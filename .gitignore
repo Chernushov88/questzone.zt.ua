@@ -1,0 +1,5 @@
+test/
+.vscode/
+.idea/
+wp-includes/
+wp-admin/
