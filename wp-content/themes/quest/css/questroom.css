@@ -1,0 +1,1405 @@
+﻿@charset "UTF-8";@import url(../fonts/font-awesome-4.5.0/css/font-awesome.min.css);body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td{padding:0;margin:0;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset, img{border:0;}
+address, caption, cite, code, dfn, em, th, var{font-weight:normal;font-style:normal;}
+ol, ul{list-style:none;}
+caption, th{text-align:left;}
+h1, h2, h3, h4, h5, h6{font-weight:normal;font-size:100%;}
+q:before, q:after{content:'';}
+abbr, acronym{border:0;}
+a:hover{opacity:.7;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:400;src:local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsDrvev4WAjW489CRDHIkJ90.woff2) format("woff2");unicode-range:U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:400;src:local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsCGXDOnx9ptx3UTSPTrfsgk.woff2) format("woff2");unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:400;src:local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsAZ98xO_Wnt-JIem4AuLGfs.woff2) format("woff2");unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:400;src:local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsE1G989qbVg6RT5ly5jB8V8.woff2) format("woff2");unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:400;src:local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsJ84zb0nVte6liF9gGtpo1Y.woff2) format("woff2");unicode-range:U+0102-0103, U+1EA0-1EF1, U+20AB;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:400;src:local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsD86pq2NkPzVgw_9lpT6RGI.woff2) format("woff2");unicode-range:U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:400;src:local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsDAdhzWOYhqHvOZMRGaEyPo.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:700;src:local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nDW5FUgIgejJvrHuLWqrSMw.woff2) format("woff2");unicode-range:U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:700;src:local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nA30BZHTGu2N_DqssQcMQNQ.woff2) format("woff2");unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:700;src:local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nPDoBG10JtAX-GAwn6iwU1Y.woff2) format("woff2");unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:700;src:local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nGhQuge17febRYSUkWKdLWA.woff2) format("woff2");unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:700;src:local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nBBtmDLrZTTOm3p1EhiGCXc.woff2) format("woff2");unicode-range:U+0102-0103, U+1EA0-1EF1, U+20AB;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:700;src:local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nEV356qNqHCUb41pS3zqMSE.woff2) format("woff2");unicode-range:U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:700;src:local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url(https://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nHm2hrkyco9jQ3NKMXpgOBg.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/0eC6fl06luXEYWpBSJvXCBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/Fl4y0QdOxyyTHEGMXX8kcRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/-L14Jk06m6pUHB-5mXQQnRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/I3S1wsgSg9YCurV6PUkTORJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/NYDWBdD4gIq26G5XYbHsFBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0102-0103, U+1EA0-1EF1, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/ek4gzZ-GeXAPcSbHtCeQI_esZW2xOQ-xsNqO47m55DA.woff2) format("woff2");unicode-range:U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/-2n2p-_Y08sg57CNWQfKNvesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/u0TOpm082MNkS5K0Q4rhqvesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/NdF9MtnOpLzo-noMoG0miPesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");unicode-range:U+0102-0103, U+1EA0-1EF1, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/Fcx7Wwv8OzT71A3E1XOAjvesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");unicode-range:U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/ZLqKeelYbATG60EpZBSDyxJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/rGvHdJnr2l75qb0YND9NyBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/mx9Uck6uB63VIKFYnEMXrRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/mbmhprMH69Zi6eEPBYVFhRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0102-0103, U+1EA0-1EF1, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/oOeFwZNlrTefzLYmlVV1UBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/77FXFjRbGzN4aCrSFhlh3hJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/isZ-wbCXNKAbnjo6_TwHThJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/UX6i4JxQDm3fVTc1CPuwqhJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/jSN2CGVDbcVyCnfJfjSdfBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/PwZc-YbIL414wB9rB1IAPRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0102-0103, U+1EA0-1EF1, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/97uahxiqZRoncBaCEI3aWxJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;}
+@font-face{font-family:'BebasNeue';src:local("Bebas Neue Regular Regular"), local("BebasNeueRegular"), url("../fonts/bebas/BebasNeue.woff") format("woff");font-weight:normal;font-style:normal;}
+@font-face{font-family:'BebasNeue';src:local("Bebas Neue Bold Regular"), local("BebasNeueBold"), url("../fonts/bebas/BebasNeueBold.woff") format("woff");font-weight:bold;font-style:normal;}
+.qroom-font_rbc{font-family:"Roboto Condensed", sans-serif;}
+.qroom-font_rbc._weight_bold{font-weight:700;}
+.qroom-font_rb{font-family:"Roboto", sans-serif;}
+.qroom-font_rb._weight_medium{font-weight:500;}
+.qroom-font_rb._weight_bold{font-weight:600;}
+._font_size_36{font-size:40px;line-height:1.2em;}
+._font_size_24{font-size:24px;line-height:24px;}
+._font_size_26{font-size:26px;line-height:26px;}
+.qroom-box_radial_mask{content:'';position:absolute;left:0;right:0;top:0;bottom:0;background-image:-webkit-radial-gradient(rgba(4, 1, 1, 0), #000);background-image:radial-gradient(rgba(4, 1, 1, 0), #000);opacity:.7;}
+.qroom-box_linear_mask{content:'';position:absolute;left:0;right:0;top:0;bottom:0;background-image:-webkit-linear-gradient(transparent, #000);background-image:linear-gradient(transparent, #000);opacity:.7;}
+.qroom-box_pattern_mask{content:'';position:absolute;left:0;right:0;top:0;bottom:0;background:url(../images/pattern.png);}
+#qroom-wrapper{overflow:hidden;min-height:100%;}
+#qroom-wrapper.fixed{position:fixed;left:0;top:0;right:0;padding:0 0 0 0;}
+#qroom-wrapper.fixed .qroom-header{background:black;}
+a, .qroom-js_link{color:#bddf01;text-decoration:underline;cursor:pointer;}
+a:hover, .qroom-js_link:hover{text-decoration:none;}
+a.qroom-dark-link{color:#D3234C;}
+.qroom-user_ava{display:inline-block;*display:inline;width:96px;height:96px;border-radius:50%;background-color:#000;background-size:cover;}
+.qroom-ttip_lib{position:absolute;background:#fff;padding:20px;-webkit-box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);z-index:1001;}
+.qroom-ttip_lib .qroom-ttip_lib_pointer{position:absolute;}
+.qroom-ttip_lib .qroom-ttip_lib_pointer._top{border-style:solid;border-width:0 10px 6px 10px;border-color:rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #fff rgba(255, 255, 255, 0);}
+.qroom-ttip_lib .qroom-ttip_lib_pointer._bottom{border-style:solid;border-width:6px 10px 0 10px;border-color:#fff rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);}
+.qroom-ttip_lib .qroom-ttip_lib_pointer._centered._top{left:50%;bottom:100%;margin-left:-10px;}
+.qroom-ttip_lib .qroom-ttip_lib_pointer._centered._left{top:50%;right:100%;}
+.qroom-ttip_lib .qroom-ttip_lib_pointer._centered._bottom{left:50%;top:100%;margin-left:-10px;}
+.qroom-ttip_lib .qroom-ttip_lib_pointer._centered._right{top:50%;left:100%;}
+.qroom-ttip_lib._fixed{position:fixed;}
+.qroom-ttip{position:absolute;top:100%;left:0;padding:6px 0 0;opacity:0;visibility:hidden;cursor:default;color:#000;text-shadow:none;}
+.qroom-ttip .qroom-ttip_inner{padding:8px 16px;position:relative;background:#fff;-webkit-box-shadow:0 2px 4px rgba(0, 0, 0, 0.5);box-shadow:0 2px 4px rgba(0, 0, 0, 0.5);font:14px/22px "Roboto", sans-serif;text-shadow:0 0 0;}
+.qroom-ttip .qroom-ttip_inner:before{position:absolute;content:'';top:-6px;left:25px;border-style:solid;border-color:rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #fff rgba(255, 255, 255, 0);border-width:0 6px 6px 6px;}
+.qroom-title_with_border, .qroom-booking_quest_title, .qroom-booking_prices .qroom-booking_prices_title, .qroom-franchise_about_title{font:600 26px/32px "Roboto", sans-serif;position:relative;overflow:hidden;text-align:center;}
+.qroom-title_with_border span, .qroom-booking_quest_title span, .qroom-booking_prices .qroom-booking_prices_title span, .qroom-franchise_about_title span{position:relative;}
+.qroom-title_with_border span:before, .qroom-booking_quest_title span:before, .qroom-booking_prices .qroom-booking_prices_title span:before, .qroom-franchise_about_title span:before{content:'';position:absolute;right:100%;width:5000px;top:50%;height:1px;background-color:rgba(0, 0, 0, 0.5);margin-right:21px;}
+.qroom-title_with_border span:after, .qroom-booking_quest_title span:after, .qroom-booking_prices .qroom-booking_prices_title span:after, .qroom-franchise_about_title span:after{content:'';position:absolute;left:100%;width:5000px;top:50%;height:1px;background-color:rgba(0, 0, 0, 0.5);margin-left:21px;}
+.qroom-info_box{padding:24px 24px 24px 56px;background-color:#f0f0f3;line-height:1.5;margin:0 0 16px;position:relative;}
+.qroom-info_box .material-icons{display:inline-block;color:red;position:absolute;left:18px;top:24px;}
+.qroom-info_box._alert .material-icons{color:red;}
+.hidden{display:none;}
+.qroom-title_with_border, .qroom-booking_quest_title, .qroom-booking_prices .qroom-booking_prices_title, .qroom-franchise_about_title{font:600 26px/32px "Roboto", sans-serif;position:relative;overflow:hidden;text-align:center;}
+.qroom-title_with_border span, .qroom-booking_quest_title span, .qroom-booking_prices .qroom-booking_prices_title span, .qroom-franchise_about_title span{position:relative;display:inline-block;max-width:740px;}
+.qroom-title_with_border span{line-height:0;}
+.qroom-title_with_border span:before, .qroom-booking_quest_title span:before, .qroom-booking_prices .qroom-booking_prices_title span:before, .qroom-franchise_about_title span:before{content:'';position:absolute;right:100%;width:5000px;top:50%;height:1px;background-color:rgba(0, 0, 0, 0.5);margin-right:21px;}
+.qroom-title_with_border span:after, .qroom-booking_quest_title span:after, .qroom-booking_prices .qroom-booking_prices_title span:after, .qroom-franchise_about_title span:after{content:'';position:absolute;left:100%;width:5000px;top:50%;height:1px;background-color:rgba(0, 0, 0, 0.5);margin-left:21px;}
+.qroom-info_box{padding:24px 24px 24px 56px;background-color:#f0f0f3;line-height:1.5;margin:0 0 16px;position:relative;}
+.qroom-info_box .material-icons{display:inline-block;color:red;position:absolute;left:18px;top:24px;}
+.qroom-info_box._alert .material-icons{color:red;}
+.qroom-row{overflow:hidden;margin-left:-15px;margin-right:-15px;}
+.qroom-row-input{min-height:160px;}
+.qroom-row [class*="qroom-col-"]{min-height:1px;padding-left:15px;padding-right:15px;float:left;box-sizing:border-box;position:relative;}
+.qroom-row .qroom-col-12{width:100%;}
+.qroom-row .qroom-col-11{width:91.6667%;}
+.qroom-row .qroom-col-10{width:83.3333%;}
+.qroom-row .qroom-col-9{width:75%;}
+.qroom-row .qroom-col-8{width:66.6667%;}
+.qroom-row .qroom-col-7{width:58.3333%;}
+.qroom-row .qroom-col-6{width:50%;}
+.qroom-row .qroom-col-5{width:41.6667%;}
+.qroom-row .qroom-col-4{width:33.3333%;}
+.qroom-row .qroom-col-3{width:25%;}
+.qroom-row .qroom-col-2{width:16.6667%;}
+.qroom-row .qroom-col-1{width:8.33333%;}
+@-webkit-keyframes opacity_animation{0%, 75%, 100%{opacity:0;}
+25%{opacity:1;}
+}
+@-moz-keyframes opacity_animation{0%, 75%, 100%{opacity:0;}
+25%{opacity:1;}
+}
+@-o-keyframes opacity_animation{0%, 75%, 100%{opacity:0;}
+25%{opacity:1;}
+}
+@keyframes opacity_animation{0%, 75%, 100%{opacity:0;}
+25%{opacity:1;}
+}
+@-webkit-keyframes loader{0%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg);}
+50%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg);border-width:2px;}
+}
+@-moz-keyframes loader{0%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg);}
+50%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg);border-width:2px;}
+}
+@-o-keyframes loader{0%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg);}
+50%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg);border-width:2px;}
+}
+@keyframes loader{0%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg);}
+50%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg);border-width:2px;}
+}
+@-webkit-keyframes loader_btn{0%{-webkit-transform:rotate(0deg) scale(1.1);transform:rotate(0deg) scale(1.1);}
+100%{-webkit-transform:rotate(360deg) scale(0.2);transform:rotate(360deg) scale(0.2);}
+}
+@-moz-keyframes loader_btn{0%{-webkit-transform:rotate(0deg) scale(1.1);transform:rotate(0deg) scale(1.1);}
+100%{-webkit-transform:rotate(360deg) scale(0.2);transform:rotate(360deg) scale(0.2);}
+}
+@-o-keyframes loader_btn{0%{-webkit-transform:rotate(0deg) scale(1.1);transform:rotate(0deg) scale(1.1);}
+100%{-webkit-transform:rotate(360deg) scale(0.2);transform:rotate(360deg) scale(0.2);}
+}
+@keyframes loader_btn{0%{-webkit-transform:rotate(0deg) scale(1.1);transform:rotate(0deg) scale(1.1);}
+100%{-webkit-transform:rotate(360deg) scale(0.2);transform:rotate(360deg) scale(0.2);}
+}
+@-webkit-keyframes loader_in_dates{0%, 100%{left:10%;-webkit-transform:scale(0.5, 1.2);transform:scale(0.5, 1.2);}
+25%, 75%{left:50%;-webkit-transform:scale(1, 0.5);transform:scale(1, 0.5);}
+50%{left:90%;-webkit-transform:scale(0.5, 1.2);transform:scale(0.5, 1.2);}
+}
+@-moz-keyframes loader_in_dates{0%, 100%{left:10%;-webkit-transform:scale(0.5, 1.2);transform:scale(0.5, 1.2);}
+25%, 75%{left:50%;-webkit-transform:scale(1, 0.5);transform:scale(1, 0.5);}
+50%{left:90%;-webkit-transform:scale(0.5, 1.2);transform:scale(0.5, 1.2);}
+}
+@-o-keyframes loader_in_dates{0%, 100%{left:10%;-webkit-transform:scale(0.5, 1.2);transform:scale(0.5, 1.2);}
+25%, 75%{left:50%;-webkit-transform:scale(1, 0.5);transform:scale(1, 0.5);}
+50%{left:90%;-webkit-transform:scale(0.5, 1.2);transform:scale(0.5, 1.2);}
+}
+@keyframes loader_in_dates{0%, 100%{left:10%;-webkit-transform:scale(0.5, 1.2);transform:scale(0.5, 1.2);}
+25%, 75%{left:50%;-webkit-transform:scale(1, 0.5);transform:scale(1, 0.5);}
+50%{left:90%;-webkit-transform:scale(0.5, 1.2);transform:scale(0.5, 1.2);}
+}
+html{overflow-y:scroll;}
+body{background:#393d44 url(../images/pattern.png);line-height:1.3em;font-family:"Roboto", sans-serif;font-weight:400;font-size:20px;font:400 16px/;color:#000;min-width:960px;}
+.qroom-default_content_header{margin-top:-120px;padding-top:120px;}
+.qroom-default_content_header._black{background:#000;}
+.qroom-page_top_box{position:relative;margin-top:-120px;background-size:cover;background-color:#000;background-attachment:fixed;}
+.qroom-page_top_box:before{content:'';position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(0, 0, 0, 0.6);}
+.qroom-content{padding:120px 0 0;position:relative;background:#fff;}
+.qroom-content_inner{position:relative;max-width:960px;margin:0 auto;}
+.qroom-form_outer{display:flex;justify-content:center;}
+.qroom-form_contact{margin:40px 60px 0 0;}
+.qroom-form_contact_manager{margin:0 0 0 100px;}
+.qroom-form_contact_manager_name{margin:0 0 10px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);font-size:18px;line-height:1.33;}
+.qroom-form_contact_manager_destiny{font-size:12px;margin:0 0 13px;}
+.qroom-form_contact_manager_address,
+.qroom-form_contact_manager_phone{font-size:16px/22px "Roboto Condensed", sans-serif;text-shadow:0 2px 4px rgba(0, 0, 0, 0.2);margin:0 0 6px;}
+.qroom-form_contact .qroom-user_ava{float:left;width:80px;height:80px;}
+._ta-c{text-align:center;}
+.footer_list-logo ._ta-c{margin-top:30px;text-align:left;}
+.footer_list-logo a{display:block;}
+.footer_list-logo{}
+._ta-l{text-align:left;}
+._ta-r{text-align:right;}
+._fl-r{float:right;}
+._fl-l{float:left;}
+._unselectable{-moz-user-select:none;-khtml-user-select:none;user-select:none;-webkit-user-select:none;-o-user-select:none;-ms-user-select:none;}
+._hidden{display:none;}
+._ellipsis{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+._nclear{*zoom:1;}
+._nclear:before, ._nclear:after{content:" ";display:table;}
+._nclear:after{clear:both;}
+._box_loading{position:relative;perspective:200px;}
+._box_loading:before{content:'';position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(255, 255, 255, 0.5);z-index:10;}
+._box_loading:after{content:'';position:absolute;left:50%;top:50%;background:#bddf01;box-sizing:border-box;filter:alpha(opacity=50);opacity:0.5;border-radius:50%;-webkit-box-shadow:0 0 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.1) inset;box-shadow:0 0 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.1) inset;-webkit-animation:2s loader infinite linear;animation:2s loader infinite linear;width:20px;height:20px;margin:-10px 0 -10px;border:10px solid #fff;z-index:11;}
+._box_loading._loader_size_50:after{width:50px;height:50px;margin:-25px 0 -25px;border:25px solid #fff;}
+._box_loading._loader_size_20:after{width:20px;height:20px;margin:-10px 0 0 -10px;}
+.material-icons{width:24px;height:24px;font-size: 30px;line-height: .7;margin-right: 4px;}
+.qroom-icn{display:inline-block;vertical-align:middle;}
+.qroom-icn._mouse{width:24px;height:40px;background:url(../i/mouse.png);}
+.qroom-icn._arrow_down{width:43px;height:20px;background:url(../i/arrow_down.png);}
+@font-face{font-family:'entipo';src:url("../fonts/entipo/fontello.eot?98175897");src:url("../fonts/entipo/fontello.eot?98175897#iefix") format("embedded-opentype"), url("../fonts/entipo/fontello.woff2?98175897") format("woff2"), url("../fonts/entipo/fontello.woff?98175897") format("woff"), url("../fonts/entipo/fontello.ttf?98175897") format("truetype"), url("../fonts/entipo/fontello.svg?98175897#fontello") format("svg");font-weight:normal;font-style:normal;}
+.qroom-icn_entipo{font-family:'entipo';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}
+.qroom-icn_entipo:before{font-family:"entipo";font-style:normal;font-weight:normal;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.qroom-icn_entipo._vk:before{content:'\e800';}
+.qroom-icn_entipo._instagram:before{content:'\e801';}
+.qroom-icn_entipo._facebook:before{content:'\e802';}
+.qroom-icn_entipo._vk_alternitive:before{content:'\e803';}
+.qroom-icn_entipo._instagram_with_circle:before{content:'\e804';}
+.qroom-icn_entipo._facebook_with_circle:before{content:'\e805';}
+.qroom-icn_entipo._vk_with_circle:before{content:'\e806';}
+@font-face{font-family:'questicn';src:url("../fonts/quest_icn/fontello.eot?18481330");src:url("../fonts/quest_icn/fontello.eot?18481330#iefix") format("embedded-opentype"), url("../fonts/quest_icn/fontello.woff2?18481330") format("woff2"), url("../fonts/quest_icn/fontello.woff?18481330") format("woff"), url("../fonts/quest_icn/fontello.ttf?18481330") format("truetype"), url("../fonts/quest_icn/fontello.svg?18481330#fontello") format("svg");font-weight:normal;font-style:normal;}
+.qroom-icn_quest{font-family:'questicn';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}
+.qroom-icn_quest:before{font-family:"questicn";font-style:normal;font-weight:normal;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.qroom-icn_quest._build:before{content:'\e800';}
+.qroom-icn_quest._visibility:before{content:'\e801';}
+.qroom-icn_quest._volume_down:before{content:'\e802';}
+.qroom-icn_quest._vpn_key:before{content:'\e803';}
+.qroom-icn_quest._world:before{content:'\e804';}
+.qroom-icn_quest._business_center:before{content:'\e805';}
+.qroom-icn_quest._event_seat:before{content:'\e806';}
+.qroom-icn_quest._face:before{content:'\e807';}
+.qroom-icn_quest._handcuffs:before{content:'\e808';}
+.qroom-icn_quest._history:before{content:'\e809';}
+.qroom-icn_quest._https:before{content:'\e80a';}
+.qroom-icn_quest._insert_emoticon:before{content:'\e80b';}
+.qroom-icn_quest._local_dining:before{content:'\e80c';}
+.qroom-icn_quest._lock_open:before{content:'\e80d';}
+.qroom-icn_quest._memory:before{content:'\e80e';}
+.qroom-icn_quest._music_note:before{content:'\e80f';}
+.qroom-icn_quest._ondemand_video:before{content:'\e810';}
+.qroom-icn_quest._people_outline:before{content:'\e811';}
+.qroom-icn_quest._people:before{content:'\e812';}
+.qroom-icn_quest._person:before{content:'\e813';}
+.qroom-icn_quest._photo_camera:before{content:'\e814';}
+.qroom-icn_quest._security:before{content:'\e815';}
+.qroom-icn_quest._shape:before{content:'\e816';}
+.qroom-icn_quest._supervisor_account:before{content:'\e817';}
+.qroom-icn_quest._home-variant:before{content:'\e818';}
+.qroom-icn_quest._human-child:before{content:'\e819';}
+.qroom-icn_quest._internet-explorer:before{content:'\e81a';}
+.qroom-icn_quest._timer-sand:before{content:'\e81b';}
+.qroom-icn_quest._account-multiple:before{content:'\e81c';}
+.qroom-icn_quest._check-circle:before{content:'\e81d';}
+.qroom-icn_quest._plus-circle:before{content:'\e81e';}
+.qroom-icn_quest._account-outline:before{content:'\e81f';}
+.qroom-icn_quest._minus:before{content:'\e820';}
+.qroom-icn_quest._clock:before{content:'\e821';}
+.qroom-btn{display:inline-block;*display:inline;vertical-align:middle;font:500 16px/20px "Roboto", sans-serif;text-align:center;color:#bddf01;text-decoration:none;border:1px solid #bddf01;padding:8px 30px;cursor:pointer;background:rgba(0, 0, 0, 0.15);-webkit-transition:all 0.1s linear;transition:all 0.1s linear;text-shadow:0 1px 2px rgba(0, 0, 0, 0.3);}
+.qroom-btn:disabled{cursor:default;border:none;}
+.qroom-btn:hover{background:#bddf01;color:#000;text-shadow:none;text-decoration:none;}
+.qroom-btn._big{font-size:20px;font-weight:500;padding:15px 40px 13px;line-height:20px;text-transform:uppercase;}
+.qroom-btn._green{background:#bddf01;color:#000;text-shadow:none;}
+.qroom-btn._green:hover{background:#d3f801;}
+.qroom-btn._transparent{border:1px solid rgba(255, 255, 255, 0.2);color:#fff;}
+.qroom-btn._transparent:hover{border:1px solid rgba(255, 255, 255, 0.3);background:rgba(0, 0, 0, 0.25);}
+.qroom-btn._white{background-color:#fff;border-color:#fff;color:#000;}
+.qroom-btn._white:hover{background-color:rgba(255, 255, 255, 0.95);}
+.qroom-btn._loading{position:relative;cursor:default;pointer-events:none;}
+.qroom-btn._loading:before{content:'';position:absolute;width:12px;height:12px;margin:-14px 0 0 -12px;top:50%;left:90%;border:2px solid #bddf01;background:#fff;border-radius:50%;-webkit-animation:1s loader_btn linear infinite;animation:1s loader_btn linear infinite;transform-origin:center bottom;}
+.qroom-btn._loading:after{content:'';position:absolute;width:12px;height:12px;margin:-14px 0 0 -12px;top:50%;left:90%;border:2px solid #bddf01;background:#fff;border-radius:50%;-webkit-animation:1s loader_btn linear infinite;animation:1s loader_btn linear infinite;animation-delay:.5s;transform-origin:center bottom;}
+.qroom-btn__invert{color:#000;background:#bddf01;}
+.qroom-btn__invert:hover{background:rgba(0, 0, 0, 0.15);color:#bddf01;}
+.qroom-form_field{margin:0 0 16px;}
+.qroom-form_field_error{padding:8px 0 0;margin:0 0 -8px;font-size:12px;color:#D3234C;display:none;}
+.qroom-textarea,
+.qroom-input{background:rgba(0, 0, 0, 0.3);border:1px solid #3D3F41;color:#fff;width:100%;padding:0 20px;font:18px/24px "Roboto", sans-serif;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);box-sizing:border-box;-webkit-transition:all 0.2s linear;transition:all 0.2s linear;}
+.qroom-textarea:focus, .qroom-textarea._not_empty,
+.qroom-input:focus,
+.qroom-input._not_empty{color:#fff;}
+.qroom-textarea:focus,
+.qroom-input:focus{outline:none;}
+.qroom-textarea._fail,
+.qroom-input._fail{border-color:#D3234C !important;}
+.qroom-input{height:48px;}
+.qroom-textarea{min-height:64px;resize:vertical;padding:12px 20px;}
+.qroom-checkbox{font:12px/14px "Roboto", sans-serif;cursor:pointer;}
+.qroom-checkbox input{visibility:hidden;}
+.qroom-checkbox .qroom-checkbox_icn{display:none;vertical-align:middle;margin:-2px 11px 0 0;}
+.qroom-checkbox .qroom-checkbox_icn._outline{display:inline-block;}
+.qroom-checkbox._checked .qroom-checkbox_icn._outline{display:none;}
+.qroom-checkbox._checked .qroom-checkbox_icn._check_icn{color:#bddf01;display:inline-block;}
+.qroom-form_additional{opacity:.7;font-size:12px;text-align:center;margin:0 0 19px;letter-spacing:0.2px;}
+.qopup-wrap{background-color:rgba(0, 0, 0, 0.7);background-position:center center;background-repeat:no-repeat;background-size:cover;text-align:center;position:absolute;min-height:100%;left:0;top:0;right:0;-webkit-perspective:1000px;-moz-perspective:1000px;-ms-perspective:1000px;perspective:1000px;z-index:3;min-width:960px;}
+.qopup-video{display:inline-block;*display:inline;*zoom:1;z-index:1000;text-align:left;margin:0;}
+.qopup-box{margin:0 auto;display:block;z-index:1000;text-align:left;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;transition:all 0.3s ease-out;-webkit-transform:translateY(10px);-moz-transform:translateY(10px);-ms-transform:translateY(10px);transform:translateY(10px);opacity:0;}
+.qopup-box.opened{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);opacity:1;}
+.qopup-box.closed{-webkit-transform:translateY(-10px);-moz-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px);opacity:0;}
+.qopup-box.invisible{height:0;overflow:hidden;}
+.qopup-box.invisible-false{height:auto;}
+.qopup-header{text-align:center;position:relative;}
+.qopup-close:hover{opacity:.8;}
+.qopup-close{display:block;position:absolute;top:24px;right:20px;cursor:pointer;color:#000;z-index:2;}
+.qopup-content{padding:30px 50px 30px;background:#fff;}
+.qopup-content-payment{display:none;position:fixed;top:50%;left:50%;z-index:100;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
+.qopup-content-payment .qopup-close{color:#000;}
+.darken{display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0, 0.7);}
+.qroom-popup_linear_mask{position:absolute;opacity:.5;background-image:linear-gradient(to bottom, #000, transparent, #000);left:0;top:0;right:0;bottom:0;}
+.qroom-booking_popup{background-color:rgba(0, 0, 0, 0.9);}
+.qroom-booking_popup:before{content:'';position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0, 0, 0, 0.8) url(../images/pattern.png);}
+.qroom-booking_popup .qroom-booking_popup_bg{content:'';position:absolute;left:50%;top:0;bottom:0;width:900px;margin-left:-450px;}
+.qroom-booking_popup .qopup-content{background:none;box-shadow:none;color:#fff;position:relative;padding:29px 0;}
+.qroom-booking_popup .qopup-box{position:relative;z-index:2;}
+.qroom-booking_popup .qopup-close{color:#fff;right:27px;}
+.qroom-booking_qopup{max-width:900px;margin:0 auto;}
+.qroom-booking_qopup_title{font:600 42px/50px "Roboto", sans-serif;margin:0 0 16px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);text-align:center;opacity:0.89;font-size:42px;}
+.qroom-booking_qopup_desc{font:100 16px/24px "Roboto", sans-serif;margin:0 0 22px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);opacity:0.89;letter-spacing:0.2px;}
+.qroom-booking_qopup_infos{color:#fff;margin:0 0 32px;font:16px/22px "Roboto Condensed", sans-serif;text-shadow:0 2px 4px rgba(0, 0, 0, 0.2);text-align:left;border-width:1px 0;border-style:solid;border-color:#fff;padding:13px 0;}
+.qroom-booking_qopup_infos table, .qroom-booking_qopup_infos td{color:#fff;}
+.qroom-booking_qopup_infos td{padding:0 18px;white-space:nowrap;}
+.qroom-booking_qopup_infos .qroom-form_price{text-align:right;opacity:0.89;width:50%;}
+.qroom-booking_qopup_infos .qroom-form_price .qroom-form_old_price{font-size:16px;color:#D3234C;letter-spacing:0.25px;text-shadow:0px 2px 4px rgba(0, 0, 0, 0.2);display:inline-block;padding:0 23px 0 0;visibility:hidden;}
+.qroom-booking_qopup_infos .qroom-form_price .qroom-form_price_now{font-size:22px;letter-spacing:0.5px;display:inline-block;}
+.qroom-booking_qopup_infos .material-icons{vertical-align:middle;margin:-2px 16px 0 0;}
+.qroom-booking_form .qroom-form_btns{padding:0 0 27px;text-align:center;}
+.qroom-booking_form .qroom-btn._big{padding:12px 30px 11px;background:#bddf01;border-color:#bddf01;color:#000;margin:0 0 -24px;background:#bddf01;color:#000;text-shadow:none;}
+.qroom-booking_form .qroom-btn:hover{background:#000;color:#bddf01;text-shadow:none;}
+.qroom-booking_form .qroom-btn._fullWidth{padding:12px 20px 11px;width:100%;background:#000;border-color:transparent;background:transparent;color:#bddf01;}
+.qroom-booking_form .qroom-btn._small-padding{padding:6px 20px 11px;}
+.qroom-booking_form .qroom-btn:hover{border-color:#bddf01;background:transparent;color:#bddf01;}
+.qroom-booking_form .qroom-form_line{line-height:48px;margin:0 0 16px;}
+.qroom-booking_form .qroom-input, .qroom-booking_form .qroom-textarea{font-size:16px;color:rgba(255, 255, 255, 0.9);letter-spacing:0.11px;}
+.qroom-booking_form .qroom-input:focus, .qroom-booking_form .qroom-textarea:focus{border-color:#fff;}
+.qroom-booking_form .qroom-textarea{height:111px;}
+.qroom-booking_form .qroom-white_link{color:#fff;font-size:14px;padding:0 20px;}
+.qroom-booking_form .qroom-js_link{text-decoration:none;position:relative;padding:0 0 0 34px;}
+.qroom-booking_form .qroom-js_link:hover{color:#fff;}
+.qroom-booking_form .qroom-js_link i{left:0;margin-top:-12px;position:absolute;top:50%;}
+.qroom-booking_form .qroom-form_additional{margin:0 0 19px;}
+.qroom-booking_form .qroom-form_promo{position:relative;}
+.qroom-booking_form .qroom-form_promo_icon{position:absolute;right:12px;top:50%;margin-top:-12px;}
+.qroom-booking_form .qroom-form_promo_icon._success{color:#00BFA5;}
+.qroom-booking_form .qroom-form_promo_icon._error{color:#D3234C;font-weight:bold;font-size:14px;}
+.qroom-booking_form .qroom-promo_error_info{color:#D3234C;font-weight:bold;font-size:14px;margin:-8px 0 17px;display:none;}
+.qroom-booking_qopup_selctors{margin:0 0 25px;font-size:0;}
+.qroom-booking_qopup_selctors_title{opacity:0.89;font:16px/32px "Roboto Condensed", sans-serif;color:#fff;letter-spacing:0.25px;text-shadow:0px 2px 4px rgba(0, 0, 0, 0.2);padding:0 12px 0 0;display:inline-block;}
+.qroom-booking_qopup_selctor{display:inline-block;vertical-align:top;color:#fff;padding:0 16px;line-height:32px;border:1px solid #fff;text-shadow:0 1px 2px rgba(0, 0, 0, 0.3);margin:0 3px;border-radius:16px;font-size:18px;font-family:"Roboto Condensed", sans-serif;cursor:pointer;opacity:0.89;}
+.qroom-booking_qopup_selctor:hover{border-color:#d3234c;color:#d3234c;}
+.qroom-booking_qopup_selctor._active, .qroom-booking_qopup_selctor._active:hover{cursor:default;background-color:#d3234c;border-color:#d3234c;color:#fff;}
+.qroom-booking_qopup_selctor .material-icons{display:inline-block;vertical-align:middle;margin:-4px 0 0 3px;}
+.qroom-booking_terms{display:none;max-width:600px;margin:0 auto;}
+.qroom-booking_terms .qroom-checkbox{display:block;margin:0 0 11px;text-shadow:0 1px 2px rgba(0, 0, 0, 0.3);opacity:0.89;}
+.qroom-booking_terms .qroom-form_field_error{margin-left:52px;}
+.qroom-booking_success.qroom-booking_qopup{max-width:530px;margin:0 auto;}
+.qroom-booking_success p{opacity:0.89;font-weight:300;font-size:16px;color:#fff;line-height:24px;letter-spacing:0.2px;text-shadow:0px 2px 4px rgba(0, 0, 0, 0.5);padding:8px 0 18px;}
+.qroom-booking_success .qroom-booking_success_lounge_link{font-size:18px;text-decoration:none;}
+.qroom-booking_success .qroom-booking_success_lounge_link:hover{text-decoration:underline;}
+.qroom-booking_success .qroom-booking_success_socials_link{margin:40px auto 0;position:relative;width:450px;}
+.qroom-booking_success .qroom-booking_success_socials_link i{left:0;margin-top:-12px;position:absolute;top:50%;}
+.qroom-booking_success .qroom-booking_success_socials_link a{display:inline-block;text-align:left;line-height:24px;padding:0 0 0 45px;display:inline-block;margin:0px;opacity:0.89;letter-spacing:0.2px;}
+.qroom-booking_success .qroom-booking_success_spec{line-height:24px;opacity:0.89;letter-spacing:0.2px;}
+.qroom-booking_success .qroom-btn._big{margin:16px 0 0;}
+.qroom-booking_success .qroom-white_link{color:#fff;margin:0 0 24px;font-weight:300;display:block;text-align:center;}
+.qroom-booking_success .qroom-white_link i{margin:-8px 14px 0 0;vertical-align:middle;}
+.qroom-location_popup_title{text-align:center;font:600 26px/32px "Roboto", sans-serif;margin:0 0 32px;}
+.qroom-location_list_devider{margin:0 40px 11px;}
+.qroom-location_list{overflow:hidden;margin:0 20px 11px;}
+.qroom-location_list li{float:left;margin:0 0 0 80px;width:160px;}
+.qroom-location_list li:first-child{margin:0;}
+.qroom-location_list a.qroom-location_list_item{display:block;font:16px/24px "Roboto", sans-serif;cursor:pointer;color:#000;text-decoration:none;}
+.qroom-location_list a.qroom-location_list_item._big{font:600 18px/24px "Roboto", sans-serif;}
+.qroom-location_list a.qroom-location_list_item:hover{color:#D3234C;}
+.qroom-location-franchise_text{font:500 16px/22px "Roboto", sans-serif;text-align:center;margin:0 130px;padding:22px 0 20px;}
+.qroom-gallery_popup .qopup-close{color:#fff;z-index:4;}
+.qroom-gallery_popup .qopup-box,
+.qroom-gallery_popup .qopup-content{position:absolute;left:0;top:0;right:0;bottom:0;background:#000;max-width:none !important;}
+.qroom-gallery_img{position:absolute;left:0;top:0;bottom:0;right:0;background-position:center;background-size:contain;background-repeat:no-repeat;}
+.qroom-gallery_img:before{left:0;right:0;top:50%;bottom:0;content:'';position:absolute;background-image:-webkit-linear-gradient(top, transparent, #000);background-image:linear-gradient(to bottom, transparent, #000);opacity:.5;}
+.qroom-gallery_img iframe,
+.qroom-gallery_img video{position:absolute;z-index:111;left:0;top:70px;bottom:70px;right:0;}
+.qroom-gallery_pointer{position:absolute;bottom:0;cursor:pointer;z-index:3;width:50%;top:0;}
+.qroom-gallery_pointer:hover{opacity:.9;}
+.qroom-gallery_pointer._back{left:0;}
+.qroom-gallery_pointer._back .material-icons{left:24px;}
+.qroom-gallery_pointer._forward{right:0;}
+.qroom-gallery_pointer._forward .material-icons{right:24px;}
+.qroom-gallery_pointer .material-icons{width:24px;height:24px;font-size:24px;color:#fff;position:absolute;bottom:24px;}
+.qroom-gallery_changer{position:absolute;text-align:center;bottom:32px;left:0;right:0;font-size:0;}
+.qroom-gallery_changer .qroom-gallery_changer_item{display:inline-block;background:rgba(255, 255, 255, 0.4);width:40px;height:8px;cursor:pointer;margin:0 5px;-webkit-transition:all 0.1s linear;transition:all 0.1s linear;position:relative;z-index:4;}
+.qroom-gallery_changer .qroom-gallery_changer_item:hover, .qroom-gallery_changer .qroom-gallery_changer_item._active{background-color:#D3234C;}
+.qroom-gallery_changer .qroom-gallery_changer_item:before{position:absolute;left:-5px;top:-5px;bottom:-5px;right:-5px;content:'';}
+.qroom-popup_opinion_inner{width:300px;margin:0 auto 45px;border:1px solid #979797;padding:35px 50px 0;position:relative;}
+.qroom-popup_opinion_inner .qroom-textarea,
+.qroom-popup_opinion_inner .qroom-input{border-color:#F0F0F3;background-color:#F0F0F3;color:#000;text-shadow:none;}
+.qroom-popup_opinion_inner .qroom-textarea{height:124px;}
+.qroom-popup_opinion_inner .qroom-form_btns{text-align:center;margin-bottom:-23px;padding-top:16px;}
+.qroom-popup_opinion_inner .qroom-form_btns .qroom-btn{display:block;width:100%;}
+.qroom-popup_opinion_inner .qroom-form_additional{opacity:1;}
+.qroom-popup_text p, .qroom-popup_text ul{margin-bottom:6px;}
+.qroom-popup_text ul{margin:8px 0 8px 17px;}
+.qroom-popup_text ul li{list-style-type:disc;padding-left:10px;padding-bottom:6px;}
+.qroom-adwords_inner{text-align:center;}
+.qroom-adwords_inner .qroom-btn{background:#bddf01;color:#000;text-shadow:none;width:45%;margin-top:30px;}
+.qroom-dop_services_inner{padding:0 10px;}
+.qroom-dop_services_inner .qroom-location_popup_title{margin:-10px 0 12px;text-align:center;}
+.qroom-dop_services_inner .qroom-textarea, .qroom-dop_services_inner .qroom-input{background:#F0F0F3;border-color:transparent;color:#000;text-shadow:none;}
+.qroom-dop_services_inner .qroom-textarea:focus, .qroom-dop_services_inner .qroom-input:focus{border:1px solid #3D3F41;}
+.qroom-dop_services_inner .qroom-btn{background:#bddf01;color:#000;text-shadow:none;width:100%;}
+.qroom-dop_services_inner .qroom-dop_services_desc{padding:0 0 32px;text-align:center;}
+.qroom-services_popup{background:none;}
+.qroom-location_list_another{display:flex;height:250px;flex-direction:column;flex-wrap:wrap;margin:0 20px 11px;}
+.qroom-location_list_another a.qroom-location_list_item{display:block;font:16px/24px "Roboto", sans-serif;cursor:pointer;color:#000;text-decoration:none;}
+.qroom-location_list_another a.qroom-location_list_item._big{font:600 18px/24px "Roboto", sans-serif;}
+.qroom-location_list_another a.qroom-location_list_item:hover{color:#D3234C;}
+.qroom-header{position:fixed;top:0;left:0;right:0;color:#fff;z-index:10;-webkit-transition:all 0.2s linear;transition:all 0.2s linear;background:transparent;-webkit-transform:translateZ(0);transform:translateZ(0);min-width:940px;}
+.qroom-header._black{background:black;}
+.qroom-header._force-black{background:black;}
+.qroom-header._mini{top:-72px;}
+.qroom-header_top{padding:0 16px 0 24px;height:71px;border-bottom:1px solid rgba(255, 255, 255, 0.15);background:rgba(0, 0, 0, 0.5);position:relative;font-size:12px;}
+.qroom-header_nav{height:50px;text-align:center;font-size:0;background:rgba(0, 0, 0, 0.7);border-bottom:1px solid rgba(255, 255, 255, 0.15);}
+.qroom-header_nav >ul{display:inline-block;}
+.qroom-header_nav> ul>li{position:relative;float:left;}
+div.qroom-header_nav> ul>li.menu-item-has-children a:hover{background:#D3234C;color:#fff;}
+div.qroom-header_nav> ul>li.menu-item-has-children .sub-menu .current-menu-item a{background:#D3234C;color:#fff;}
+.qroom-header_nav> ul>li:hover ul{display:block;}
+.qroom-header_nav> ul>li> ul{}
+.qroom-header_nav> ul>li> ul{position:absolute;top:48px;display:none;background:#fff;padding:20px;-webkit-box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);z-index:1001;white-space:nowrap;text-align:left;}
+.qroom-header_nav> ul>li>a, .qroom-header_nav_item{display:inline-block;*display:inline;line-height:48px;padding:0 18px;margin:0 5px;font:500 20px/48px "Roboto", sans-serif;color:#fff;text-transform:uppercase;-webkit-transition:0.05s all linear;transition:0.05s all linear;text-decoration:none;cursor:pointer;}
+.qroom-header_nav> ul>li>a .blog_site{
+	opacity: 0;
+	/*opacity: 1;*/
+}
+.qroom-header_nav_item:first-child, .qroom-header_nav> ul>li>a:first-child{margin-left:0;}
+.qroom-header_nav_item:last-child, .qroom-header_nav> ul>li>a:last-child{margin-right:0;}
+.qroom-header_nav_item._active, .qroom-header_nav_item:hover, .qroom-header_nav> ul>li.current-menu-item>a, .qroom-header_nav> ul>li.menu-item a:hover{color:#c92149;}
+.qroom-header_nav_item._hovered{background:#D3234C;color:#fff;}
+.qroom-header_nav_ttip_items{margin:-13px -20px;}
+.qroom-header_nav> ul>li> ul li a, .qroom-header_nav_ttip_item{display:block;padding:10px 18px;color:#000;text-transform:uppercase;text-decoration:none;font-size:16px;font-weight:500;letter-spacing:0.2px;}
+.qroom-header_nav> ul>li> ul li a:hover, .qroom-header_nav_ttip_item:hover{text-decoration:none;background:#f0f0f3;}
+.qroom-header_ttip_menu .qroom-ttip_lib_pointer{display:none;}
+.qroom-header_side{position:relative;}
+.qroom-header_side._fl-r{padding:19px 0 0;}
+.qroom-header_side._fl-l{padding:17px 0 0;}
+.qroom-header_center{overflow:hidden;left:0;position:absolute;right:0;padding:12px 50px 0 0;text-align:center;}
+.qroom-header_center .qroom-header_nav_item{letter-spacing:0.13px;position:relative;padding:0px;margin:0 18px;}
+.qroom-header_center .qroom-header_nav_item:hover:not(._active){color:#fff;}
+.qroom-header_center .qroom-header_nav_item:hover:not(._active)::after{content:'';color:#fff;border-bottom:1px solid #fff;position:absolute;width:100%;top:32px;left:0px;}
+.qroom-header_center li{display:inline-block;}
+.qroom-header_center li a{display:inline-block;line-height:48px;padding:0 18px;margin:0 5px;font:500 12px/48px "Roboto", sans-serif;color:#fff;text-transform:uppercase;-webkit-transition:0.05s all linear;transition:0.05s all linear;text-decoration:none;cursor:pointer;letter-spacing:0.13px;position:relative;padding:0px;margin:0 18px;}
+.qroom-header_center li.current-menu-item a{color:#c92149;}
+.qroom-lk_info{float:left;}
+.qroom-lk_info .qroom-btn{float:left;margin:0 24px 0 0;text-transform:uppercase;background:#bddf01;color:#000;text-shadow:none;letter-spacing:0.1px;}
+.qroom-lk_info .qroom-btn:hover{background:transparent;color:#bddf01;}
+.qroom-logo{float:left;}
+.qroom-logo img{max-width:155px;height:auto;}
+.logo-icon{width:50px;margin:-10px 9px 0 0;float:left;}
+.qroom-header_phone{font-size:18px;font-family:"Roboto Condensed", sans-serif;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);float:left;margin:7px 31px 0 0;}
+.qroom-header_phone .material-icons{vertical-align:middle;margin:-2px 17px 0 0;}
+.qroom-location{float:left;margin-left:24px;position:relative;line-height:37px;text-shadow:0 1px 2px rgba(0, 0, 0, 0.3);cursor:pointer;}
+.qroom-location .material-icons{width:16px;height:16px;vertical-align:middle;margin:-2px 0 0 14px;font-size:16px;overflow:hidden;display:inline-block;}
+.qroom-location span{opacity:0.89;letter-spacing:0.2px;}
+.qroom-location .qroom-location_ttip{white-space:nowrap;cursor:default;}
+.qroom-location .qroom-location_ttip .qroom-btn._green{margin:0 0 0 45px;color:#fff;text-shadow:0 1px 2px rgba(0, 0, 0, 0.3);}
+.qroom-location .qroom-location_ttip .qroom-btn._transparent{margin:0 0 0 8px;color:#000;border:1px solid rgba(0, 0, 0, 0.5);text-shadow:0 0 0;background:none;}
+.qroom-location .qroom-location_ttip .qroom-ttip_inner{padding:8px 8px 8px 16px;font:14px/22px "Roboto", sans-serif;color:#000;}
+.qroom-location._hover .qroom-location_ttip{opacity:1;visibility:visible;}
+.qroom-location .qroom-location_ttip_inner{position:relative;background:#fff;}
+.qroom-location .qroom-location_ttip_inner:before{content:'';position:absolute;left:35px;border-style:solid;border-width:0 6px 6px 6px;border-color:rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #fff rgba(255, 255, 255, 0);bottom:100%;}
+.qroom-lang_choice{float:left;position:relative;line-height:32px;text-shadow:0 1px 2px rgba(0, 0, 0, 0.3);}
+.qroom-lang_choice .material-icons{width:16px;height:16px;vertical-align:middle;margin:-2px 0 0 14px;font-size:14px;display:inline-block;overflow:hidden;}
+.qroom-lang_choice .qroom-lang_ttip{left:auto;right:0;}
+.qroom-lang_choice .qroom-lang_ttip .qroom-ttip_inner{padding:0;}
+.qroom-lang_choice .qroom-lang_ttip .qroom-ttip_inner:before{right:16px;}
+.qroom-lang_choice:hover .qroom-lang_ttip{visibility:visible;opacity:1;}
+.qroom-lang_choice .qroom-lang_item{cursor:pointer;padding:8px 16px;}
+.qroom-lang_choice .qroom-lang_item:hover{background:rgba(0, 0, 0, 0.05);}
+.qroom-booking_header{background:#f0f0f3;padding:40px 0 32px;text-align:center;}
+.qroom-booking_header .qroom-booking_title{font:700 36px/40px "Roboto Condensed", sans-serif;margin:0 0 40px;text-transform:uppercase;}
+.qroom-booking_header .qroom-booking_desc{margin:0 0 40px;}
+.qroom-booking_header .qroom-booking_phone{margin:-24px 0 16px;}
+.qroom-booking_header .qroom-booking_phone b{display:block;font:700 20px/24px "Roboto Condensed", sans-serif;}
+.qroom-booking_header .qroom-booking_dates{font:700 36px/40px "Roboto Condensed", sans-serif;}
+.qroom-booking_header .qroom-content_inner{max-width:916px;}
+.stub-page{display:none;position:relative;}
+.stub-page::after{content:'Скоро открытие комнаты Пятый элемент';display:block;position:absolute;top:0;left:0;z-index:9;width:100%;height:100%;padding-top:40%;text-align:center;background:rgba(0,0,0,0.5);color:#00bfa5;font-size:40px;font-weight:900;text-shadow:3px 6px 2px black, 0 0 1em #00bfa5;}
+.qroom-content-hom-page .stub-page::after{padding-top:3%;font-size:30px;}
+.qroom-booking_body .qroom-content_inner{max-width:916px;padding-bottom:32px;}
+.qroom-booking_body._on_quest_page .qroom-content_inner{padding-top:44px;padding-bottom:75px;}
+.qroom-booking_body._on_quest_page .qroom-content_inner:before{content:'';position:absolute;left:50%;top:0;border-style:solid;border-width:20px 20px 0 20px;border-color:#F0F0F3 rgba(240, 240, 243, 0) rgba(240, 240, 243, 0) rgba(240, 240, 243, 0);margin-left:-20px;}
+.qroom-booking_date_pick{width:36px;height:56px;display:inline-block;background:#f6f6f6;vertical-align:top;position:relative;font:700 20px/24px "Roboto Condensed", sans-serif;-webkit-transition:all 0.1s linear;transition:all 0.1s linear;cursor:pointer;margin:0 4px;color:#000;}
+.qroom-booking_date_pick:before{content:'';position:absolute;left:50%;top:-28px;border-style:solid;border-width:0 16px 0 16px;border-color:#f0f0f3 rgba(240, 240, 243, 0) rgba(240, 240, 243, 0) rgba(240, 240, 243, 0);margin-left:-18px;-webkit-transition:all 0.15s linear;transition:all 0.15s linear;}
+.qroom-booking_date_pick:first-child{margin-left:0;}
+.qroom-booking_date_pick:last-child{margin:0;}
+.qroom-booking_date_pick:hover{-webkit-box-shadow:0 0 0 1px #000 inset;box-shadow:0 0 0 1px #000 inset;}
+.qroom-booking_date_pick._weekend{color:#D3234C;}
+.qroom-booking_date_pick._active:hover, .qroom-booking_date_pick._active{-webkit-box-shadow:0 0 0 4px #D3234C;box-shadow:0 0 0 4px #D3234C;background:#D3234C;color:#fff;}
+.qroom-booking_date_pick._active:hover:before, .qroom-booking_date_pick._active:before{border-width:18px 16px 0 16px;}
+.qroom-booking_date_pick .qroom-booking_date_pick_desc{padding:8px 0 3px;font:400 13px/15px "Roboto Condensed", sans-serif;text-transform:uppercase;}
+.qroom-booking_quest_title{font:600 26px/30px "Roboto", sans-serif;margin:0 0 14px;}
+.qroom-booking_quest_title span:before{background-color:rgba(74, 74, 74, 0.5);}
+.qroom-booking_quest_title span:after{background-color:rgba(74, 74, 74, 0.5);}
+.qroom-booking_quest_title._weekend{color:#D3234C;font:700 26px/30px "Roboto Condensed", sans-serif;}
+.qroom-booking_times{margin:0 0 19px;width:100%;table-layout:fixed;}
+.qroom-booking_times td:first-child .qroom-booking_time{margin-left:0;}
+.qroom-booking_times td:last-child .qroom-booking_time{margin-right:0;}
+.qroom-booking_times .qroom-booking_time{font:400 18px/20px "Roboto Condensed", sans-serif;color:#fff;margin:0 4px;padding:6px 0;text-align:center;background-color:#f6f6f6;cursor:pointer;position:relative;-webkit-transition:all 0.05s linear;transition:all 0.05s linear;}
+
+.qroom-booking_times .qroom-booking_time._turquoise{background-color:#00BFA5;}
+.qroom-booking_times .qroom-booking_time._pink{background-color:#C4659C;}
+.qroom-booking_times .qroom-booking_time._blue{background-color:#458CE1;}
+.qroom-booking_times .qroom-booking_time._red{background-color:#e14545;}
+.qroom-booking_times .qroom-booking_time._yellow{background-color:#d8e145;}
+.qroom-booking_times .qroom-booking_time._cyan{background-color:#BF9400;}
+.qroom-booking_times .qroom-booking_time._booked{font-size:16px;cursor:default;color:#000;}
+.qroom-booking_times .qroom-booking_time._small{font-size:15px;}
+.qroom-booking_times .qroom-booking_time._loading{filter:alpha(opacity=70);opacity:0.7;}
+.qroom-booking_times .qroom-booking_time._loading:before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(255, 255, 255, 0.4);}
+.qroom-booking_times .qroom-booking_time._loading:after{content:'';position:absolute;width:20px;height:20px;margin:-14px 0 0 -14px;top:50%;left:50%;border:4px solid rgba(189, 223, 1, 0.5);background:rgba(255, 255, 255, 0.5);border-radius:50%;-webkit-animation:1s loader_in_dates linear infinite;animation:1s loader_in_dates linear infinite;}
+.qroom-booking_dates_pick{margin-bottom:43px;text-align:center;font-size:0;padding-top:28px;}
+.qroom-booking_link_more{cursor:pointer;margin:39px 0 4px;background:#F6F6F6;line-height:20px;padding:14px 0;text-align:center;}
+.qroom-booking_link_more:hover{text-decoration:underline;}
+.qroom-booking_prices{padding:25px 0 32px;text-align:center;}
+.qroom-booking_prices .qroom-booking_prices_title{margin-bottom:23px;}
+.qroom-booking_prices .qroom-booking_prices_title span:before{background-color:rgba(74, 74, 74, 0.5);margin-right:25px;}
+.qroom-booking_prices .qroom-booking_prices_title span:after{margin-left:25px;}
+.qroom-booking_prices .qroom-booking_prices_desc{text-align:center;margin:0 0 34px;}
+.qroom-booking_prices_info{width:50%;margin: 0px auto;color:#fff;font:400 20px/22px "Roboto Condensed", sans-serif;table-layout:fixed;}
+.qroom-booking_prices_info b{font:700 22px/25px "Roboto Condensed", sans-serif;text-shadow:0 2px 4px rgba(0, 0, 0, 0.1);}
+.qroom-booking_prices_info td{border:2px solid #fff;vertical-align:middle;height:51px;text-align:center;}
+.qroom-booking_prices_info._count-2{width:50%;}
+.qroom-booking_prices_info._count-4{width:25%;}
+.qroom-booking_prices_info._count-5{width:20% !important;}
+.qroom-booking_prices_info._price-type-1 td{height:104px;}
+.qroom-booking_prices_info._price-type-1 b{font-size:36px;line-height:40px;}
+.qroom-booking_prices_info._price-type-2{width:299px;}
+.qroom-booking_prices_info._pink td{background-color:#C4659C;}
+.qroom-booking_prices_info._yellow td{background-color:#c8de61;}
+.qroom-booking_prices_info._red td{background-color:#e14545;}
+.qroom-booking_prices_info._blue td{background-color:#458CE1;}
+.qroom-booking_prices_info._turquoise td{background-color:#00BFA5;}
+.qroom-booking_prices_info._cyan td{background-color:#BF9400;}
+.qroom-booking_prices_info .material-icons{vertical-align:middle;margin:-2px 0 0 3px;}
+.qroom-booking_prices_variants{display:none;margin:0 0 33px;text-align:center;}
+.qroom-booking_prices_variants .qroom-js_link{font-weight:500;color:#000;}
+.qroom-opinions{padding:32px 0 39px;background:#f0f0f3;}
+.qroom-opinions .qroom-opinions_title{text-align:center;font:700 36px/48px "Roboto Condensed", sans-serif;color:#000;margin:0 0 42px;}
+.qroom-opinions .qroom-opinions_title._min_space{margin-bottom:20px;}
+.qroom-opinions .qroom-opinions_desc{padding:0 0 40px;}
+.qroom-opinions .qroom-opinion{padding:57px 61px 115px;width:578px;background:#fff;margin:0 auto;font:16px/22px "Roboto", sans-serif;visibility:hidden;opacity:0;position:absolute;-webkit-transition:opacity 0.3s linear;transition:opacity 0.3s linear;}
+.qroom-opinions .qroom-opinion:first-child{visibility:visible;opacity:1;position:relative;}
+.qroom-opinions .qroom-opinions_list{padding:0 0 80px;position:relative;}
+.qroom-opinions .qroom-opinions_list._inited .qroom-opinion:first-child{visibility:hidden;opacity:0;position:absolute;}
+.qroom-opinions .qroom-opinions_list._inited .qroom-opinion._shown{visibility:visible;opacity:1;position:relative;}
+.qroom-opinions .qroom-opinions_list_inner{width:700px;margin:0 auto;position:relative;}
+.qroom-opinions .qroom-opinion_user{position:absolute;left:50%;bottom:-48px;margin-left:-48px;}
+.qroom-opinions .qroom-opinion_user_name{font:500 18px/20px "Roboto", sans-serif;margin:0 -100px 14px;text-align:center;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.qroom-opinions .qroom-opinion_quotes{position:absolute;left:54px;height:80px;width:80px;background:url(../i/quot_icn.png);top:-40px;}
+.qroom-opinions .qroom-opinions_choicer{margin:-8px 0 32px;text-align:center;font-size:0;position:relative;}
+.qroom-opinions .qroom-opinions_choicer_item{display:inline-block;width:40px;height:8px;background-color:#fff;cursor:pointer;-webkit-transition:all 0.1s linear;transition:all 0.1s linear;margin:0 5px;position:relative;}
+.qroom-opinions .qroom-opinions_choicer_item:hover, .qroom-opinions .qroom-opinions_choicer_item._active{background-color:#D3234C;}
+.qroom-opinions .qroom-opinions_choicer_item:before{content:'';position:absolute;left:-5px;top:-5px;right:-5px;bottom:-5px;}
+.qroom-opinions .qroom-opinion_pointer{position:absolute;width:48px;height:48px;font-size:48px;color:#fff;cursor:pointer;-webkit-transition:all 0.1s linear;transition:all 0.1s linear;top:50%;margin-top:-24px;}
+.qroom-opinions .qroom-opinion_pointer._pointer_back{right:100%;margin-right:35px;}
+.qroom-opinions .qroom-opinion_pointer._pointer_forward{left:100%;margin-left:35px;}
+.qroom-opinions .qroom-opinion_pointer._hidden{visibility:hidden;opacity:0;}
+.qroom-opinions .qroom-opinions_all_link{width:700px;background:#fff;line-height:18px;padding:15px 0;cursor:pointer;margin:0 auto 24px;text-align:center;display:block;text-decoration:none;color:#000;}
+.qroom-opinions .qroom-opinions_all_link:hover{text-decoration:underline;}
+.qroom-opinions .qroom-opinion_photos{padding:18px 0 0;margin:0 -7px;font-size:0;text-align:center;}
+.qroom-opinions .qroom-opinion_photo{display:inline-block;width:183px;height:122px;margin:0 7px 14px;background-size:cover;background-repeat:no-repeat;background-position:center center;}
+.qroom-quests_filter_holder{min-height:45px;position:relative;}
+.qroom-quests_filter{position:absolute;bottom:0;left:0;right:0;font-size:0;text-align:center;-webkit-transition:opacity 0.2s linear;transition:opacity 0.2s linear;}
+.qroom-quests_filter._fixed{position:fixed !important;z-index:20;background-color:#000;background-color:rgba(0, 0, 0, 0.9);left:0 !important;bottom:0 !important;right:0 !important;-webkit-transform:translateZ(0);transform:translateZ(0);}
+.qroom-quests_filter._h{filter:alpha(opacity=0);opacity:0;}
+.qroom-quests_filter .qroom-quests_filter_title{position:relative;text-align:center;overflow:hidden;margin:0 0 26px;}
+.qroom-quests_filter .qroom-quests_filter_title span{color:#fff;font:600 22px/26px "Roboto Condensed", sans-serif;position:relative;}
+.qroom-quests_filter .qroom-quests_filter_title span:before{content:'';position:absolute;right:100%;margin-right:30px;top:50%;margin-top:-1px;border-top:1px solid rgba(255, 255, 255, 0.2);width:5000px;}
+.qroom-quests_filter .qroom-quests_filter_title span:after{content:'';position:absolute;left:100%;margin-left:30px;top:50%;margin-top:-1px;border-top:1px solid rgba(255, 255, 255, 0.2);width:5000px;}
+.qroom-quests_filter .qroom-quests_filter_item{display:inline-block;*display:block;cursor:pointer;color:rgba(255, 255, 255, 0.9);font:12px/22px "Roboto", sans-serif;padding:0 15px;margin:0 16px 11px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.3);border:1px solid #fff;border-radius:14px;-webkit-transition:0.09 all linear;transition:0.09 all linear;}
+.qroom-quests_filter .qroom-quests_filter_item:hover{border-color:#d3234c;color:#d3234c;}
+.qroom-quests_filter .qroom-quests_filter_item._active{border-color:#d3234c;background-color:#d3234c;color:#fff;}
+.qroom-quests_list{position:relative;background-color:#000;font-size:0;margin:0;}
+.qroom-quests_list._on_giftpage .qroom-quests_list_table{margin-bottom:0;}
+.qroom-quests_list .qroom-quests_item_img_cover{left:0;right:0;top:0;bottom:0;overflow:hidden;}
+.qroom-quests_list .qroom-quests_item_img_cover img{max-width:100%;height:auto;}
+.qroom-quests_list .qroom-quests_item_img_cover .qroom-quests_item_img{background-size:cover;background-position:center;background-repeat:no-repeat;position:absolute;left:0;right:0;top:0;bottom:0;-webkit-transition:all 0.1s linear;transition:all 0.1s linear;}
+.qroom-quests_list .qroom-quests_item_stars{position:absolute;left:16px;top:16px;color:#fff;font-size:0;padding:0 5px;background:rgba(0, 0, 0, 0.3);height:24px;}
+.qroom-quests_list .qroom-quests_item_stars._gold{display:none;color:#e4be2f;}
+.qroom-quests_list .qroom-quests_item{overflow:hidden;text-align:center;color:#fff;font:400 18px/20px "Roboto Condensed", sans-serif;position:relative;background-repeat:no-repeat;background-size:cover;background-position:center;display:inline-block;width:50%;vertical-align:top;}
+.qroom-quests_list .qroom-quests_item:hover .qroom-quests_item_stars{filter:alpha(opacity=0);opacity:0;}
+.qroom-quests_list .qroom-quests_item:hover .qroom-quests_item_hover{opacity:1;}
+.qroom-quests_list .qroom-quests_item:hover .qroom-quests_item_title{top:15px;margin-top:0;}
+.qroom-quests_list .qroom-quests_item:hover .qroom-quests_item_img{-webkit-transform:scale(1.05);transform:scale(1.05);}
+.qroom-quests_list .qroom-quests_item._disabled, .qroom-quests_list .qroom-quests_item._disabled:hover{-webkit-filter:grayscale(100%);filter:grayscale(100%);opacity:.5;}
+.qroom-quests_list .qroom-quests_item._disabled .qroom-quests_item_hover, .qroom-quests_list .qroom-quests_item._disabled:hover .qroom-quests_item_hover{opacity:0;}
+.qroom-quests_list .qroom-quests_item._disabled .qroom-quests_item_title, .qroom-quests_list .qroom-quests_item._disabled:hover .qroom-quests_item_title{top:100%;margin-top:-65px;}
+.qroom-quests_list .qroom-quests_item:before{position:absolute;top:50%;bottom:0;left:0;right:0;background-image:-webkit-linear-gradient(top, transparent, #000);background-image:linear-gradient(to bottom, transparent, #000);content:'';opacity:.7;z-index:1;}
+.qroom-quests_list .qroom-quests_item._mini .qroom-quests_item_infos{display:none;}
+.qroom-quests_list .qroom-quests_item._mini .qroom-quests_item_hover_inner{position:absolute;left:0;top:0;right:0;bottom:0;}
+.qroom-quests_list .qroom-quests_item._mini .qroom-quests_item_btns{bottom:20px;position:absolute;left:0;right:0;}
+.qroom-quests_list .qroom-quests_item._mini .qroom-quests_item_level{display:none;}
+.qroom-quests_list .qroom-quests_item_label_cover{position:absolute;right:0;top:0;width:120px;height:120px;overflow:hidden;}
+.qroom-quests_list .qroom-quests_item_label{position:absolute;right:0;top:0;font:500 14px/33px "Roboto", sans-serif;text-shadow:0 1px 2px rgba(0, 0, 0, 0.3);color:#fff;text-align:center;-webkit-transform:rotate(45deg) translateY(-3px) translateX(49px);transform:rotate(45deg) translateY(-3px) translateX(49px);transform-origin:center center;width:170px;}
+.qroom-quests_list .qroom-quests_item_label._scare{background:#bd10e0;}
+.qroom-quests_list .qroom-quests_item_label._hit{background:#ff6f00;}
+.qroom-quests_list .qroom-quests_item_label._action{background:#d0021b;}
+.qroom-quests_list .qroom-quests_item_label._yellow{background:#ffe100;}
+.qroom-quests_list .qroom-quests_item_hover_link{position:absolute;left:0;top:0;right:0;bottom:0;z-index:1;font-size: 30px;}
+.qroom-quests_list .qroom-quests_item_hover_inner{padding:80px 0 20px;position:relative;font-size: 24px;}
+.qroom-quests_list .qroom-quests_item_hover{position:absolute;left:0;top:0;right:0;bottom:0;opacity:0;background-color:rgba(20, 135, 130, 0.7);-webkit-transition:all 0.2s;transition:all 0.2s;text-shadow:0 2px 4px rgba(0, 0, 0, 0.2);z-index:1;}
+.qroom-quests_list .qroom-quests_filter{position:static;bottom:-20px;left:auto;right:auto;padding:10px 0 0;}
+.qroom-quests_list .qroom-quests_item_title{position:absolute;top:100%;margin-top:-65px;left:20px;right:20px;z-index:2;text-shadow:0 2px 4px rgba(0, 0, 0, 0.2);font-size:0;}
+.qroom-quests_list .qroom-quests_item_title span{display:inline-block;vertical-align:middle;font:700 30px/24px "Roboto Condensed", sans-serif;max-width:100%;}
+.qroom-quests_list .qroom-quests_item_title a, .qroom-quests_list .qroom-quests_item_title a:hover{font-family:'Berkshire Swash', cursive;font-size:46px;color:#fff;text-decoration:none;}
+.qroom-quests_list .qroom-quests_item_title:before{display:inline-block;height:48px;vertical-align:middle;margin-left:-1px;width:1px;content:'';}
+.qroom-quests_list .qroom-quests_item_info{margin:0 0 10px;}
+.qroom-quests_list .qroom-quests_item_info .material-icons{vertical-align:middle;}
+.qroom-quests_list .qroom-quests_item_infos{text-align:left;display:inline-block;margin: 0 0 3em;}
+.qroom-quests_list .qroom-quests_item_btns{position:relative;z-index:2;}
+.qroom-quests_list .qroom-quests_item_btns .qroom-btn{margin-bottom:15px;}
+.qroom-quests_list .qroom-quests_item_btns a{font: 28px/22px "Roboto", sans-serif;text-decoration:none;text-shadow:0 2px 4px rgba(0, 0, 0, 0.3);}
+.qroom-quests_list .qroom-quests_item_btns > a{ display: none;   color: #fff;
+    line-height: 14;
+    font-size: 2em;}
+.qroom-quests_list .qroom-quests_item_btns a:hover{text-decoration:underline;}
+.qroom-quests_list .qroom-quests_item_btns .qroom-btn{text-decoration:none;}
+.qroom-quests_list .qroom-quests_item_btns .qroom-btn:hover{text-decoration:none;text-shadow:none;}
+.qroom-quests_item_level{text-align:center;font-size:0;margin:0 0 16px;}
+.qroom-quests_item_level .material-icons._lock{margin:0 1px;opacity:.3;}
+.qroom-quests_item_level .material-icons._lock._active{opacity:1;}
+.qroom-contacts_box{padding:30px 0 0;background:#f0f0f3;}
+.qroom-contacts_box .qroom-content_inner{max-width:700px;margin:0 auto 25px;}
+.qroom-contacts_box_title{text-align:center;margin:0 0 15px;}
+.qroom-contacts_box_text{}
+.qroom-contacts_box_infos{font:20px/24px "Roboto Condensed", sans-serif;text-align:center;}
+.qroom-contacts_box_infos .qroom-contacts_box_infos_inner{display:inline-block;text-align:left;}
+.qroom-contacts_box_infos .qroom-contacts_box_info{padding:6px 0;}
+.qroom-contacts_box_infos .material-icons{vertical-align:middle;margin:-2px 16px 0 0;}
+.qroom-footer{background:#393d44 url(../images/pattern.png);color:#fff;}
+.qroom-footer .qroom-footer_list{float:left;width:320px;padding-right:17px;}
+.qroom-footer .qroom-footer_list a{display:inline-block;}
+.qroom-footer .qroom-footer_list a img{max-width:155px;}
+.qroom-footer .qroom-footer_list._contacts{width:400px;margin:0 auto;float:right;}
+.qroom-footer .qroom-footer_list._contacts .qroom-footer_list_item{padding:0 0 0 30px;}
+.qroom-footer .qroom-footer_list_title{font:32px/20px "Roboto Condensed", sans-serif;margin-bottom:24px;}
+.qroom-footer .qroom-footer_list_item{font-size:22px;font-family:"Roboto", sans-serif;font-weight:400;margin-bottom:7px;color:#aaabb5;position:relative;}
+.qroom-footer .qroom-footer_list_item .material-icons{width:16px;height:16px;font-size:16px;color:rgba(255, 255, 255, 0.7);position:absolute;left:0;top:4px;}
+.qroom-footer .qroom-footer_list_item:last-child{margin-bottom:0;}
+.qroom-footer .qroom-footer_list_item a{text-decoration:none;color:#aaabb5;-webkit-transition:all 0.05s linear;transition:all 0.05s linear;}
+.qroom-footer .qroom-footer_list_item a:hover{color:#bddf01;}
+.qroom-footer .qroom-footer_middle{}
+.qroom-footer .qroom-footer_middle .qroom-content_inner{padding:32px 0 32px 32px;max-width:928px;}
+.qroom-footer .qroom-footer_bottom{height:72px;border-top:1px solid rgba(255, 255, 255, 0.15);font-size:12px;line-height:24px;}
+.qroom-footer .qroom-footer_bottom .qroom-content_inner{padding:24px 0;min-height:24px;}
+.qroom-footer .qroom-footer_socials{text-align:center;font-size:0;}
+.qroom-footer .qroom-footer_socials a{text-decoration:none;color:#fff;vertical-align:middle;}
+.qroom-footer .qroom-footer_social_item{display:inline-block;*display:inline;border-radius:50%;height:24px;width:24px;margin:0 5px;vertical-align:top;background:#fff;}
+.qroom-footer .qroom-copyright{left:32px;top:50%;margin-top:-12px;position:absolute;}
+.qroom-footer .qroom-copyright a{color:#fff;text-decoration:none;}
+.qroom-footer .qroom-copyright a:hover{text-decoration:underline;}
+.qroom-footer .qroom-terms{position:absolute;top:50%;margin-top:-12px;width:217px;right:0;}
+.qroom-footer .qroom-terms a{color:#fff;text-decoration:none;}
+.qroom-footer .qroom-terms a:hover{text-decoration:underline;}
+.qroom-mainpage_top .qroom-content_inner{max-width:780px;height:340px;position:absolute;left:50%;top:50%;margin-top:-190px;margin-left:-390px;color:#fff;text-align:center;width:780px;}
+.qroom-mainpage_top_title{font:600 43px/50px "Roboto", sans-serif;margin:0 0 25px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);}
+.qroom-mainpage_top_desc{font:300 18px/24px "Roboto", sans-serif;margin:0 0 50px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);}
+.qroom-mainpage_top_mouse{position:absolute;left:50%;top:100%;width:44px;height:40px;margin-left:-22px;text-align:center;}
+.qroom-mainpage_top_mouse .qroom-icn._mouse{margin:0 0 5px;}
+.qroom-mainpage_top_mouse .qroom-icn._arrow_down{margin:0 0 -10px;display:block;-webkit-transition:opacity 0.2s linear;transition:opacity 0.2s linear;-webkit-animation:2s opacity_animation linear infinite;animation:2s opacity_animation linear infinite;filter:alpha(opacity=0);opacity:0;}
+.qroom-mainpage_top_mouse .qroom-icn._arrow_down._arrow_2{animation-delay:.5s;}
+.qroom-mainpage_top_mouse .qroom-icn._arrow_down._arrow_3{animation-delay:1s;}
+#qroom-main_video{position:absolute;left:50%;top:50%;}
+.qroom-main_video_wrapper{-webkit-transition:opacity 0.4s linear;transition:opacity 0.4s linear;position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;filter:alpha(opacity=0);opacity:0;}
+.qroom-about_top_title{font:600 42px/50px "Roboto", sans-serif;color:#fff;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);margin:0 0 26px;}
+.qroom-about_top_desc{font:18px/24px "Roboto", sans-serif;color:rgba(255, 255, 255, 0.9);text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);text-align:left;}
+.qroom-about_top .qroom-content_inner{max-width:840px;height:200px;position:absolute;left:50%;top:50%;margin-top:-80px;margin-left:-420px;color:#fff;text-align:center;}
+.qroom-about_top .qroom-box_linear_mask{opacity:.7;}
+.qroom-about_top:before{display:none;}
+.qroom-about_arrow_bottom{position:absolute;width:24px;height:24px;color:#fff;font-size:24px;right:24px;bottom:24px;}
+.qroom-about_faq_desc{text-align:center;padding:15px 0 34px;font-size:18px;line-height:24px;}
+.qroom-faq_item .qroom-faq_item_title{font:600 26px/32px "Roboto", sans-serif;text-align:center;cursor:pointer;position:relative;border-top:1px solid rgba(0, 0, 0, 0.12);}
+.qroom-faq_item_title a{position:relative;display:block;padding:12px 0 15px;text-decoration:none;color:#000;}
+.qroom-faq_item_title a{}
+.qroom-faq_item_title a:hover{opacity:.7;}
+.qroom-faq_item_title a i{position:absolute;top:45px;right:20px;-webkit-animation:preloader 1.5s infinite linear;-moz-animation:preloader 1.5s infinite linear;-ms-animation:preloader 1.5s infinite linear;-o-animation:preloader 1.5s infinite linear;animation:preloader 1.5s infinite linear;}
+.qroom-faq_item_title a[aria-expanded="true"] i{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(360deg);-o-transform:rotate(180deg);transform:rotate(180deg);}
+.qroom-faq_item .qroom-faq_item_title span{font-size:16px;font-weight:normal;line-height:28px;margin:0 70px 0 0;position:absolute;right:0;}
+.qroom-faq_item .qroom-faq_item_desc{font-size:16px;line-height:22px;padding:32px 0;border-top:1px solid rgba(0, 0, 0, 0.12);background:#f0f0f3;}
+.qroom-faq_item .qroom-faq_item_desc .qroom-title_with_border, .qroom-faq_item .qroom-faq_item_desc .qroom-booking_quest_title, .qroom-faq_item .qroom-faq_item_desc .qroom-booking_prices .qroom-booking_prices_title, .qroom-booking_prices .qroom-faq_item .qroom-faq_item_desc .qroom-booking_prices_title, .qroom-faq_item .qroom-faq_item_desc .qroom-franchise_about_title{font-size:28px;line-height:30px;margin:0 0 16px;}
+.qroom-faq_item .panel-collapse{font-size:16px;line-height:22px;border-top:1px solid rgba(0, 0, 0, 0.12);background:#f0f0f3;}
+.qroom-faq_item .panel-collapse .qroom-content_inner{padding:32px 0;}
+.qroom-faq_item .qroom-content_inner{max-width:870px;margin:0 auto;}
+.qroom-faq_item .qroom-content_inner a{color:#D3234C;}
+.qroom-faq_item .qroom-content_inner a.qroom-btn{color:black;}
+.qroom-faq_item .qroom-content_inner strong{font-weight:bold;}
+.qroom-faq_item .qroom-content_inner ul{padding-left:17px;}
+.qroom-faq_item .qroom-content_inner ul li{list-style-type:disc;padding:10px 0 0 0;}
+.qroom-faq_item .qroom-content_inner .qroom-list_dotted li{padding:0px;line-height:24px;list-style:none;position:relative;}
+.qroom-faq_item .qroom-content_inner .qroom-list_dotted li:before{position:absolute;content:'';bottom:0;left:0;right:0;border-bottom:1px dotted #000;}
+.qroom-faq_item .qroom-content_inner .qroom-list_dotted li:last-child{margin:0px;}
+.qroom-faq_item .qroom-content_inner .qroom-list_dotted li span{background:#F0F0F3;position:relative;top:4px;}
+.qroom-faq_item .qroom-content_inner .qroom-list_dotted li span:last-child{font-weight:bold;padding-left:5px;}
+.qroom-faq_item .qroom-content_inner .qroom-list_dotted li span:first-child{padding-right:5px;}
+.qroom-faq_item .qroom-title_with_border [class^="qroom-icn_"], .qroom-faq_item .qroom-booking_quest_title [class^="qroom-icn_"], .qroom-faq_item .qroom-booking_prices .qroom-booking_prices_title [class^="qroom-icn_"], .qroom-booking_prices .qroom-faq_item .qroom-booking_prices_title [class^="qroom-icn_"], .qroom-faq_item .qroom-franchise_about_title [class^="qroom-icn_"]{color:#00BFA5;}
+.qroom-faq_item .qroom-faq_item_pd{padding:0 0 30px;}
+.qroom-faq_item .qroom-faq_item_title .material-icons{position:absolute;width:24px;height:24px;right:24px;top:50%;margin-top:-11px;font-size:24px;}
+.qroom-quest_top .qroom-content_inner{position:absolute;max-width:920px;bottom:10%;padding:0 0 40px;left:50%;margin-left:-460px;color:#fff;}
+.qroom-quest_top .qroom-content_inner.qroom-quests{padding:210px 0 30px;}
+.qroom-quest_top .qroom-quest_top_info{font-size:20px;line-height:1.5em;display:inline-block;*display:inline;margin:0 25px;vertical-align:middle;}
+.qroom-quest_top .qroom-quest_top_info .material-icons{vertical-align:middle;margin:-2px 14px 0 0;}
+.qroom-quest_top .qroom-quest_top_info .qroom-quests_item_level{margin:0;}
+.qroom-quest_top .qroom-quest_top_info .qroom-quests_item_level .material-icons{margin:-2px 1px 0 1px;font-size:24px;}
+.qroom-quest_top .qroom-quest_top_infos{margin:0 -70px 24px;text-align:center;font-size:0;}
+.qroom-quest_top .qroom-quest_top_desc{font-size:26px;line-height:1.5;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);margin:0 0 18px;}
+.qroom-quest_top .qroom-quests{padding-top:210px;}
+.qroom-quest_top .qroom-quests .qroom-quest_top_desc{line-height:24px;margin:0 0 24px;font-weight:300;opacity:0.89;text-shadow:0px 2px 4px rgba(0, 0, 0, 0.5);}
+.qroom-quest_top_selector{position:absolute;top:135px;left:0;right:0;text-align:center;font:600 42px/50px "Roboto", sans-serif;color:#fff;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);z-index:1;}
+.qroom-quest_top_selector .qroom-quest_top_selector_inner{display:inline-block;position:relative;}
+.qroom-quest_top_selector .qroom-quest_top_selector_inner h1{display:inline-block;position:relative;font:600 42px/50px "Roboto", sans-serif;}
+.qroom-quest_top_selector .qroom-quest_top_selector_inner:hover .qroom-quest_choice_ttip{visibility:visible;opacity:1;}
+.qroom-quest_top_selector .material-icons{display:none;font-size:24px;height:24px;width:24px;margin:0 0 0 25px;}
+.qroom-quest_top_selector .qroom-quest_choice_ttip{display:none;right:-4px;z-index:5;}
+.qroom-quest_top_selector .qroom-quest_choice_ttip .qroom-ttip_inner:before{right:10px;left:auto;}
+.qroom-quest_top_selector .qroom-quest_choice_ttip .qroom-quest_choice_item{text-decoration:none;color:#000;display:block;padding:8px 16px;font-size:18px;}
+.qroom-quest_top_selector .qroom-quest_choice_ttip .qroom-quest_choice_item:hover{background:rgba(0, 0, 0, 0.1);}
+.qroom-quest_photos{text-align:center;font-size:0;display:table;table-layout:fixed;width:100%;}
+.qroom-quest_photo{position:relative;display:table-cell;background-position:center center;background-size:cover;background-repeat:no-repeat;vertical-align:top;}
+.qroom-quest_photo .material-icons{font-size:48px;width:48px;height:48px;position:absolute;margin:-24px 0 0 -24px;color:#fff;left:50%;top:50%;opacity:0;-webkit-transition:all 0.1s;transition:all 0.1s;-webkit-transform:scale(0);transform:scale(0);}
+.qroom-quest_photo:after{content:'';display:block;padding-bottom:75%;}
+.qroom-quest_photo:before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background:transparent;-webkit-transition:all 0.1s linear;transition:all 0.1s linear;}
+.qroom-quest_photo:hover .material-icons{opacity:1;-webkit-transform:scale(1);transform:scale(1);}
+.qroom-quest_photo:hover:before{background:rgba(0, 0, 0, 0.5);}
+.qroom-quest_photo:last-child:before{
+     /*background: rgba(255,255,255, 0.1); */
+} 
+.qroom-contacts_box_map{position:relative;height:350px;overflow:hidden;border-top:1px solid #C5C5C5;}
+#contact-outside{position:absolute;top:0;right:0;z-index:9999;width:300px;height:100%;padding:20px 15px 0;background:#fff;font-size:16px;}
+#contact-outside .block-contact{overflow:hidden;}
+#contact-outside img{height:150px;}
+.gm-style .place-card-large{padding:9px 4px 9px 11px;width:200px !important;}
+.qroom-quest_options{padding:10px;text-align:center;font-size:0;position:absolute;top:40%;left:0;right:0;margin-top:-65px;background:rgba(0, 0, 0, 0.2);}
+.qroom-quest_option{display:inline-block;vertical-align:top;color:#fff;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);margin:0 9px;font-size:14px;line-height:18px;font-weight:300;max-width:200px;}
+.qroom-quest_option:first-child{margin-left:0;}
+.qroom-quest_option:last-child{margin-right:0;}
+.qroom-quest_option .qroom-icn_quest{width:46px;height:46px;font-size:40px;color:#fff;display:block;margin:0 auto 16px;}
+.qroom-quest_option .qroom-icn_quest:before{line-height:46px;width:46px;margin:0;}
+.qroom-quests_options{padding:0 0 24px;display:table;table-layout:fixed;width:100%;}
+.qroom-quests_options .qroom-quest_option{text-align:center;line-height:20px;display:table-cell;}
+.qroom-booking_selector_quest .material-icons{display:none;margin:0 0 0 16px;}
+.qroom-booking_selector_quest .qroom-booking_selector_quest_inner{display:inline-block;position:relative;}
+.qroom-booking_selector_quest .qroom-booking_selector_quest_inner:hover .qroom-quest_choice_ttip{visibility:visible;opacity:1;}
+.qroom-booking_selector_quest .qroom-quest_choice_ttip{display:none;right:-4px;z-index:5;}
+.qroom-booking_selector_quest .qroom-quest_choice_ttip .qroom-ttip_inner:before{right:10px;left:auto;}
+.qroom-booking_selector_quest .qroom-quest_choice_ttip .qroom-quest_choice_item{text-decoration:none;color:#000;display:block;padding:8px 16px;font-size:18px;}
+.qroom-booking_selector_quest .qroom-quest_choice_ttip .qroom-quest_choice_item:hover{background:rgba(0, 0, 0, 0.1);}
+.qroom-sale-on-close .qroom-textarea, .qroom-sale-on-close .qroom-input{border-color:#F0F0F3;background-color:#F0F0F3;color:#000;text-shadow:none;margin-top:10px;}
+@media (max-height:580px){.qroom-quest_top .qroom-quest_top_selector{font-size:34px;line-height:42px;}
+.qroom-quest_top .qroom-content_inner{padding-bottom:20px;}
+.qroom-quest_top .qroom-quest_top_infos{margin-bottom:15px;}
+.qroom-quest_top .qroom-icn_quest{width:36px;height:36px;font-size:30px;}
+.qroom-quest_top .qroom-icn_quest:before{line-height:36px;width:36px;}
+.qroom-quest_top .qroom-quest_top_desc{font-size:14px;font-weight:300;}
+}
+@media (max-height:500px){.qroom-quest_top{padding:135px 0 0;box-sizing:border-box;}
+.qroom-quest_top .qroom-quest_top_selector{position:relative;top:auto;left:auto;right:auto;margin:0 auto 20px;}
+.qroom-quest_top .qroom-content_inner{padding-bottom:20px;position:relative;top:auto;left:auto;right:auto;margin:0 auto;}
+.qroom-quest_top .qroom-content_inner.qroom-quests{padding:0 0 30px;}
+.qroom-quest_top .qroom-quest_options{position:relative;top:auto;left:auto;right:auto;margin:0 auto 20px;}
+}
+.qroom-franchise_nav{position:absolute;left:0;right:0;bottom:0;background:rgba(0, 0, 0, 0.1);text-align:center;border-top:1px solid rgba(255, 255, 255, 0.15);}
+.qroom-franchise_nav .qroom-franchise_nav_item{display:inline-block;vertical-align:middle;font:500 12px/14px "Roboto", sans-serif;color:#fff;text-shadow:0 1px 2px rgba(0, 0, 0, 0.5);text-decoration:none;padding:17px 14px;}
+.qroom-franchise_nav .qroom-franchise_nav_item:hover{color:#D3234C;}
+.qroom-franchise_top .qroom-content_inner{max-width:892px;min-height:380px;background:rgba(0, 0, 0, 0.5);position:absolute;left:50%;top:50%;margin:-190px 0 0 -481px;padding:22px 35px;color:#fff;}
+.qroom-franchise_top .qroom-franchise_top_calling{padding:8px 0 0;}
+.qroom-franchise_top .qroom-box_linear_mask{opacity:.6;}
+.qroom-franchise_top:before{display:none;}
+.qroom-franchise_top .qroom-form{position:absolute;bottom:60px;right:181px;width:240px;}
+.qroom-franchise_top .qroom-form .qroom-btn{background:#000;display:block;width:100%;}
+.qroom-franchise_top .qroom-form .qroom-btn:hover{background:#bddf01;color:#000;text-shadow:none;}
+.qroom-franchise_top .qroom-form .qroom-form_additional{position:absolute;left:-50px;right:-50px;top:100%;margin-top:16px;text-align:center;text-shadow:0 1px 2px rgba(0, 0, 0, 0.2);}
+.qroom-franchise_top .qroom-franchise_form_title{font:600 42px/50px "Roboto", sans-serif;color:#fff;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);margin:0 auto 20px;text-align:center;width:640px;}
+.qroom-franchise_top .qroom-franchise_form_desc{line-height:1.5em;text-align:center;margin:0 0 27px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);}
+.qroom-franchise_map{padding:40px 0 15px;background:#f0f0f3;}
+.qroom-franchise_map .qroom-franchise_map_img{width:900px;height:456px;position:relative;background:url(../i/franchise_map.png);}
+.qroom-franchise_map .qroom-franchise_map_counter_desc{font-size:12px;position:absolute;text-align:center;left:0;right:0;bottom:0;}
+.qroom-franchise_map .qroom-franchise_map_marker{position:absolute;padding:4px 10px;background:#fff;font-size:12px;line-height:12px;border-radius:10px;}
+.qroom-franchise_map .qroom-franchise_map_title{margin:0 0 36px;text-align:center;}
+.qroom-franchise_map .qroom-franchise_map_digits{position:absolute;left:0;right:0;bottom:65px;table-layout:fixed;width:100%;text-align:center;font:600 20px/26px "Roboto", sans-serif;color:#000;}
+.qroom-franchise_map .qroom-franchise_map_digits b{display:block;font:144px/150px "BebasNeue", sans-serif, "Roboto Condensed", sans-serif;color:#10B4B9;margin:0 0 4px;}
+.qroom-franchise_about{padding:40px 0;}
+.qroom-franchise_seo{font:600 20px/26px "Roboto", sans-serif;width:860px;margin:0 auto 32px;text-align:center;}
+.qroom-franchise_about_title{margin:0 0 22px;}
+.qroom-franchise_about_title span:before{margin-right:28px;}
+.qroom-franchise_about_title span:after{margin-left:28px;}
+.qroom-franchise_about_inner{padding:0 48px 22px;line-height:22px;}
+.qroom-franchise_about_inner li{display:block;padding:0 0 0 22px;position:relative;}
+.qroom-franchise_about_inner li:before{position:absolute;left:0;top:11px;width:3px;height:3px;margin:-1px 0 0 -1px;border-radius:50%;content:'';background:#000;}
+.qroom-franchise_about_info{text-align:center;font-size:0;}
+.qroom-franchise_about_info li{display:inline-block;vertical-align:top;margin:0 19px;}
+.qroom-franchise_about_info li span{font-size:16px;display:inline-block;vertical-align:top;}
+.qroom-franchise_about_info li span:first-child{margin-right:-18px;color:#10B4B9;font-size:48px;line-height:62px;font-family:"Roboto Condensed", sans-serif;}
+.qroom-franchise_about_info li span:first-child b{font:72px/72px "BebasNeue", sans-serif;}
+.qroom-franchise_business{background:#F0F0F3 url(../i/pattern_opacity_20.png);padding:40px 0 80px;}
+.qroom-franchise_business .qroom-content_inner{overflow:hidden;margin-bottom:-34px;}
+.qroom-franchise_business_title{text-align:center;margin-bottom:24px;}
+.qroom-franchise_business_side{width:473px;}
+.qroom-franchise_business_side._right{float:right;}
+.qroom-franchise_business_side._left{float:left;}
+.qroom-franchise_business_side .qroom-franchise_business_side_title{font:600 26px/32px "Roboto", sans-serif;margin:0 0 23px;text-align:center;}
+.qroom-franchise_business_side_box{background:#fff;border-radius:1px;margin:0 0 19px;padding:40px;line-height:18px;}
+.qroom-franchise_business_side_box li{margin:0 0 30px;position:relative;}
+.qroom-franchise_business_side_box li:before{position:absolute;content:'';bottom:0;left:0;right:0;border-bottom:1px dotted #000;}
+.qroom-franchise_business_side_box li:last-child{margin:0;}
+.qroom-franchise_business_side_box li span{background:#fff;position:relative;top:4px;}
+.qroom-franchise_business_side_box li span:first-child{padding-right:5px;}
+.qroom-franchise_business_side_box li span:last-child{padding-left:5px;}
+.qroom-franchise_business_feature{text-align:center;width:300px;margin:0 auto 10px;}
+.qroom-franchise_business_calc{font:600 30px/32px "Roboto", sans-serif;text-align:center;}
+.qroom-franchise_icon_circle{position:absolute;left:50%;top:180px;width:48px;height:48px;margin:0 0 0 -24px;color:#000;font-size:48px;}
+.qroom-franchise_motivation_payment{width:960px;margin:0 auto 63px;border-top:1px solid #000;padding:11px 0 0;font:600 19px/26px "Roboto", sans-serif;text-align:center;}
+.qroom-franchise_motivation{margin:-40px 0 34px;text-align:center;}
+.qroom-franchise_motivation .material-icons{font-size:48px;width:48px;height:48px;margin:0 0 8px;}
+.qroom-franchise_motivation p{margin:0 0 10px;}
+.qroom-franchise_motivation_title{font:600 26px/32px "Roboto", sans-serif;margin:0 0 8px;text-align:center;}
+.qroom-franchise_motivation_summary{font:700 36px/40px "Roboto Condensed", sans-serif;color:#D3234C;text-align:center;position:relative;}
+.qroom-franchise_motivation_summary:before{content:'';position:absolute;left:-100px;top:-5px;background:url(../i/hand_left.png);width:324px;height:134px;}
+.qroom-franchise_motivation_summary:after{content:'';position:absolute;right:-100px;top:-5px;background:url(../i/hand_right.png);width:329px;height:134px;}
+.qroom-franchise_service{padding:35px 0 20px;}
+.qroom-franchise_service_title{text-align:center;margin:0 0 22px;}
+.qroom-franchise_service_about{width:660px;margin:0 auto 22px;text-align:center;}
+.qroom-franchise_service_item{margin:0 auto 19px;position:relative;width:660px;}
+.qroom-franchise_service_item_content{padding:11px 0 0;line-height:22px;}
+.qroom-franchise_service_item_title{font:600 26px/32px "Roboto", sans-serif;}
+.qroom-franchise_service_item_title .material-icons{position:absolute;left:-48px;top:2px;}
+.qroom-franchise_steps{padding:36px 0 111px;background:#F0F0F3 url(../i/pattern_opacity_20.png);}
+.qroom-franchise_steps_title{margin:0 0 83px;text-align:center;}
+.qroom-franchise_steps_map{position:relative;height:230px;margin:0 auto;}
+.qroom-franchise_steps_map:before{content:'';height:1px;left:0;right:0;top:100px;background:#000;position:absolute;}
+.qroom-franchise_steps_map:after{position:absolute;left:0;right:0;bottom:0;top:0;content:'';background:url(../i/steps_bg.png) center no-repeat;}
+.qroom-franchise_steps_text{font-size:16px;line-height:19px;text-align:center;position:absolute;font-weight:500;}
+.qroom-franchise_steps_text._text1{width:100px;bottom:182px;left:50px;}
+.qroom-franchise_steps_text._text2{width:130px;bottom:182px;left:202px;}
+.qroom-franchise_steps_text._text3{width:130px;bottom:201px;left:466px;}
+.qroom-franchise_steps_text._text4{width:100px;bottom:233px;left:669px;}
+.qroom-franchise_steps_text._text5{width:210px;bottom:182px;left:758px;text-align:left;}
+.qroom-franchise_steps_text._text6{width:140px;bottom:150px;left:784px;font-weight:600;color:#D3234C;}
+.qroom-franchise_steps_text._text7{width:90px;top:121px;left:6px;}
+.qroom-franchise_steps_text._text8{width:120px;top:238px;left:118px;text-align:left;}
+.qroom-franchise_steps_text._text9{width:120px;top:150px;left:258px;}
+.qroom-franchise_steps_text._text10{width:120px;top:238px;left:440px;text-align:left;}
+.qroom-franchise_steps_text._text11{width:120px;top:238px;left:578px;text-align:left;}
+.qroom-franchise_steps_text._text12{width:185px;top:150px;left:600px;}
+.qroom-franchise_steps_text._text13{width:124px;top:238px;left:802px;text-align:left;}
+.qroom-franchise_steps_texts{position:relative;width:960px;height:230px;margin:0 auto;z-index:1;}
+.qroom-franchise_feedback{position:relative;background:url(../i/attention_icn.png);}
+.qroom-franchise_feedback_form_wrapper{padding:46px 24px 46px;background:rgba(255, 255, 255, 0.95);max-width:700px;margin:0 auto;-webkit-box-shadow:0 0 22px rgba(0, 0, 0, 0.2);box-shadow:0 0 22px rgba(0, 0, 0, 0.2);}
+.qroom-franchise_feedback_title{font:600 18px/26px "Roboto", sans-serif;text-align:center;width:640px;margin:0 auto 42px;}
+.qroom-franchise_feedback_inner{width:240px;margin:0 auto 45px;border:1px solid #979797;padding:35px 50px 0;position:relative;}
+.qroom-franchise_feedback_inner .qroom-input{border-color:#F0F0F3;background-color:#F0F0F3;color:#000;text-shadow:none;}
+.qroom-franchise_feedback_inner .qroom-form_btns{text-align:center;margin-bottom:-23px;padding-top:16px;}
+.qroom-franchise_feedback_inner .qroom-form_btns .qroom-btn{display:block;width:100%;}
+.qroom-franchise_feedback_inner .qroom-form_additional{opacity:1;}
+.qroom-franchise_feedback_hand{position:absolute;top:192px;}
+.qroom-franchise_feedback_hand._left{background:url(../i/hand_left_gray.png);left:-40px;width:345px;height:134px;}
+.qroom-franchise_feedback_hand._right{background:url(../i/hand_right_gray.png);height:135px;width:345px;right:-40px;}
+.qroom-franchise_quests{padding:32px 0 0;background:#000;color:#fff;}
+.qroom-franchise_quests_title{font:36px/40px "Roboto Condensed", sans-serif;text-align:center;margin:0 0 24px;}
+.qroom-franchise_quests_desc{width:800px;margin:0 auto 42px;font-size:18px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);}
+.qroom-franchise_quest{padding:40px 0 42px;border-top:1px solid rgba(255, 255, 255, 0.2);}
+.qroom-franchise_quest .qroom-content_inner{max-width:912px;}
+.qroom-franchise_quest_gallery{float:left;width:460px;height:320px;position:relative;}
+.qroom-franchise_quest_img{width:460px;height:320px;background-position:center;background-repeat:no-repeat;background-size:cover;display:none;}
+.qroom-franchise_quest_img:first-child{display:block;}
+.qroom-franchise_quest_navs{position:absolute;z-index:2;left:0;right:0;}
+.qroom-franchise_quest_nav{position:absolute;padding:16px;cursor:pointer;bottom:0;z-index:1;height:24px;}
+.qroom-franchise_quest_nav._back{left:0;}
+.qroom-franchise_quest_nav._forward{right:0;}
+.qroom-franchise_quest_nav:hover{opacity:.85;}
+.qroom-franchise_quest_nav .material-icons{width:24px;height:24px;font-size:24px;}
+.qroom-franchise_quest_changer{display:inline-block;width:40px;height:8px;position:relative;margin:0 5px;background:rgba(255, 255, 255, 0.5);-webkit-transition:all 0.09s linear;transition:all 0.09s linear;cursor:pointer;}
+.qroom-franchise_quest_changer:before{position:absolute;left:-5px;top:-5px;right:-5px;bottom:-5px;content:'';}
+.qroom-franchise_quest_changer.active, .qroom-franchise_quest_changer:hover{background:#D3234C;}
+.qroom-franchise_quest_changers{position:absolute;bottom:24px;left:0;right:0;height:8px;text-align:center;font-size:0;}
+.qroom-franchise_quest_desc{margin:0 0 0 492px;}
+.qroom-franchise_quest_desc p{font-size:14px;opacity:.7;line-height:24px;margin:0 0 4px;}
+.qroom-franchise_quest_desc ul{font-size:16px;line-height:22px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);padding:4px 0;}
+.qroom-franchise_quest_desc ul li{padding:0 0 0 42px;position:relative;}
+.qroom-franchise_quest_desc ul li:before{position:absolute;width:4px;height:4px;left:12px;background:#fff;border-radius:50%;top:10px;content:'';}
+.qroom-franchise_quest_title{font:600 26px/32px "Roboto", sans-serif;margin:0 0 12px;}
+.qroom-franshise_reasons{padding:35px 0 0;background-color:#BDDF01;}
+.qroom-franshise_reasons_title{color:#fff;}
+.qroom-franshise_reason{padding:109px 40px 40px 238px;width:682px;min-height:325px;margin:0 auto;position:relative;display:none;}
+.qroom-franshise_reason:first-child, .qroom-franshise_reason._active{display:block;}
+.qroom-franshise_reason_title{font:600 26px/32px "Roboto", sans-serif;margin:0 0 24px;}
+.qroom-franshise_reasons_navs{position:absolute;z-index:2;left:0;right:0;}
+.qroom-franshise_reasons_nav{position:absolute;padding:24px;cursor:pointer;bottom:0;}
+.qroom-franshise_reasons_nav._back{left:0;}
+.qroom-franshise_reasons_nav._forward{right:0;}
+.qroom-franshise_reasons_nav:hover{opacity:.85;}
+.qroom-franshise_reasons_nav .material-icons{font-size:24px;width:24px;height:24px;color:#000;}
+.qroom-franshise_reasons_changer{display:inline-block;height:8px;width:40px;background:#fff;position:relative;margin:0 5px;-webkit-transition:all 0.09s linear;transition:all 0.09s linear;cursor:pointer;}
+.qroom-franshise_reasons_changer:before{position:absolute;left:-5px;top:-5px;bottom:-5px;right:-5px;content:'';}
+.qroom-franshise_reasons_changer:hover, .qroom-franshise_reasons_changer.active{background:#D3234C;}
+.qroom-franshise_reasons_changers{position:absolute;left:0;right:0;text-align:center;font-size:0;bottom:32px;}
+.qroom-franshise_reason_content{line-height:1.375em;}
+.qroom-franshise_reasons_list{position:relative;}
+.qroom-franshise_reason_num{position:absolute;top:0;left:0;font:600 270px/270px "BebasNeue", sans-serif;color:#fff;width:238px;text-align:center;}
+.qroom-franchise_publics{padding:32px 0 82px;}
+.qroom-franchise_publics_title{margin:0 0 44px;}
+.qroom-franchise_publics_list{position:relative;width:620px;max-height:310px;overflow:hidden;}
+.qroom-franchise_publics_list_inner{position:relative;-webkit-transition:all 0.2s linear;transition:all 0.2s linear;}
+.qroom-franchise_public{margin:0 0 22px;max-height:40px;overflow:hidden;}
+.qroom-franchise_public_content{margin-left:104px;}
+.qroom-franchise_public_content a{color:#000;font-style:italic;}
+.qroom-franchise_public_content a:hover{color:#148782;text-decoration:underline;}
+.qroom-franchise_public_logo{float:left;width:80px;height:40px;background-color:#F0F0F3;}
+.qroom-franchise_publics_list_wrapper{position:relative;width:620px;margin:0 auto;}
+.qroom-franchise_publics_nav{position:absolute;padding:13px;left:100%;margin-left:114px;cursor:pointer;-webkit-transition:all 0.2s linear;transition:all 0.2s linear;}
+.qroom-franchise_publics_nav .material-icons{width:24px;height:24px;font-size:24px;display:block;}
+.qroom-franchise_publics_nav:hover{opacity:.85;background:rgba(0, 0, 0, 0.05);}
+.qroom-franchise_publics_nav._disabled, .qroom-franchise_publics_nav._disabled:hover{cursor:default;filter:alpha(opacity=20);opacity:0.2;background:none;}
+.qroom-franchise_publics_nav._up{top:-25px;}
+.qroom-franchise_publics_nav._down{bottom:-25px;}
+.qroom-franchise_contacts{padding:28px 0 30px;background:#F0F0F3;}
+.qroom-franchise_contacts_title{margin:0 0 30px;}
+.qroom-franchise_contacts_desc{text-align:center;font:600 20px/26px "Roboto", sans-serif;margin:0 0 28px;}
+.qroom-franchise_contact_manager{width:670px;margin:0 auto 19px;}
+.qroom-franchise_contact_info{width:750px;margin:0 auto;}
+.qroom-franchise_contact_manager_content{float:right;width:420px;margin-right:-22px;}
+.qroom-franchise_contact_manager_content .material-icons{margin:-2px 25px 0 0;vertical-align:middle;width:24px;height:24px;font-size:24px;}
+.qroom-franchise_contact_manager_content div{margin:0 0 12px;}
+.qroom-franchise_contact_manager_content div:last-child{margin:0;}
+.qroom-franchise_contact_manager_img{float:left;width:80px;height:80px;}
+.qroom-franchise_contact_manager_info{margin:0 0 0 104px;font-size:12px;line-height:14px;width:130px;}
+.qroom-franchise_contact_manager_name{font:18px/24px "Roboto Condensed", sans-serif;margin:0 0 8px;}
+@media (max-height:660px){.qroom-franchise_top{padding:140px 0 120px;box-sizing:border-box;}
+.qroom-franchise_top .qroom-content_inner{position:relative;top:auto;left:auto;margin:0 auto;}
+}
+.qroom-opinions_top, .qroom-contacts_top{background:#393D44 url(../images/pattern.png);text-align:center;}
+.qroom-opinions_top .qroom-content_inner, .qroom-contacts_top .qroom-content_inner{padding-top:40px;padding-bottom:32px;}
+.qroom-opinions_top_title, .qroom-contacts_top_title, .qroom-custom_top_title{font:600 42px/50px "Roboto", sans-serif;color:#fff;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);margin:0 0 36px;}
+.qroom-opinions_filter{margin:0 0 40px;font-size:0;}
+.qroom-opinions_filter_item{display:inline-block;vertical-align:middle;margin:0 4px 9px;color:#fff;padding:9px 30px 9px;line-height:18px;font-size:16px;cursor:pointer;-webkit-box-shadow:0 0 0 1px #3D3F41 inset;box-shadow:0 0 0 1px #3D3F41 inset;border-radius:18px;background:rgba(0, 0, 0, 0.3);-webkit-transition:all 0.05s linear;transition:all 0.05s linear;text-decoration:none;}
+.qroom-opinions_filter_item:hover{color:#D3234C;}
+.qroom-opinions_filter_item._active, .qroom-opinions_filter_item._active:hover{background-color:#D3234C;color:#fff;-webkit-box-shadow:0 0 0 1px #D3234C inset;box-shadow:0 0 0 1px #D3234C inset;}
+.qroom-opinions_top_btn .qroom-btn{background:#2D3036;}
+.qroom-opinions_top_btn .qroom-btn:hover, .qroom-opinions_top_btn .qroom-btn:active{background:#bddf01;}
+.qroom-page_opinions{padding:10px 0;}
+.qroom-page_opinion{padding:24px 12px 24px 18px;border-top:1px solid rgba(0, 0, 0, 0.5);}
+.qroom-page_opinion:first-child{border-top:none;}
+.qroom-page_opinion_date{float:right;padding:0 0 20px 20px;}
+.qroom-page_opinion_content{margin:0 0 0 130px;line-height:22px;width:670px;}
+.qroom-page_opinion_user{float:left;width:80px;text-align:center;}
+.qroom-page_opinion_user .qroom-user_ava{width:80px;height:80px;background-color:#000;margin:0 0 8px;}
+.qroom-page_opinion_user .qroom-page_opinion_name{line-height:20px;font-weight:500;}
+.qroom-contacts_top{color:#fff;}
+.qroom-contacts_top_title{margin:0 0 24px;}
+.qroom-contacts_top_text, .qroom-custom_top_text{width:400px;margin:0 auto 31px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);}
+.qroom-contacts_top_text b, .qroom-custom_top_text b{display:block;text-shadow:none;font-weight:600;font-size:26px;line-height:32px;margin:0 0 10px;}
+.qroom-contacts_top_infos{text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);display:inline-block;text-align:left;}
+.qroom-contacts_top_info{line-height:22px;margin:0 0 10px;display:block;color:#fff;text-decoration:none;}
+.qroom-contacts_top_info:last-child{margin:0;}
+.qroom-contacts_top_info._phone{font:700 22px/22px "Roboto Condensed", sans-serif;}
+.qroom-contacts_top_info .material-icons{margin:-2px 20px 0 0;vertical-align:middle;font-size:24px;height:24px;width:24px;}
+.qroom-contacts_addresses{padding:30px 0 12px;}
+.qroom-contacts_addresses .qroom-title_with_border, .qroom-contacts_addresses .qroom-booking_quest_title, .qroom-contacts_addresses .qroom-booking_prices .qroom-booking_prices_title, .qroom-booking_prices .qroom-contacts_addresses .qroom-booking_prices_title, .qroom-contacts_addresses .qroom-franchise_about_title{margin:0 0 32px;}
+.qroom-contacts_addresses .qroom-contacts_address{padding:0 30px 24px;}
+.qroom-contacts_addresses .qroom-contacts_address_map{float:left;width:440px;height:300px;background:#F0F0F3;}
+.qroom-contacts_addresses .qroom-contacts_address_content{margin-left:480px;}
+.qroom-contacts_addresses .qroom-contacts_address_quests_title{margin:0 0 17px;font-size:18px;line-height:21px;}
+.qroom-contacts_addresses .qroom-contacts_address_quests_list{margin:0 0 8px;overflow:hidden;}
+.qroom-contacts_addresses .qroom-contacts_address_quest{padding:5px 15px 4px;float:left;font-size:12px;line-height:15px;margin:0 8px 8px 0;border:1px solid rgba(0, 0, 0, 0.5);border-radius:13px;-webkit-transition:all 0.1s linear;transition:all 0.1s linear;text-decoration:none;color:#000;}
+.qroom-contacts_addresses .qroom-contacts_address_quest:hover{color:#fff;background-color:#bddf01;border-color:#bddf01;}
+.qroom-contacts_addresses .qroom-contacts_address_info{margin:0 0 10px;padding:0 0 0 36px;position:relative;line-height:20px;}
+.qroom-contacts_addresses .qroom-contacts_address_info .material-icons{position:absolute;top:-2px;left:0;}
+.qroom-contacts_infos{text-align:center;margin:-8px 0 24px;}
+.qroom-contacts_info_cover{margin:0 0 12px;}
+.qroom-contacts_info{display:inline-block;width:300px;text-align:left;font-size:18px;line-height:21px;}
+.qroom-contacts_info .material-icons{vertical-align:middle;margin:-2px 14px 0 0;float:left;}
+.qroom-actions_top{background:#393d44;color:rgba(255, 255, 255, 0.7);}
+.qroom-actions_top .qroom-actions_top_inner{background:rgba(0, 0, 0, 0.5);}
+.qroom-actions_top .qroom-content_inner{padding:32px 0 0;}
+.qroom-actions_top_title{line-height:42px;padding:32px 0 0;margin:0 0 32px;color:#fff;text-align:center;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);}
+.qroom-action{padding:40px 0;border-top:1px solid rgba(255, 255, 255, 0.2);}
+.qroom-action .qroom-content_inner{padding:0 24px;max-width:912px;}
+.qroom-action_img{float:left;width:460px;height:320px;background-size:cover;background-repeat:no-repeat;background-position:center;}
+.qroom-action_content{margin:0 0 0 500px;}
+.qroom-action_content p{font-size:14px;line-height:1.7;margin:0 0 36px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);}
+.qroom-action_title{font:600 26px/32px "Roboto", sans-serif;color:#fff;margin:0 0 30px;}
+.qroom-corporate_top .qroom-content_inner{max-width:892px;min-height:390px;background:rgba(0, 0, 0, 0.5);position:absolute;left:50%;top:50%;margin:-220px 0 0 -481px;padding:22px 35px;color:#fff;}
+.qroom-corporate_top .qroom-corporate_top_calling{padding:8px 0 0;}
+.qroom-corporate_top .qroom-box_linear_mask{opacity:.6;}
+.qroom-corporate_top:before{display:none;}
+.qroom-corporate_top .qroom-form .qroom-btn{background:#000;display:block;width:100%;}
+.qroom-corporate_top .qroom-form .qroom-btn:hover{background:#bddf01;color:#000;text-shadow:none;}
+.qroom-corporate_top .qroom-form .qroom-form_additional{margin-top:16px;text-align:center;text-shadow:0 1px 2px rgba(0, 0, 0, 0.2);}
+.qroom-corporate_top .qroom-corporate_form_title{font:600 36px/42px "Roboto", sans-serif;color:#fff;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);margin:0 auto 35px;text-align:center;width:640px;}
+.qroom-corporate_top .qroom-corporate_form_desc{line-height:1.35em;font-size:18px;text-align:left;margin:0 45px 27px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);}
+.qroom-corporate_top .qroom-corporate_form_desc li{padding:0 0 0 37px;position:relative;}
+.qroom-corporate_top .qroom-corporate_form_desc li:before{position:absolute;width:3px;height:3px;background-color:#fff;left:12px;top:10px;content:'';border-radius:50%;}
+.qroom-corporate_service{padding:40px 0 0;}
+.qroom-corporate_service_title{margin:0 0 32px;}
+.qroom-corporate-reviews{padding:40px 0;}
+.qroom-corporate-reviews-title{margin:12px 0 0 0;}
+.qroom-corporate-reviews .wpcr3_button_1{background:#bddf01;color:#000;text-shadow:none;border:0;border-radius:0;font-size:20px;font-weight:500;padding:15px 40px 13px;line-height:20px;text-transform:uppercase;}
+.qroom-corporate-reviews .wpcr3_button_1:hover{background:#d3f801;}
+.qroom-corporate-reviews .wpcr3_respond_3{text-align:center;}
+.qroom-corporate-reviews .wpcr3_div_2{margin:0 auto;}
+.qroom-corporate-reviews .wpcr3_table_2 td{text-align:left;vertical-align:middle;padding-bottom:5px;}
+.qroom-corporate-reviews div.wpcr3_review div.wpcr3_review_title{font-size:24px;}
+.qroom-corporate-reviews div.wpcr3_review blockquote.wpcr3_content{font-size:14px;font-weight:normal;display:block !important;padding-bottom:30px;border-left:0;}
+.qroom-corporate-reviews .wpcr3_leave_text{padding-bottom:10px;font-size:30px;color:#b5284a;}
+.qroom-corporate-reviews .wpcr3_respond_2 input[type="text"]{min-width:200px;text-align:left;padding-left:10px;}
+.qroom-corporate-reviews .wpcr3_respond_2 textarea{height:150px !important;width:100%;font-size:14px;padding:10px;line-height:1.3;}
+.qroom-corporate-reviews .wpcr3_respond_2 .wpcr3_review_form_review_field_textarea{margin-top:-10px;}
+.qroom-corporate-reviews div.wpcr3_review div.wpcr3_review_custom{}
+.qroom-corporate-reviews div[data-wpcr3-content="-1"]{display:none !important;}
+.qroom-opinions._corporate .qroom-opinion_user_ava{float:left;}
+.qroom-opinions._corporate .qroom-opinion_user{left:0;top:32px;bottom:auto;}
+.qroom-opinions._corporate .qroom-opinion_user_info{margin:0 0 0 117px;padding:30px 0 0;text-align:left;}
+.qroom-opinions._corporate .qroom-opinion_user_name{text-align:left;margin:0 0 4px;}
+.qroom-opinions._corporate .qroom-opinion{padding:140px 69px 20px;}
+.qroom-opinions._corporate .qroom-opinion_corporate_logo{position:absolute;top:56px;left:311px;background-size:cover;background-position:center;background-repeat:no-repeat;background-color:#f0f0f3;width:152px;height:50px;}
+.qroom-opinions._corporate .qroom-opinion_corporate_scan{float:left;background-size:cover;background-position:center;background-repeat:no-repeat;background-color:#f0f0f3;width:210px;height:300px;margin:0 32px 20px 0;}
+.qroom-corporate_service_item{margin:0 0 40px;line-height:1.375;}
+.qroom-corporate_service_item .qroom-title_with_border, .qroom-corporate_service_item .qroom-booking_quest_title, .qroom-corporate_service_item .qroom-booking_prices .qroom-booking_prices_title, .qroom-booking_prices .qroom-corporate_service_item .qroom-booking_prices_title, .qroom-corporate_service_item .qroom-franchise_about_title{margin:0 -32px 24px;}
+.qroom-corporate_service_item a{color:#D3234C;}
+.qroom-corporate_service_item .qroom-content_inner{max-width:896px;}
+.qroom-corporate_service_item .qroom-content_inner p{margin-bottom:10px;}
+.qroom-corporate_service_item._abonement{position:relative;}
+.qroom-corporate_service_item._abonement p{width:456px;margin:0 auto;}
+.qroom-corporate_service_item._abonement .qroom-content_inner{z-index:2;}
+.qroom-corporate_service_item._abonement:before{content:'';position:absolute;left:-124px;width:345px;height:134px;top:50%;margin-top:-67px;background:url(../i/hand_left_gray.png);pointer-events:none;}
+.qroom-corporate_service_item._abonement:after{content:'';position:absolute;right:-124px;width:345px;height:127px;top:50%;margin-top:-63px;background:url(../i/hand_right_gray.png);pointer-events:none;}
+.qroom-corporate_service_item ul, .qroom-corporate_service_item ol{margin-bottom:20px;}
+.qroom-corporate_service_item ol > li{list-style:decimal outside;margin-left:45px;}
+.qroom-corporate_service_item ul > li{list-style:disc outside;margin-left:45px;}
+.qroom-corporate_service_item h1{font:600 42px/50px "Roboto", sans-serif;}
+.qroom-corporate_service_gallery{text-align:center;font-size:0;margin:0 0 32px;}
+.qroom-corporate_service_gallery._pics_2 .qroom-corporate_service_img{width:440px;height:240px;}
+.qroom-corporate_service_gallery._pics_2 .qroom-corporate_service_img:first-child{margin-right:7px;}
+.qroom-corporate_service_gallery._pics_2 .qroom-corporate_service_img:last-child{margin-left:8px;}
+.qroom-corporate_service_gallery._pics_1 .qroom-corporate_service_img{width:456px;height:246px;}
+.qroom-corporate_service_img{display:inline-block;width:288px;height:228px;background-position:center;background-size:cover;background-repeat:no-repeat;margin:0 8px;}
+.qroom-corporate_service_img:first-child{margin-left:0;}
+.qroom-corporate_service_img:last-child{margin-right:0;}
+.qroom-corporate_contact{padding:40px 0 60px;background:#fff;}
+.qroom-corporate_contact .qroom-content_inner{max-width:580px;margin:0 auto;}
+.qroom-corporate_contact .qroom-form{float:right;width:266px;}
+.qroom-corporate_contact .qroom-form_btns .qroom-btn{display:block;width:100%;}
+.qroom-corporate_contact .qroom-input,
+.qroom-corporate_contact .qroom-textarea{border-color:#F0F0F3;background:#F0F0F3;text-shadow:none;font-size:22px;color:#000;}
+.qroom-corporate_form_contact .qroom-user_ava{width:80px;height:80px;float:left;}
+.qroom-corporate_form_contact .qroom-corporate_manager_cover{overflow:hidden;margin:0 0 36px;}
+.qroom-corporate_form_contact .qroom-corporate_manager{margin-left:104px;width:130px;font-size:12px;line-height:1.3;}
+.qroom-corporate_form_contact .qroom-corporate_manager_name{font-size:18px;line-height:1.2;padding:2px 0 10px;}
+.qroom-corporate_form_contact .qroom-corporate_manager_phone{margin:0 0 15px;}
+.qroom-corporate_form_contact .qroom-corporate_manager_phone .material-icons,
+.qroom-corporate_form_contact .qroom-corporate_manager_address .material-icons{display:inline-block;vertical-align:middle;margin:-4px 16px 0 0;}
+@media (max-height:660px){.qroom-corporate_top{padding:140px 0 80px;box-sizing:border-box;}
+.qroom-corporate_top .qroom-content_inner{position:relative;top:auto;left:auto;margin:0 auto;}
+}
+.qroom-gift_top .qroom-content_inner{max-width:892px;min-width:800px;min-height:420px;background:rgba(0, 0, 0, 0.5);position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);padding:22px 35px;color:#fff;}
+.qroom-gift_top .qroom-box_linear_mask{opacity:.6;}
+.qroom-gift_top:before{display:none;}
+.qroom-gift_top .qroom-gift_top_calling{padding:8px 0 0;}
+.qroom-gift_top .qroom-form{position:relative;}
+.qroom-gift_top .qroom-form .qroom-btn{background:#000;display:block;width:100%;}
+.qroom-gift_top .qroom-form .qroom-btn:hover{background:#bddf01;color:#000;text-shadow:none;}
+.qroom-gift_top .qroom-form .qroom-form_additional{margin-top:16px;text-align:center;text-shadow:0 1px 2px rgba(0, 0, 0, 0.2);}
+.qroom-gift_top .qroom-gift_form_title{font:600 36px/42px "Roboto", sans-serif;color:#fff;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);margin:0 auto 40px;text-align:center;width:100%;}
+.qroom-gift_top .qroom-gift_form_sub-title{font-size:22px;color:#fff;margin:0 auto 15px 87px;width:640px;}
+.qroom-gift_top .qroom-gift_form_desc{line-height:1.35em;font-size:18px;text-align:left;margin:0 auto 15px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);}
+.qroom-gift_top .qroom-gift_form_desc li{padding:0 0 0 37px;position:relative;}
+.qroom-gift_top .qroom-gift_form_desc li:before{position:absolute;width:3px;height:3px;background-color:#fff;left:12px;top:10px;content:'';border-radius:50%;}
+.qroom-gift_top .qroom-gift_form_desc li strong{font-weight:bold;}
+.qroom-gift_presentation{padding:32px 0 0;}
+.qroom-gift_presentation_title{margin:0 0 24px;}
+.qroom-gift_presentation_text{width:830px;margin:0 auto 48px;text-align:center;}
+.qroom-gift_presentation_pic{background:url(../images/girl_present_gift.jpg);width:960px;height:575px;}
+.qroom-gift_how{padding:42px 0;background-color:#bddf01;}
+.qroom-gift_how_title{margin:0 0 38px;color:#fff;}
+.qroom-gift_how_list{font-size:0;text-align:center;}
+.qroom-gift_how_item{display:inline-block;width:240px;margin:0 42px;line-height:1.25;font-size:18px;vertical-align:top;}
+.qroom-gift_how_item:first-child{margin-left:0;}
+.qroom-gift_how_item:last-child{margin-right:0;}
+.qroom-gift_how_item_icn{width:48px;height:48px;font-size:48px;display:block;margin:0 auto 20px;}
+.qroom-gift_how_item_title{font:600 26px/32px "Roboto", sans-serif;margin:0 0 13px;}
+.qroom-gift_how_item_phone{font:24px/24px "Roboto Condensed", sans-serif;padding:5px 0;}
+.qroom-gift_how_item_phone .material-icons{margin:-2px 11px 0 0;}
+.qroom-gift_how_item_times{padding:15px 0 0;text-align:left;font-size:12px;}
+.qroom-gift_how_btn{width:250px;}
+.qroom-gifts_examples{padding:35px 0 5px;}
+.qroom-gifts_examples_title{font:600 26px/32px "Roboto", sans-serif;text-align:center;margin:0 0 16px;}
+.qroom-gifts_examples_img{background:url(../images/gifts_examples.jpg);width:886px;height:567px;margin:0 auto;}
+.qroom-gifts_info{background:#000;padding:0;color:#fff;font-size:18px;line-height:24px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);}
+.qroom-gifts_info._ta-c{padding: 0;}
+.qroom-gifts_info._ta-c .qroom-gifts_info_title{margin: 0;}
+.qroom-gifts_info .qroom-content_inner{max-width:760px;}
+.qroom-gifts_info_title{font:600 26px/32px "Roboto", sans-serif;text-shadow:0;min-height: 45px;}
+.qroom-gift_form_box{padding:40px 0 100px;background-size:cover;background-color:#000;background-repeat:no-repeat;background-position:center;position:relative;}
+.qroom-gift_form_box .qroom-form{width:376px;background:rgba(0, 0, 0, 0.5);position:relative;margin:0 auto;padding:32px 28px;}
+.qroom-gift_form_box .qroom-input{font-weight:300;}
+.qroom-gift_form_box .qroom-textarea{font-weight:300;}
+.qroom-gift_form_box .qroom-form_btns{text-align:center;}
+.qroom-gift_form_box .qroom-form_btns .qroom-btn{margin-bottom:-24px;background:#000;}
+.qroom-gift_form_box .qroom-form_btns .qroom-btn:hover{background:#bddf01;}
+.qroom-gift_form_box .qroom-form_additional{position:absolute;top:100%;left:0;right:0;text-align:center;margin-top:45px;color:rgba(255, 255, 255, 0.7);}
+.qroom-gift_form_box .qroom-form_counter{text-align:right;color:rgba(255, 255, 255, 0.5);font-size:12px;padding:5px 0 0;}
+.qroom-gift_form_title{position:relative;z-index:1;text-align:center;width:780px;font:600 26px/32px "Roboto", sans-serif;color:#fff;margin:0 auto 40px;}
+@media (max-height:660px){.qroom-gift_top{padding:140px 0 80px;box-sizing:border-box;}
+.qroom-gift_top .qroom-content_inner{position:relative;top:auto;left:auto;margin:0 auto;-webkit-transform:translate(-0%, -0%);-ms-transform:translate(-0%, -0%);transform:translate(-0%, -0%);}
+}
+.qroom-vacancies_top{background-color:#393d44;}
+.qroom-vacancies_top .qroom-content_inner{padding:40px 0;}
+.qroom-vacancies_top .qroom-form{width:320px;padding:32px 70px 0;-webkit-box-shadow:0 0 0 1px rgba(255, 255, 255, 0.2);box-shadow:0 0 0 1px rgba(255, 255, 255, 0.2);margin:0 auto 60px;position:relative;}
+.qroom-vacancies_top .qroom-form_btns{text-align:center;}
+.qroom-vacancies_top .qroom-form_btns .qroom-btn{margin-bottom:-24px;background:#303339;}
+.qroom-vacancies_top .qroom-form_btns .qroom-btn:hover{background:#bddf01;}
+.qroom-vacancies_top .qroom-form_additional{position:absolute;top:100%;left:0;right:0;text-align:center;color:rgba(255, 255, 255, 0.7);margin-top:45px;}
+.qroom-vacancies_top .qroom-form_counter{text-align:right;color:rgba(255, 255, 255, 0.5);font-size:12px;padding:5px 0 0;}
+.qroom-vacancies_list{margin:0 0 12px;}
+.qroom-vacancies_top_title{color:#fff;text-align:center;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);margin:0 0 36px;}
+.qroom-vacancy{margin:0 0 28px;color:#fff;}
+.qroom-vacancy .qroom-title_with_border, .qroom-vacancy .qroom-booking_quest_title, .qroom-vacancy .qroom-booking_prices .qroom-booking_prices_title, .qroom-booking_prices .qroom-vacancy .qroom-booking_prices_title, .qroom-vacancy .qroom-franchise_about_title{margin:0 auto 20px;color:#fff;}
+.qroom-vacancy .qroom-title_with_border span:before, .qroom-vacancy .qroom-booking_quest_title span:before, .qroom-vacancy .qroom-booking_prices .qroom-booking_prices_title span:before, .qroom-booking_prices .qroom-vacancy .qroom-booking_prices_title span:before, .qroom-vacancy .qroom-franchise_about_title span:before,
+.qroom-vacancy .qroom-title_with_border span:after,
+.qroom-vacancy .qroom-booking_quest_title span:after,
+.qroom-vacancy .qroom-booking_prices .qroom-booking_prices_title span:after, .qroom-booking_prices
+.qroom-vacancy .qroom-booking_prices_title span:after,
+.qroom-vacancy .qroom-franchise_about_title span:after{background:rgba(255, 255, 255, 0.5);}
+.qroom-vacancy_text{width:700px;margin:0 auto;line-height:1.375;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);text-align:center;}
+.qroom-holidays_top .qroom-content_inner{width:892px;min-height:390px;background:rgba(0, 0, 0, 0.5);position:absolute;left:50%;top:50%;margin:-180px 0 0 -481px;padding:22px 35px;color:#fff;}
+.qroom-holidays_top .qroom-box_linear_mask{opacity:.6;}
+.qroom-holidays_top:before{display:none;}
+.qroom-holidays_top .qroom-holidays_top_calling{padding:8px 0 0;}
+.qroom-holidays_top .qroom-form-outer{display:flex;justify-content:center;}
+.qroom-holidays_top .qroom-form .qroom-btn{background:#000;display:block;width:100%;}
+.qroom-holidays_top .qroom-form .qroom-btn:hover{background:#bddf01;color:#000;text-shadow:none;}
+.qroom-holidays_top .qroom-form .qroom-form_additional{margin-top:16px;text-align:center;text-shadow:0 1px 2px rgba(0, 0, 0, 0.2);}
+.qroom-holidays_top .qroom-holidays_form_title{font:600 36px/42px "Roboto", sans-serif;color:#fff;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);margin:0 auto 15px;text-align:center;}
+.qroom-holidays_top .qroom-holidays_form_desc{line-height:1.35em;font-size:18px;text-align:left;margin:0 30px 10px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5);font-weight:300;}
+.qroom-holidays_top .qroom-holidays_form_desc li{padding:0 0 0 37px;position:relative;}
+.qroom-holidays_top .qroom-holidays_form_desc li:before{position:absolute;width:3px;height:3px;background-color:#fff;left:12px;top:10px;content:'';border-radius:50%;}
+.qroom-holidays_space_photos{overflow:hidden;position:relative;font-size:0;background:#000;white-space:nowrap;width:100%;}
+.qroom-holidays_space{padding:30px 0;}
+.qroom-holidays_space_wide{padding:40px 0;}
+.qroom-holidays_space_title{margin:0 0 3px;}
+.qroom-holidays_space_text{width:860px;margin:15px auto 15px;text-align:center;}
+.owl-item .qroom-holidays_space_photo{width:100%;}
+.qroom-holidays_space_photo{width:33.33%;display:inline-block;background-size:cover;background-repeat:no-repeat;background-position:center;cursor:pointer;position:relative;vertical-align:top;}
+.qroom-holidays_space_photo:before{position:absolute;left:0;right:0;bottom:0;top:0;content:'';background:transparent;transition:all .2s linear;}
+.qroom-holidays_space_photo:hover .material-icons{opacity:1;}
+.qroom-holidays_space_photo:hover:before{background:rgba(0, 0, 0, 0.5);}
+.qroom-holidays_space_photo .material-icons{position:absolute;left:50%;top:50%;margin:-24px 0 0 -24px;width:48px;height:48px;font-size:48px;color:#fff;opacity:0;transition:all .2s linear;}
+.qroom-holidays_space_photo_inner{padding-bottom:80%;position:relative;}
+.qroom-holidays_space_list{width:530px;margin:0 auto;}
+.qroom-holidays_space_list li{padding:0 0 0 28px;position:relative;line-height:22px;}
+.qroom-holidays_space_list li:before{content:'';position:absolute;width:3px;height:3px;left:0;top:8px;background-color:#000;}
+.qroom-holidays_space_photos_nav{position:absolute;bottom:0;color:#fff;z-index:1;padding:24px;cursor:pointer;height:24px;}
+.qroom-holidays_space_photos_nav._back{left:0;}
+.qroom-holidays_space_photos_nav._forward{right:0;}
+.qroom-holidays_space_photos_nav .material-icons{font-size:24px;width:24px;height:24px;}
+.qroom-holidays_space_photos_nav:hover{background:rgba(0, 0, 0, 0.1);}
+.qroom-holidays_space_photos_nav:hover .material-icons{opacity:.9;}
+.qroom-holiday_gift{position:relative;background-color:#D3234C;text-align:center;padding:32px 0;color:#fff;}
+.qroom-holiday_gift .qroom-content_inner{text-shadow:0 1px 2px rgba(0, 0, 0, 0.3);max-width:710px;position:relative;}
+.qroom-holiday_gift_title{position:relative;margin:0 0 24px;text-shadow:0 2px 4px rgba(0, 0, 0, 0.3);}
+.qroom-holiday_how{padding:32px 0;}
+.qroom-holiday_how_title{margin:0 0 24px;text-align:center;}
+.qroom-holiday_how_desc{width:710px;margin:0 auto 32px;}
+.qroom-holiday_how_items{font-size:0;text-align:center;}
+.qroom-holiday_how_item{display:inline-block;margin:0 22px;font-size:16px;line-height:22px;vertical-align:top;text-align:left;position:relative;}
+.qroom-holiday_how_item._item_1{width:255px;margin-left:0;}
+.qroom-holiday_how_item._item_2{width:355px;}
+.qroom-holiday_how_item._item_3{width:240px;margin-right:0;}
+.qroom-holiday_how_item_icn{width:48px;height:48px;font-size:48px;display:block;margin:0 auto 20px;}
+.qroom-holiday_how_pointer{position:absolute;top:0;width:48px;height:48px;font-size:48px;}
+.qroom-holiday_how_pointer._before{right:100%;margin-right:12px;}
+.qroom-holiday_how_pointer._after{left:100%;margin-left:-12px;}
+.qroom-holiday_why{background:#F0F0F3 url(../i/pattern_opacity_20.png);padding:32px 0 28px;}
+.qroom-holiday_why .qroom-content_inner{max-width:740px;line-height:22px;}
+.qroom-holiday_why .qroom-content_inner ol{padding:18px 0 15px;list-style:decimal;}
+.qroom-holiday_why .qroom-content_inner ol li{margin:0 0 3px 50px;}
+.qroom-holiday_why .qroom-content_inner a{color:#D3234C;text-decoration:underline;}
+.qroom-holiday_why .qroom-content_inner a:hover{text-decoration:none;}
+.qroom-holiday_why_title{margin:0 0 22px;text-align:center;}
+.qroom-holiday_feedback{position:relative;padding:32px 0 26px;}
+.qroom-holiday_feedback_title{font:600 20px/26px "Roboto", sans-serif;text-align:center;width:580px;margin:0 auto 30px;}
+.qroom-holiday_feedback_inner{width:240px;margin:0 auto 45px;border:1px solid #979797;padding:35px 50px 0;position:relative;}
+.qroom-holiday_feedback_inner .qroom-textarea, .qroom-holiday_feedback_inner .qroom-input{border-color:#F0F0F3;background-color:#F0F0F3;color:#000;text-shadow:none;margin-top:30px;}
+.qroom-holiday_feedback_inner .qroom-form_btns{text-align:center;margin-bottom:-23px;padding-top:16px;}
+.qroom-holiday_feedback_inner .qroom-form_btns .qroom-btn{display:block;width:100%;}
+.qroom-holiday_feedback_inner .qroom-form_additional{opacity:1;}
+.qroom-holiday_feedback_hand{position:absolute;top:203px;}
+.qroom-holiday_feedback_hand._left{background:url(../i/hand_left_gray.png);left:-40px;width:345px;height:134px;}
+.qroom-holiday_feedback_hand._right{background:url(../i/hand_right_gray.png);height:135px;width:345px;right:-40px;}
+.qroom-holiday_top.qroom-page_top_box::before{background:rgba(0, 0, 0, 0.4);}
+.qroom-holiday_top .qroom-content_inner{width:892px;min-height:390px;position:absolute;left:50%;top:50%;margin:-190px 0 0 -481px;padding:22px 35px;color:#fff;}
+.qroom-holiday_top .qroom-about_top_title{opacity:0.89;text-shadow:0px 5px 10px rgba(0, 0, 0, 0.3);text-align:center;}
+.qroom-holiday_top .qroom-holiday_top_desc{font-weight:300;line-height:24px;opacity:0.89;text-shadow:0px 2px 4px rgba(0, 0, 0, 0.5);text-align:center;padding:0 0 32px;}
+.qroom-holiday_top .qroom-holiday_form_desc{text-align:center;padding:0 0 30px;}
+.qroom-holiday_top .qroom-form{float:right;margin:0 147px -48px 0;position:relative;width:240px;}
+.qroom-holiday_top .qroom-form .qroom-form_additional{position:absolute;left:-50px;right:-50px;top:100%;margin-top:16px;text-align:center;text-shadow:0 1px 2px rgba(0, 0, 0, 0.2);}
+.qroom-holiday_top .qroom-form .qroom-input{border-color:transparent;}
+.qroom-holiday_top .qroom-form .qroom-input:focus{border-color:#fff;}
+.qroom-holiday-table{margin-top:32px;width:100%;table-layout:fixed;text-align:center;}
+.qroom-holiday-table td{padding:9px 10px;}
+.qroom-holiday-table .qroom-title_with_border, .qroom-holiday-table .qroom-booking_quest_title, .qroom-holiday-table .qroom-booking_prices .qroom-booking_prices_title, .qroom-booking_prices .qroom-holiday-table .qroom-booking_prices_title, .qroom-holiday-table .qroom-franchise_about_title{font-size:20px;line-height:22px;font-weight:400;}
+.qroom-holiday-table .qroom-icn_quest{margin:-4px 0 0;vertical-align:middle;color:#00BFA5;}
+.qroom-holiday-table .qroom-table_right_text{position:relative;display:inline-block;}
+.qroom-holiday-table .qroom-table_right_text span{position:absolute;left:100%;white-space:nowrap;margin:0 0 0 10px;}
+.qroom-holiday_select_package{text-align:center;padding:40px 0 10px;}
+.qroom-holiday_select_package .qroom-block_gray_title{margin:0 0 16px;}
+.qroom-holiday_select_package .qroom-btn._green{width:140px;}
+#qopup-wrap-form{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:999;}
+@media (max-height:660px){.qroom-holidays_top, .qroom-holiday_top{padding:140px 0 80px;box-sizing:border-box;}
+.qroom-holidays_top .qroom-content_inner, .qroom-holiday_top .qroom-content_inner{position:relative;top:auto;left:auto;margin:0 auto;}
+}
+.qroom-tabs .qroom-tabs_caption{text-align:center;padding:0 50px 180px;position:relative;width:600px;margin:0 auto;}
+.qroom-tabs .qroom-tabs_caption .qroom-icn_quest{margin:-6px 0 0;vertical-align:middle;}
+.qroom-tabs .qroom-tabs_caption .arrow{width:100px;height:3px;background:#000;position:relative;}
+.qroom-tabs .qroom-tabs_caption .arrow:before, .qroom-tabs .qroom-tabs_caption .arrow:after{content:"";display:block;position:absolute;width:0;height:0;border:40px solid transparent;border-right:0;}
+.qroom-tabs .qroom-tabs_caption .arrow:after{top:-7px;right:-20px;border-left-color:#000;border-width:9px 0 9px 20px;}
+.qroom-tabs .qroom-tabs_caption .arrows-wrapper{bottom:-50px;height:50px;left:50%;margin-left:-250px;overflow:hidden;position:absolute;width:500px;opacity:0;}
+.qroom-tabs .qroom-tabs_caption .qroom-btn_radius{border:1px solid #c4c4c4;color:#c4c4c4;border-radius:50px;text-align:center;line-height:26px;font-weight:500;cursor:pointer;margin:0 0 12px;padding:8px 0;}
+.qroom-tabs .qroom-tabs_caption .arrows-outer{position:absolute;top:15px;}
+.qroom-tabs .qroom-tabs_caption .arr-first{left:20px;transform:rotate(155deg);}
+.qroom-tabs .qroom-tabs_caption .arr-second{left:50%;margin-left:-50px;top:-20px;transform:rotate(90deg);}
+.qroom-tabs .qroom-tabs_caption .arr-third{right:20px;transform:rotate(25deg);}
+.qroom-tabs .qroom-tabs_caption li:hover .qroom-btn_radius{color:#D3234C;border-color:#D3234C;}
+.qroom-tabs .qroom-tabs_caption li{transition:all ease 0.4s;}
+.qroom-tabs .qroom-tabs_caption li.active{transform:translateY(100px);position:absolute;left:50%;margin-left:-150px;width:300px;}
+.qroom-tabs .qroom-tabs_caption li.active .qroom-btn_radius{background:#D3234C;color:#fff;border-color:#D3234C;}
+.qroom-tabs .qroom-tabs_caption li.active .arrows-wrapper{opacity:100;transition:opacity ease 2s;}
+.qroom-tabs_content{display:none;}
+.qroom-tabs_content.active{display:block;}
+.qroom-block_gray{background:#F0F0F0;padding:19px 15px;text-align:center;}
+.qroom-block_gray .qroom-block_gray_title{font-weight:bold;margin:0 0 3px;font-size:20px;line-height:26px;}
+.qroom-block_gray .qroom-block_gray_price{font-family:'Roboto Condensed';font-size:36px;line-height:40px;font-weight:bold;padding:4px 0 5px;}
+.qroom-offsite-quests_feedback{border-top:1px solid rgba(0, 0, 0, 0.12);}
+.qroom-holidays_block_title{font-weight:600;font-size:26px;line-height:32px;margin:10px 0 20px;text-align:center;}
+.qroom-custom_top{background:#393D44 url(../images/pattern.png);text-align:center;}
+.qroom-custom_top_title{margin:0 0 24px;}
+.qroom-custom_top_text{width:auto;margin:0 0 24px;}
+.qroom-custom_inner{padding:24px 0 0;line-height:1.5;}
+.qroom-custom_inner a{color:#c92149;}
+.qroom-custom_inner p{padding:0 0 24px;}
+.qroom-custom_inner .qroom-title_with_border, .qroom-custom_inner .qroom-booking_quest_title, .qroom-custom_inner .qroom-booking_prices .qroom-booking_prices_title, .qroom-booking_prices .qroom-custom_inner .qroom-booking_prices_title, .qroom-custom_inner .qroom-franchise_about_title{margin:0 0 24px;padding:16px 0 0;}
+.qroom-custom_inner .qroom-info_box{margin:0 0 24px;}
+.qroom-custom_inner ul{padding:0 0 24px 24px;}
+.qroom-custom_inner ul li{list-style:disc;}
+.qroom-custom_inner ul ul{padding:8px 0 24px 24px;}
+.qroom-custom_inner ul ul li{list-style:circle;}
+.qroom-custom_inner .qroom-gift_form_box{color:#fff;}
+.qroom-custom_inner .qroom-gift_form_box p{position:relative;max-width:700px;margin:0 auto 24px;}
+.pagination{display:flex;}
+.pagination li{display:inline;margin:0 5px;}
+.pagination > .active:not(:last-child):not(:first-child) > a{z-index:3;color:#fff;background-color:#d3234c;cursor:default;}
+.pagination > li > a, .pagination > li > span{position:relative;float:left;padding:6px 12px;line-height:1.42857;text-decoration:none;color:#000;background-color:#fff;margin-left:-1px;border:1px solid #fff;}
+.pagination > li.active > a:hover{border:1px solid #fff;}
+.pagination > li > a:hover{border:1px solid #000;}
+.blog strong{font-weight:bold;}
+.blog{margin:30px auto;}
+.blog h1{font-size:46px;font-weight:normal;margin:20px 0 20px 0;}
+.blog h1.big{font-size:72px;font-weight:normal;margin:20px 0 20px 0;}
+.blog h2{font-size:32px;font-weight:normal;margin:20px 0 20px 0;line-height:34px;}
+.blog h3{font-size:22px;font-weight:normal;margin:20px 0 20px 0;line-height:24px;}
+.blog h4{font-size:17px;font-weight:normal;margin:20px 0 20px 0;line-height:19px;}
+.blog h5{font-size:12px;font-weight:normal;margin:20px 0 20px 0;line-height:14px;}
+.blog p{font-size:18px;line-height:24px;margin-bottom:15px;text-indent:15px;}
+.blog code{background-color:#F7F7F9;border:1px solid #E1E1E8;padding:2px 4px;}
+.blog .date{margin-bottom:20px;color:#444;margin-top:-10px;font-size:14px;}
+.blog-list {
+    margin: 40px auto;
+}
+.blog-list h1{
+	text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2em;
+}
+.blog-list .blog-item:not(:last-child) {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.blog-list .blog-item {
+    display: flex;
+}
+.blog-list .blog-item:not(:last-child) {
+border-bottom: 1px solid #e5e5e5;
+margin-bottom: 30px;
+padding-bottom: 30px;
+}
+
+.blog-list .blog-img{
+display: block;
+width: 230px;
+height: 160px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+flex-shrink: 0;
+margin-right: 15px;
+}
+.blog-list .blog-img img{
+	max-width: 100%;
+	height: auto;	
+}
+.blog-list .blog h3{
+font-size: 18px;
+margin: 20px 0;
+font-weight: bold;
+}
+.blog-text{
+	padding-bottom: 20px;
+}
+.currency.rub:after{content:' грн.';}
+.currency.sek:after{content:' SEK';}
+.currency.byr:after{content:' Br';}
+.currency.eur:after{content:' eur';}
+.qroom-text ul, .qroom-text ol{font-size:18px;font-weight:normal;line-height:32px;margin-bottom:20px;}
+.qroom-text ol > li{list-style:decimal outside;margin-left:45px;}
+.qroom-text ul > li{list-style:disc outside;margin-left:45px;}
+.qroom-text blockquote{border-left:2px solid #bbb;margin:10px 0;padding-left:15px;clear:both;}
+.qroom-text p{line-height:130%;margin-bottom:15px;}
+.qroom-text p img{max-width:100%;}
+.panel-group .panel+.panel{margin:0;border:0;}
+.registration{background-color:#fff;max-width:600px;margin:0 auto;padding-bottom:20px;box-shadow:1px 1px 5px 0px rgba(0,0,0,0.3);border-bottom:5px solid #ffdb3a;}
+.input-requirements{font-size:1.3rem;font-style:italic;text-align:left;list-style:disc;list-style-position:inside;max-width:400px;margin:10px auto;color:rgb(150,150,150);}
+#block-block-3{display:none;position:relative;margin-bottom:50px;background:#393d44 url(../images/pattern.png);}
+.cost-block{position:relative;}
+.cost-block-title{text-align:center;color:#E6DED5;font-size:36pt;font-family:'metaboldc';font-weight:bold;font-style:normal;margin:20px 0 29px 0;line-height:1;}
+.cost-block-table{background:url(../images/cost-block-table.png) no-repeat 0px 0px;width:725px;height:426px;position:relative;margin:0 auto 60px;}
+.cost-block-table>div>span{display:block;}
+.cost-block-table-1{position:absolute;top:27px;left:7px;width:200px;}
+.cost-block-table-4 .span1, .cost-block-table-3 .span1, .cost-block-table-2 .span1, .cost-block-table-1 .span1{font-size:20pt;font-family:'llrubbergrotesque';font-weight:normal;font-style:normal;color:#FFF;text-shadow:0px 1px 0px rgba(0,0,0,.28);float:left;display:block;}
+.cost-block-table-4 .span2, .cost-block-table-3 .span2, .cost-block-table-2 .span2, .cost-block-table-1 .span2{color:#D8D8D8;font-size:16pt;font-family:'NeoSansProMedium';font-style:normal;font-weight:normal;display:block;line-height:22px;float:left;padding-left:23px;margin-top:-13px;}
+.cost-block-table-2{position:absolute;top:27px;left:228px;width:200px;}
+.cost-block-table-3{position:absolute;top:27px;left:448px;width:200px;}
+.cost-block-table-4{position:absolute;top:27px;left:660px;width:200px;}
+.cost-block-table-5{color:#A49D95;font-size:24pt;font-family:'llrubbergrotesque';font-weight:normal;font-style:normal;position:absolute;top:168px;left:5px;}
+.cost-block-table-6{color:#A49D95;font-size:24pt;font-family:'llrubbergrotesque';font-weight:normal;font-style:normal;position:absolute;top:288px;left:5px;}
+.cost-block-table-7{color:#A49D95;font-size:24pt;font-family:'llrubbergrotesque';font-weight:normal;font-style:normal;position:absolute;top:413px;left:5px;}
+.cost-block-table-8{position:absolute;top:257px;left:157px;}
+.cost-block-table-8, .cost-block-table-10, .cost-block-table-12, .cost-block-table-14{color:#D8D8D8;font-size:24pt;font-family:'llrubbergrotesque';font-weight:normal;font-style:normal;}
+.cost-block-table-9{color:#333;font-size:24pt;font-family:'llrubbergrotesque';font-weight:normal;font-style:normal;position:absolute;top:220px;left:227px;text-align:center;line-height:28px;}
+.cost-block-table-10{position:absolute;top:257px;left:342px;}
+.cost-block-table-11{width:50px;color:#333;font-size:24pt;font-family:'llrubbergrotesque';font-weight:normal;font-style:normal;position:absolute;top:220px;left:423px;text-align:center;line-height:28px;}
+.cost-block-table-12{position:absolute;top:380px;left:243px;}
+.cost-block-table-13{color:#333;font-size:24pt;font-family:'llrubbergrotesque';font-weight:normal;font-style:normal;position:absolute;top:344px;left:309px;text-align:center;line-height:28px;}
+.cost-block-table-14{position:absolute;top:380px;left:428px;}
+.cost-block-table-15{color:#333;font-size:24pt;font-family:'llrubbergrotesque';font-weight:normal;font-style:normal;position:absolute;top:344px;left:508px;text-align:center;line-height:28px;}
+.cost-block-button{position:absolute;top:298px;left:50%;margin-left:190px;}
+.cost-block-button .bron{width:310px;height:113px;font-size:0;display:block;text-decoration:none;background:url(../images/bron2.png) no-repeat 0px 0px;}
+.cost-block-button .sertificat{color:#FF7300;font-size:16pt;font-family:'NeoSansProMedium';font-style:normal;font-weight:normal;text-decoration:none;background:url(../images/sertificat.png) no-repeat 0px 0px;padding-left:210px;display:block;padding-top:55px;padding-bottom:80px;line-height:28px;display:inline-block;margin-left:-45px;}
+.cost-block-button .sertificat span{border-bottom:1px dashed #FF7300;}
+.cost-block-button .sertificat{color:#FF7300;font-size:16pt;font-family:'NeoSansProMedium';font-style:normal;font-weight:normal;text-decoration:none;background:url(../images/sertificat.png) no-repeat 0px 0px;padding-left:210px;display:block;padding-top:55px;padding-bottom:80px;line-height:28px;display:inline-block;margin-left:-45px;}
+#menu-item-44{pointer-events:none;}
+.qroom-quests_list .qroom-quests_item_hover.qroom-quests_item_hover-stop,
+.qroom-quests_list .qroom-quests_item_hover.qroom-quests_item_hover-stop .qroom-quests_item_hover_link{cursor:default !important;}
+.qroom-quests_list .qroom-quests_item_hover.qroom-quests_item_hover-stop:hover{box-shadow:none;background-color:rgba(187, 194, 194, 0.7);}
+.qroom-quests_list .qroom-quests_item_hover.qroom-quests_item_hover-stop .qroom-quests_item_hover_inner{display:none;}
+/*----------- отзывы ------------*/
+.qroom-corporate-reviews .wpcr3_table_2 td .wpcr3_leave_text{
+	padding-top: 50px;
+} 
+@media (max-width:1330px){.qroom-header_phone{display:none;}
+.qroom-header_center{padding:12px 0 0 140px;}
+}
+@media (max-width:1060px){.qroom-header_nav_item{padding:0 14px;}
+.qroom-header_center .qroom-header_nav_item{margin:0 7px;}
+}
+@media (max-width:960px){.qroom-quests_list .qroom-quests_item_info{display:none;}
+.qroom-quests_item_level{display:none;}
+.qroom-header_nav_item{margin:0 5px;padding:0 8px;}
+.qroom-lk_info .qroom-btn{margin-right:10px;}
+.qroom-quests_filter .qroom-quests_filter_item{margin:0 5px 11px;}
+.qroom-header_center .qroom-header_nav_item{margin:0 5px;}
+}
+@media (max-width:800px){.qroom-header_nav_item{margin:0;padding:0 7px;}
+.qroom-quests_list .qroom-quests_item_title span{font:700 32px/34px "Roboto Condensed", sans-serif;}
+.qroom-quests_list .qroom-quests_item{font:400 24px/22px "Roboto Condensed", sans-serif;}
+.qroom-quests_list .qroom-quests_item_btns a{font-size:22px;}
+}
+@media (max-height:660px){.qroom-mainpage_top_desc{margin:0 0 25px;}
+.qroom-mainpage_top_title{line-height:45px;margin:0 0 20px;}
+.qroom-mainpage_top .qroom-content_inner{height:280px;margin-top:-170px;}
+}
+@media (max-height:570px){.qroom-mainpage_top_desc{margin:0 0 15px;font-size:16px;line-height:20px;}
+.qroom-mainpage_top_title{font-size:36px;line-height:40px;margin:0 0 15px;}
+.qroom-mainpage_top .qroom-content_inner{height:230px;margin-top:-140px;}
+.qroom-mainpage_top_mouse .qroom-icn._mouse{margin-bottom:-2px;}
+.qroom-mainpage_top_mouse .qroom-icn._arrow_down{margin-bottom:-13px;}
+}
+@media (max-height:580px){.qroom-header{position:absolute;}
+}
+@media screen and (min-width: 768px), screen and (min-height: 768px) {
+
+
+
+}
+
+@media (max-width: 768px){
+.qroom-quest_top .qroom-quest_top_desc {
+    font-size: 22px;
+} 
