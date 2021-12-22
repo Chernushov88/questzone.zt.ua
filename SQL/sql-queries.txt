@@ -1,0 +1,5 @@
+UPDATE wp_options SET option_value = REPLACE (option_value, 'questzone.zt.ua', 'questzone.zt.ua-local') WHERE option_name = 'home' OR option_name = 'siteurl';
+
+UPDATE wp_posts SET guid = REPLACE (guid, 'questzone.zt.ua', 'questzone.zt.ua-local');
+
+UPDATE wp_posts SET post_content = REPLACE (post_content, 'questzone.zt.ua', 'questzone.zt.ua-local');
