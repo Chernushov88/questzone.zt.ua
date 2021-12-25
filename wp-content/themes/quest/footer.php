@@ -137,6 +137,19 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
           <div class="qroom-row">
           </div>
           <script></script>
+          <?
+          function get_ip()
+          {
+            $value = '';
+            if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+              $value = $_SERVER['HTTP_CLIENT_IP'];
+            } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+              $value = $_SERVER['HTTP_X_FORWARDED_FOR'];
+            } elseif (!empty($_SERVER['REMOTE_ADDR'])) {
+              $value = $_SERVER['REMOTE_ADDR'];
+            }
+            return $value;
+          }?>
           <form id="myform" action="" class="qroom-form qroom-booking_form" method="post">
             <input type="hidden" name="room" value="" id="room">
             <input type="hidden" name="time" value="" id="time">
@@ -146,6 +159,7 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
             <input type="hidden" name="Email" value="" id="Email">
             <input type="hidden" name="Comment" value="" id="Comment">
             <input type="hidden" name="action" value="action_send_form">
+<!--            <input type="hidden" name="id" value="--><?//get_ip();?><!--">-->
             <div class="qroom-row qroom-row-input">
               <div class="qroom-col-6">
                 <div class="qroom-row">

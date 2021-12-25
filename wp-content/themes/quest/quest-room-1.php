@@ -2,7 +2,6 @@
 /*
 Template Name: КВЕСТ КОМНАТА 1
 */
-
 get_header(); ?>
 <script>
   var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
@@ -29,7 +28,7 @@ get_header(); ?>
         </div>
       </div>
     </div>
-    <!-- <div class="qroom-quest_options">
+  11  <div class="qroom-quest_options">
       <div class="qroom-quest_option">
         <div class="qroom-icn_quest qroom-icn_quest _handcuffs"></div>
         Все игроки окажутся в настоящих полицейских наручниках
@@ -46,7 +45,7 @@ get_header(); ?>
         <div class="qroom-icn_quest qroom-icn_quest _face"></div>
         Отличный выбор для новичков
       </div>
-    </div> -->
+    </div>22
     <i class="material-icons qroom-about_arrow_bottom">arrow_downward</i>
     <div class="qroom-content_inner">
       <div class="qroom-quest_top_desc">

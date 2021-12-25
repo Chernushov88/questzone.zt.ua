@@ -440,6 +440,7 @@ function my_action_javascript() {
 	jQuery(document).ready(function($) {
 
 		$('#myform').submit(function(e){
+        console.log('e', e)
 			e.preventDefault();
 			
 			var msg   = $('#myform').serialize();
@@ -450,10 +451,11 @@ function my_action_javascript() {
         data: msg,	         
         success: function(even) {
           console.log(even + 'test event --- 1');
+            console.log('ajaxurl', ajaxurl)
           // console.log('Отправка сообщения');
 
     		setTimeout(function(){
-      			$('#qroom-node_heap').hide();        
+      			$('#qroom-node_heap').hide();
         		$('#qroom-wrapper').removeClass('fixed');
         		$('.loading-block').removeClass('loading');
         		window.location.reload();
@@ -535,6 +537,7 @@ function my_action_callback() {
 	$room = $_POST['room'];
 	$time = $_POST['time'];
 	$date = $_POST['date'];
+	$id = $_POST['id'];
 
 
 	// $name = clean($name);
@@ -542,11 +545,22 @@ function my_action_callback() {
 	// $phone = clean($phone);	
 	// $descr = clean($descr);
 	// $mail_info = 'bron@room.zt';
-	$mail_info = 'bron@questzone.zt.ua';	
-	
+	$mail_info = 'bron@questzone.zt.ua';
+
 	$sub="Сообщение с сайта: http://questzone.zt.ua/";
 	$address = 'vdns@ukr.net, questzone.zt@ukr.net,questzt@ukr.net';		/*Тут указіваем E-mail, куда будет отправляться письмо */
-	$mes = "
+$messageTB = "
+‼ $sub ‼
+Комната: $room
+День: $date
+Время: $time
+👤 Имя: $name
+☎ Телефон: $phone
+E-mail:  $email
+Телефон:  $phone
+Сообщение:  $descr
+";
+  $message = "
 	Комната: $room \n
 	День: $date \n
 	Время: $time \n
@@ -555,7 +569,37 @@ function my_action_callback() {
 	Телефон:  $phone \n
 	Сообщение:  $descr \n
 	";
-	mail($address, $sub ,$mes, "Content-type:text/plain; charset = utf-8\r\nFrom:$mail_info");
+
+  //SEND MESSAGE TO TELEGRAM
+function sendMessage($chatID, $message, $token){
+  $url = "https://api.telegram.org/" . $token . "/sendMessage?chat_id=" . $chatID;
+  $url = $url . "&text=" . urlencode($message);
+  $ch = curl_init();
+  $optArray = array(CURLOPT_URL => $url, CURLOPT_RETURNTRANSFER => true);
+  curl_setopt_array($ch, $optArray);
+  $result = curl_exec($ch);
+  curl_close($ch);
+}
+$token = "bot5099544126:AAE6aCjP44Sar2281qE56LZw_iYVYmyErgo";
+$chatID = "-1001608034990";
+
+
+//  if($name == 'test'){
+//    sendMessage('-1001253520742', $messageTB, 'bot546026860:AAGbAoQE9a8EdJVBXB7IkbxavL6gkvLUrCU');
+//  } else {}
+    sendMessage($chatID, $messageTB, $token);
+
+
+// Для отправки HTML-письма должен быть установлен заголовок Content-type
+  $headers  = 'MIME-Version: 1.0' . "\r\n";
+  $headers .= 'Content-type: text/html; charset=urf-8' . "\r\n";
+
+// Дополнительные заголовки
+  $headers .= 'From: http://questzone.zt.ua/';
+
+  mail($address, $sub, $message, $headers);
+
+	//mail($address, $sub ,$mes, "Content-type:text/plain; charset = utf-8\r\nFrom:$mail_info");
 
 	wp_insert_post($args);
 	// выход нужен для того, чтобы в ответе не было ничего лишнего, только то что возвращает функция
