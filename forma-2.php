@@ -29,19 +29,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	  	$mail_info = 'info@questzone.zt.ua';
     	$sub="Сообщение с сайта: http://questzone.zt.ua/";
 			$address = 'vdns@ukr.net,questzone.zt@ukr.net';		/*Тут указіваем E-mail, куда будет отправляться письмо */
-$messageTB = "
-‼ $sub ‼
-Купить подарочный сертификат
-Телефон:  $phone
-Адрес: $address 
-Сообщение:  $descr
-";
-$mes = "
-Адрес: $name \n
-Телефон:  $phone \n
-Адрес: $address \n
-Сообщение:  $descr \n
-";
+			$mes = "
+			Адрес: $name \n
+			Телефон:  $phone \n
+			Адрес: $address \n
+			Сообщение:  $descr \n
+			";
 			$verify = mail($address, $sub ,$mes, "Content-type:text/plain; charset = utf-8\r\nFrom:$mail_info");			
 	      echo "<html><head><meta http-equiv='refresh' content='2; URL=http://questzone.zt.ua/'/></head><body><div class='otpravleno'>Ваше сообщение успешно отправлено</div></body></html>";
 	    } else {
