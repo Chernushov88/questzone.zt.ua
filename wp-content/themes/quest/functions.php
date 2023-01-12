@@ -621,7 +621,6 @@ function my_action_js_change_day() {
  */
 function russian_date( $tdate = '' ) {
 	if ( substr_count($tdate , '---') > 0 ) return str_replace('---', '', $tdate);
-
 	$treplace = array (
 		"Январь" => "января",
 		"Февраль" => "февраля",
@@ -673,6 +672,77 @@ function russian_date( $tdate = '' ) {
 		"Saturday" => "суббота",
 
 		"Sun" => "вос.",
+		"Mon" => "пон.",
+		"Tue" => "вт.",
+		"Wed" => "ср.",
+		"Thu" => "чет.",
+		"Fri" => "пят.",
+		"Sat" => "суб.",
+
+		"th" => "",
+		"st" => "",
+		"nd" => "",
+		"rd" => ""
+	);
+	return strtr($tdate, $treplace);
+}
+
+/**
+ * Руская дата
+ */
+function ukr_date( $tdate = '' ) {
+	if ( substr_count($tdate , '---') > 0 ) return str_replace('---', '', $tdate);
+	$treplace = array (
+		"Січень" => "січень",
+		"Лютий" => "лютий",
+		"Березень" => "березень",
+		"Квітень" => "квітень",
+		"Травень" => "травень",
+		"Червень" => "червень",
+		"Липень" => "липень",
+		"Серпень" => "серпень",
+		"Вересень" => "вересень",
+		"Жовтень" => "жовтень",
+		"Листопад" => "листопад",
+		"Грудень" => "грудень",
+
+
+		"Січ" => "січень",
+		"Лют" => "лютий",
+		"Бер" => "березень",
+		"Квіт" => "квітень",
+		"Май" => "травень",
+		"Чер" => "червень",
+		"Лип" => "липень",
+		"Сер" => "серпень",
+		"Вер" => "вересень",
+		"Жовт" => "жовтень",
+		"Лист" => "листопад",
+		"Груд" => "грудень",
+
+
+		"January" => "січень",
+		"February" => "лютий",
+		"March" => "березень",
+		"April" => "квітень",
+		"May" => "травень",
+		"June" => "червень",
+		"July" => "липень",
+		"August" => "серпень",
+		"September" => "вересень",
+		"October" => "жовтень",
+		"November" => "листопад",
+		"December" => "грудень",
+
+		"Sunday" => "неділя",
+		"Monday" => "понеділок",
+		"Tuesday" => "вівторок",
+		"Wednesday" => "середа",
+		"Thursday" => "четверг",
+		"Friday" => "пятница",
+		"Saturday" => "субота",
+
+		"Sun" => "нед.",
 		"Mon" => "пон.",
 		"Tue" => "вт.",
 		"Wed" => "ср.",
@@ -741,9 +811,9 @@ add_filter( 'wpseo_canonical', 'at_remove_dup_canonical_link' );
 *  Область виджетов на 
 */
   register_sidebar(array(
-      'name' => __('Edit img на глав/gift Тайны да Винчи'),
+      'name' => __('Edit img на глав/gift Таємниці да Вінчі'),
       'id' => 'img_room_home_1',
-      'description' => __('Тайны да Винчи на главной'),
+      'description' => __('Таємниці да Вінчі на главной'),
       'before_widget' => '<div class="col-shadow">',
       'after_widget' => '</div>',
       'before_title' => '<div class="h2">', 
@@ -751,9 +821,9 @@ add_filter( 'wpseo_canonical', 'at_remove_dup_canonical_link' );
   ));
 
   register_sidebar(array(
-      'name' => __('Edit img на глав/gift Пятый элемент'),
+      'name' => __('Edit img на глав/gift Пятий елемент'),
       'id' => 'img_room_home_2',
-      'description' => __('Пятый элемент на главной'),
+      'description' => __('Пятий елемент на головній'),
       'before_widget' => '<div class="col-shadow">',
       'after_widget' => '</div>',
       'before_title' => '<div class="h2">', 

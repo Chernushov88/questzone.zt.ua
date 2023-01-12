@@ -6,8 +6,8 @@
 function jt_calendar_level_1($atts){
   ob_start();
     $array = array(
-        "room1" => "Тайны да Винчи",
-        "room2" => "Пятый элемент",
+        "room1" => "Таємниці да Вінчі",
+        "room2" => "Пятий елемент",
       );
     foreach ($array as $value) {
       echo do_shortcode('[jt-calendar-level-2 room="'.$value.'" date="'.$atts['date'].'"]') ;
@@ -45,17 +45,19 @@ function jt_calendar_level_3($atts){
   <?php
       $start = '8:0';
       $date3 = new DateTime($atts['date']);
-      $days_M = array(1=>'января',2=>'февраля',3=>'марта',4=>'апрля', 5 =>'мая',6=>'июня',7=>'июля',8=>'августа',9=> 'сентября',10=> 'октября',11=> 'ноября',12=>'декабря');
+     $days_M = array(1=>'січень',2=>'лютий',3=>'березень',4=>'квітень', 5 =>'травень',6=>'червень',7=>'липень',8=>'серпень',9=> 'вересень',10=> 'жовтень',11=> 'листопад',12=>'грудень');
       $data_W = ( $days_M[($date3->format('n'))] );
       $days_w = array('Вс.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');
       $key = $date3->format('w');
       $date = new DateTime($atts['date']);
       $data_date = $date->format('d ');
-      if ($atts['room']=='Тайны да Винчи') {
+      if ($atts['room']=='Таємниці да Вінчі') {
        $data_ID = 'kvest-komnata-1';
+       $data_price = 700;
       }
       else{
-        $data_ID = 'kvest-komnata-2';
+        $data_ID = 'five-element';
+        $data_price = 800;
       }
     $b =0;
     while ( $b < 9) {
@@ -72,7 +74,7 @@ function jt_calendar_level_3($atts){
       // echo '<br>';
       // echo '<h1><b>'.$key.'</b></h1>';
       if ( !empty($post_set_array) ) {
-        $class = '<div class="qroom-booking_time _booked">Занято</div>';
+        $class = '<div class="qroom-booking_time _booked">'. $echo_time .'</div>';
       }
      /* elseif ( $b == 9 ) {
         // echo "test - 11100000111";
@@ -80,11 +82,11 @@ function jt_calendar_level_3($atts){
       }*/
       elseif ($b >= 0 || $key == 0 || $key == 6 ) {
         // echo "test - 111";
-         $class = "<div class='qroom-booking_time _turquoise _blue' data-price='500'  data-title-h1='". $atts['room'] ."' data-time='". $echo_time ."' data-date='". $data_date.$data_W ."' data-id='".$data_ID."' onclick='qroom.quests.bookingPopup(this)'>". $echo_time . " </div>";
+         $class = "<div class='qroom-booking_time _turquoise _blue' data-price='".$data_price."'  data-title-h1='". $atts['room'] ."' data-time='". $echo_time ."' data-date='". $data_date.$data_W ."' data-id='".$data_ID."' onclick='qroom.quests.bookingPopup(this)'>". $echo_time . " </div>";
       }
 
       else{
-        $class = "<div class='qroom-booking_time _turquoise' data-price='400' data-title-h1='". $atts['room'] ."' data-time='". $echo_time ."' data-date='". $data_date.$data_W ."' data-id='".$data_ID."' onclick='qroom.quests.bookingPopup(this)'>". $echo_time . " </div>";
+        $class = "<div class='qroom-booking_time _turquoise' data-price='".$data_price."' data-title-h1='". $atts['room'] ."' data-time='". $echo_time ."' data-date='". $data_date.$data_W ."' data-id='".$data_ID."' onclick='qroom.quests.bookingPopup(this)'>". $echo_time . " </div>";
       }
       echo "<td>".$class."</td>";
       $b++;

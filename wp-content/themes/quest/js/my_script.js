@@ -2,5 +2,5 @@ jQuery(document).ready(function($){$("a[rel=group]").fancybox({'padding':0,'tran
 var days_w=$('.qroom-booking_quest_title span strong');$('.qroom-content_inner  span').find('strong').each(function(){if($(this).text()=='Сб.'||$(this).text()=='Вс.'){$(this).parents('.qroom-booking_quest_title').addClass('_weekend');}});$('#qroom-booking_dates_pick .qroom-booking_date_pick').find('.qroom-booking_date_pick_desc').each(function(){if($(this).text()=='Сб.'||$(this).text()=='Вс.'){$(this).parents('.qroom-booking_date_pick').addClass('_weekend');}});window.home_dates_day=function(){var firstDay=$('.qroom-booking_date_pick').first();firstDay=$(firstDay).attr('data-date');var lastDay=$('.qroom-booking_date_pick').last();lastDay=$(lastDay).attr('data-date');$('#firstDay').text(firstDay);$('#lastDay').text(lastDay);}
 home_dates_day();window.pricesTypesPopup=function(){$('.qopup-content-payment').show();$('.darken').show();}
 window.pricesTypesPopupHide=function(){$('.qopup-content-payment').hide();$('.darken').hide();}
-window.stub_page=function(){$('#qroom-booking_holder_id').find('.qroom-booking_quest_title-content').last().addClass('stub-page');}
-stub_page();})
+// window.stub_page=function(){$('#qroom-booking_holder_id').find('.qroom-booking_quest_title-content').last().addClass('stub-page');}stub_page();
+})

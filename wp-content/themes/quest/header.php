@@ -9,7 +9,7 @@
  * @since Twenty Fifteen 1.0
  */
 ?><!DOCTYPE html>
-<html>
+<html lang="uk-UA">
 <head>
     <meta name="description" content="квест,квеструм,квест Житомир,квест комната Житомир,квеструм Житомир,квест да винчи,квест кімната житомир, квест рум житомир,отдых в житомире, куда пойти в житомире,развлечения в житомире,відпочинок в житомирі,куди піти в житомирі,розваги житомир">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -28,12 +28,6 @@
     <div id="qroom-wrapper">
         <div class="qroom-header">
             <div class="qroom-header_top _nclear">
-                <!-- <div class="qroom-header_center">
-                    <a class="qroom-header_nav_item" href="/about.php">Об игре</a>
-                    <a class="qroom-header_nav_item" href="/contacts.php">Контакты</a>
-                    <a target="_blank" class="qroom-header_nav_item" href="http://франшиза.квеструм.рф">Франшиза</a>
-
-                </div> -->
                 <?/*php 
                     $args = array(
                         'theme_location'  => '',
@@ -57,8 +51,7 @@
                 */?>
                 <div class="qroom-header_side _fl-l">
                     <a href="/" class="qroom-logo">
-                        <!-- <img src="/wp-content/themes/quest/images/logo-icon.png" class="logo-icon" /> -->
-                        <img src="/wp-content/themes/quest/images/new-logo.jpg" style="width: 155px;" alt='Логотип'/>
+                        <img src="/wp-content/themes/quest/images/new-logo.jpg" style="width: 155px;" alt='questzone'/>
                     </a>                    
                 </div>
                 <div class="qroom-header_side _fl-r">
@@ -69,7 +62,7 @@
         </span>
                     </div>
                     <div class="qroom-lk_info">
-                        <div class="qroom-btn qr-booking-site qroom-btn__invert" onclick="qroom.scrollToBooking();">Забронировать</div>
+                        <div class="qroom-btn qr-booking-site qroom-btn__invert" onclick="qroom.scrollToBooking();">Забронювати</div>
                     </div>
                 </div>
             </div>
@@ -95,25 +88,6 @@
                     );                  
                     wp_nav_menu( $args );
                 ?>
-                <!-- <ul>
-                    <li>
-                        <a href="#" class="qroom-header_nav_item _js_show_quest _active">Квесты</a>
-                        <ul>
-                            <li>
-                                <a href="/pobeg-iz-turmi.php" class="qroom-header_nav_ttip_item">Побег из Тюрьмы</a>
-                            </li>
-                            <li>
-                                <a href="/fotolaboratoriya-prizraka.php" class="qroom-header_nav_ttip_item">Фотолаборатория Призрака</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="qroom-header_nav_item" href="/gift.php">Сертификат</a>
-                    </li>
-                    <li>
-                        <a class="qroom-header_nav_item" href="/corporate.php">Корпоративным клиентам</a>
-                    </li>
-                </ul>  -->
             </div>
         </div>
 

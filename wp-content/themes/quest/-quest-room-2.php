@@ -70,7 +70,7 @@ function time_add_min( & $time, $min)
                     </div>
                 </div>
                 <div class="qroom-quest_top_info">
-                    <i class="material-icons">person_outline</i>2-6 игроков
+                    <i class="material-icons">person_outline</i>2-6 гравців
                 </div>
                 <div class="qroom-quest_top_info">
                     <i class="material-icons">timer</i>60 минут
@@ -81,7 +81,7 @@ function time_add_min( & $time, $min)
             </div>
             <div class="_ta-c">
                 <span class="qroom-btn _big qr-booking-button" onclick="qroom.navScroll($('.qroom-booking'));">
-                Забронировать
+                Забронювати
                 </span>
             </div>
         </div>
@@ -104,7 +104,7 @@ function time_add_min( & $time, $min)
         <div class="qroom-booking_header">
             <div class="qroom-content_inner">
                 <div class="qroom-booking_title">
-                    Календарь бронирования
+                    Календар бронювання
                 </div>
                 <div class="qroom-booking_desc">
                     Чтобы записаться на игру -  выберите любое доступное время в одном из квестов. После нажатия на плитку со временем Вы попадете на страницу бронирования.
@@ -126,14 +126,14 @@ function time_add_min( & $time, $min)
             </div>
         </div>
         <div class="qroom-booking_body _on_quest_page">
-      <div class="qroom-content_inner" data-title="Нажмите на плитку с удобным временем, чтобы забронировать игру!">
+      <div class="qroom-content_inner" data-title="Натисніть на плитку зі зручним часом, щоб Забронювати гру!">
         <?php 
           $date = new DateTime(date('d.m.Y')); 
 
         for ($a=0; $a < 7 ; $a++) {
           $start = '6:30';
-          $days_M = array(1=>'января',2=>'февраля',3=>'марта',4=>'апрля', 5 =>'мая',6=>'июня',7=>'июля',8=>'августа',9=> 'сентября',10=> 'октября',11=> 'ноября',12=>'декабря');
-          $days_w = array('Вс.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');   
+         $days_M = array(1=>'січень',2=>'лютий',3=>'березень',4=>'квітень', 5 =>'травень',6=>'червень',7=>'липень',8=>'серпень',9=> 'вересень',10=> 'жовтень',11=> 'листопад',12=>'грудень');
+          $days_w = array('Нд.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');   
                 
           $data_date = $date->format('d.m.Y');                    
           ?>
@@ -142,7 +142,7 @@ function time_add_min( & $time, $min)
              <span> <?php echo '<strong>'.( $days_w[($date->format('w'))] .'</strong>'.$data_date ); ?></span>
             </div>
             <table class="qroom-booking_times">
-              <?php echo do_shortcode('[jt-calendar-level-3 room=" Пятый элемент" date="'.$data_date.'"]') ; ?>
+              <?php echo do_shortcode('[jt-calendar-level-3 room="Пятий елемент" date="'.$data_date.'"]') ; ?>
             </table>
           </div> 
           <?php
@@ -152,15 +152,15 @@ function time_add_min( & $time, $min)
           }             
         ?>        
         <div class="qroom-booking_link_more button-1" onclick="qroom.quests.showMore(2,this,2);">
-          Показать еще
+          Показати ще
         </div>
 
 
         <?php        
         for ($a=0; $a < 7 ; $a++) {
           $start = '6:30';
-          $days_M = array(1=>'января',2=>'февраля',3=>'марта',4=>'апрля', 5 =>'мая',6=>'июня',7=>'июля',8=>'августа',9=> 'сентября',10=> 'октября',11=> 'ноября',12=>'декабря');
-          $days_w = array('Вс.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');                
+         $days_M = array(1=>'січень',2=>'лютий',3=>'березень',4=>'квітень', 5 =>'травень',6=>'червень',7=>'липень',8=>'серпень',9=> 'вересень',10=> 'жовтень',11=> 'листопад',12=>'грудень');
+          $days_w = array('Нд.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');                
           $data_date = $date->format('d.m.Y');    
           ?>
           <div class="qroom-booking_times_week-2" style="display:none;">
@@ -168,7 +168,7 @@ function time_add_min( & $time, $min)
               <span> <?php echo '<strong>'.( $days_w[($date->format('w'))] .'</strong>'.$data_date ); ?></span>
             </div>
             <table class="qroom-booking_times">
-              <?php echo do_shortcode('[jt-calendar-level-3 room=" Пятый элемент" date="'.$data_date.'"]') ; ?>
+              <?php echo do_shortcode('[jt-calendar-level-3 room="Пятий елемент" date="'.$data_date.'"]') ; ?>
             </table>
           </div>        
           <?php
@@ -178,15 +178,15 @@ function time_add_min( & $time, $min)
           }             
         ?>
         <div class="qroom-booking_link_more button-2" onclick="qroom.quests.showMore(3,this,3);" style="display:none;">
-          Показать еще
+          Показати ще
         </div>
 
 
         <?php        
         for ($a=0; $a < 7 ; $a++) {
           $start = '6:30';
-          $days_M = array(1=>'января',2=>'февраля',3=>'марта',4=>'апрля', 5 =>'мая',6=>'июня',7=>'июля',8=>'августа',9=> 'сентября',10=> 'октября',11=> 'ноября',12=>'декабря');
-          $days_w = array('Вс.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.'); 
+         $days_M = array(1=>'січень',2=>'лютий',3=>'березень',4=>'квітень', 5 =>'травень',6=>'червень',7=>'липень',8=>'серпень',9=> 'вересень',10=> 'жовтень',11=> 'листопад',12=>'грудень');
+          $days_w = array('Нд.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.'); 
           $data_date = $date->format('d.m.Y');  
           ?>
           <div class="qroom-booking_times_week-3" style="display:none;">
@@ -194,7 +194,7 @@ function time_add_min( & $time, $min)
               <span> <?php echo '<strong>'.( $days_w[($date->format('w'))] .'</strong>'.$data_date ); ?></span>
             </div>
             <table class="qroom-booking_times">
-              <?php echo do_shortcode('[jt-calendar-level-3 room=" Пятый элемент" date="'.$data_date.'"]') ; ?>
+              <?php echo do_shortcode('[jt-calendar-level-3 room="Пятий елемент" date="'.$data_date.'"]') ; ?>
             </table>
           </div>        
           <?php
@@ -204,14 +204,14 @@ function time_add_min( & $time, $min)
             }             
           ?>
           <div class="qroom-booking_link_more button-3" onclick="qroom.quests.showMore(4,this,4);" style="display:none;">
-            Показать еще
+            Показати ще
           </div>
 
           <?php        
           for ($a=0; $a < 7 ; $a++) {
             $start = '6:30';
-            $days_M = array(1=>'января',2=>'февраля',3=>'марта',4=>'апрля', 5 =>'мая',6=>'июня',7=>'июля',8=>'августа',9=> 'сентября',10=> 'октября',11=> 'ноября',12=>'декабря');
-            $days_w = array('Вс.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');  
+           $days_M = array(1=>'січень',2=>'лютий',3=>'березень',4=>'квітень', 5 =>'травень',6=>'червень',7=>'липень',8=>'серпень',9=> 'вересень',10=> 'жовтень',11=> 'листопад',12=>'грудень');
+            $days_w = array('Нд.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');  
             $data_date = $date->format('d.m.Y');    
             ?>
             <div class="qroom-booking_times_week-4" style="display:none;">
@@ -219,7 +219,7 @@ function time_add_min( & $time, $min)
                 <span> <?php echo '<strong>'.( $days_w[($date->format('w'))] .'</strong>'.$data_date ); ?></span>
               </div>
               <table class="qroom-booking_times">
-                <?php echo do_shortcode('[jt-calendar-level-3 room=" Пятый элемент" date="'.$data_date.'"]') ; ?>
+                <?php echo do_shortcode('[jt-calendar-level-3 room="Пятий елемент" date="'.$data_date.'"]') ; ?>
               </table>
             </div>        
             <?php
@@ -231,10 +231,10 @@ function time_add_min( & $time, $min)
       
       <div class="qroom-booking_prices">
         <div class="qroom-booking_prices_title">
-          <span>Цена за команду</span>
+          <span>Ціна за команду</span>
         </div>
         <div class="qroom-booking_prices_desc">
-          Стоимость игры любой категории не зависит от количества человек в команде. Число игроков может варьироваться от 2 до 4.
+          Стоимость игры любой категории не зависит от количества человек в команде. Число гравців может варьироваться от 2 до 4.
         </div>
         <div class="_nclear">
           <table class="qroom-booking_prices_info _count-3 _price-type-1 _turquoise" onmouseover="qroom.ttip.show({ el: this, side: 'top', hoverable: true, width: 350 })" onmouseout="qroom.ttip.hide(this);">
@@ -268,21 +268,21 @@ function time_add_min( & $time, $min)
         </div>
       </div>
       <div class="qroom-booking_prices_variants" onclick="pricesTypesPopup();">
-        <span class="qroom-js_link">Способы оплаты</span>
+        <span class="qroom-js_link">Методи оплати</span>
       </div>
       <div class="_ta-c">
         Бронирование открыто на 21 день вперед. Если Вас интересует более поздняя дата, то позвоните нам, мы внесем вас в предварительное бронирование. Телефон <span class="ya-phone"> 097-15-14-542,  073-135-16-17</span>.
       </div>
       <div class="hidden" id="qroom-prices_popup">
         <div class="qroom-location_popup_title">
-          Способы оплаты
+          Методи оплати
         </div>
         <div class="qroom-popup_text">
           <p>Вы можете оплатить наши услуги следующими способами:</p>
           <ul>
             <li>Наличными перед началом квеста;</li>
-            <li>Банковской картой перед началом квеста;<br/><img src="/wp-content/themes/quest/images/cards_accepted.jpg" style="padding-top:3px;" alt='Карты для оплаты'/></li>
-            <li>Корпоративным клиентам мы готовы выставить счет для безналичной оплаты. Для получения счета свяжитесь, пожалуйста, с нашим менеджером по работе с корпоративными клиентами по телефону 8 (918) 758-62-58 или по почте <a class="qroom-dark-link" href="mailto:questzt@i.ua">questzt@i.ua</a></li>
+            <li>Банковской картой перед началом квеста;<br/><img src="/wp-content/themes/quest/images/cards_accepted.jpg" style="padding-top:3px;" alt='Карти для оплати'/></li>
+            <li>Корпоративним клієнтам ми готові виставити рахунок для безготівкової оплати. Для отримання рахунку зв'яжіться, будь ласка, з нашим менеджером з корпоративних клієнтів за телефоном  <a href="tel:+380971514542">097-15-14-542</a> або поштою  <a class="qroom-dark-link" href="mailto:questzt@i.ua">questzt@i.ua</a></li>
           </ul>
         </div>
       </div>

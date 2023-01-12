@@ -32,7 +32,7 @@ get_header(); ?>
           </div>
            <div class="relative">
             <div class="" onClick="sendForm4()">
-              <input type="submit"  class="qroom-btn _big"  value="Заказать звонок">
+              <input type="submit"  class="qroom-btn _big"  value="Замовити дзвінок">
             </div>
             <div class="qroom-form_additional">
               <div id="result4"></div>
@@ -88,7 +88,7 @@ get_header(); ?>
           </div>
            <div class="relative">
             <div class="" onClick="sendForm5()">
-              <input type="submit"  class="qroom-btn _big _green"  value="Заказать звонок">
+              <input type="submit"  class="qroom-btn _big _green"  value="Замовити дзвінок">
             </div>
             <div class="qroom-form_additional">
               <div id="result5"></div>

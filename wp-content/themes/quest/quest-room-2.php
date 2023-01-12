@@ -24,7 +24,7 @@ get_header(); ?>
         <i class="material-icons">arrow_drop_down</i>
         <div class="qroom-quest_choice_ttip qroom-ttip">
           <div class="qroom-ttip_inner">
-            <a onclick="qroom.analytics.track('quest','game_click',{label:'from_game_header'}); " href="/da_vinci/" class="qroom-quest_choice_item">Тайны да Винчи</a>
+            <a onclick="qroom.analytics.track('quest','game_click',{label:'from_game_header'}); " href="/da_vinci/" class="qroom-quest_choice_item">Таємниці да Вінчі</a>
           </div>
         </div>
       </div>
@@ -69,71 +69,71 @@ get_header(); ?>
           </div>
         </div>
         <div class="qroom-quest_top_info">
-          <i class="material-icons">person_outline</i>2-4 игроков
+          <i class="material-icons">person_outline</i>2-6 гравців
         </div>
+
         <div class="qroom-quest_top_info">
           <i class="material-icons">timer</i>60 минут
         </div>
         <div class="qroom-quest_top_info">
-          <i class="material-icons">place</i> ул. Победы 3
+          <i class="material-icons">place</i> вул. Перемоги 3
         </div>
       </div>
       <div class="_ta-c">
         <span class="qroom-btn _big qr-booking-button" onclick="qroom.navScroll($('.qroom-booking'));">
-        Забронировать
+        Забронювати
         </span>
       </div>
     </div>
   </div>
   <div class="qroom-quest_photos">
-    <a rel="group" class="qroom-quest_photo" style="background-image: url(<?php echo $thumb_url[0]; ?>)" href="<?php echo $thumb_url[0]; ?>">
+    <!--<a rel="group" class="qroom-quest_photo" style="background-image: url(<?php echo $thumb_url[0]; ?>)" href="<?php echo $thumb_url[0]; ?>">
+      <div class="material-icons">add</div>
+    </a>-->
+    <a rel="group" class="qroom-quest_photo" style="background-image: url(/wp-content/uploads/2023/01/five-element-1.jpg)" href="/wp-content/uploads/2023/01/five-element-1.jpg">
       <div class="material-icons">add</div>
     </a>
-    <a rel="group" class="qroom-quest_photo" style="background-image: url(/wp-content/uploads/2017/08/5-element-2.jpg)" href="/wp-content/uploads/2017/08/5-element-2.jpg">
+    <a rel="group" class="qroom-quest_photo" style="background-image: url(/wp-content/uploads/2023/01/five-element-2.jpg)" href="/wp-content/uploads/2023/01/five-element-2.jpg">
       <div class="material-icons">add</div>
     </a>
-    <a rel="group" class="qroom-quest_photo" style="background-image: url(/wp-content/uploads/2017/08/5-element-3.jpg)" href="/wp-content/uploads/2017/08/5-element-3.jpg">
+    <a rel="group" class="qroom-quest_photo" style="background-image: url(/wp-content/uploads/2023/01/five-element-3.jpg)" href="/wp-content/uploads/2023/01/five-element-3.jpg">
       <div class="material-icons">add</div>
     </a>
-    <!-- <a rel="group" class="qroom-quest_photo" style="background-image: url(/wp-content/themes/quest/images/prison/3-s.jpg)" href="/wp-content/themes/quest/images/prison/3.jpg">
-      <div class="material-icons">add</div>
-    </a> -->
   </div>
   <div class="qroom-booking" id="booking">
     <div class="qroom-booking_header">
       <div class="qroom-content_inner">
         <div class="qroom-booking_title">
-          Календарь бронирования
+          Календар бронювання
         </div>
         <div class="qroom-booking_desc">
-          Чтобы записаться на игру -  выберите любое доступное время в одном из квестов. После нажатия на плитку со временем Вы попадете на страницу бронирования.
-        </div>
+            Щоб записатись на гру - виберіть будь-який доступний час в одному з квестів. Після натискання плитки з часом Ви потрапите на сторінку бронювання.        </div>
         <div class="qroom-booking_phone">
-          Или запишитесь по телефону
-          <b class="ya-phone">097-15-14-542</b>
+            Або запишіться по телефону
+          <b class="ya-phone"><a style="font-size: 22px; font-family: Roboto, sans-serif; color: #BDDF01;"
+                                 href="tel:+380971514542">097-15-14-542</a></b>
         </div>
         <div class="qroom-booking_selector_quest qroom-font_rbc _weight_bold _font_size_36">
           <div class="qroom-booking_selector_quest_inner" data-title="<?php echo get_the_title(); ?>">
             <?php echo get_the_title(); ?><i class="material-icons">arrow_drop_down</i>
             <div class="qroom-quest_choice_ttip qroom-ttip">
               <div class="qroom-ttip_inner">
-                <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_game_timetable' });" href="/da_vinci/#booking" class="qroom-quest_choice_item">Тайны да Винчи</a>
+                <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_game_timetable' });" href="/da_vinci/#booking" class="qroom-quest_choice_item">Таємниці да Вінчі</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="qroom-booking_body _on_quest_page">
-      <div class="qroom-content_inner" data-title="Нажмите на плитку с удобным временем, чтобы забронировать игру!">
-      <div class="stub-page">
-        <?php  
+      <div class="qroom-content_inner" data-title="Натисніть на плитку зі зручним часом, щоб Забронювати гру!">        <?php
           $date = new DateTime(date('d.m.Y')); 
 
         for ($a=0; $a < 7 ; $a++) {
           $start = '6:30';
-          $days_M = array(1=>'января',2=>'февраля',3=>'марта',4=>'апрля', 5 =>'мая',6=>'июня',7=>'июля',8=>'августа',9=> 'сентября',10=> 'октября',11=> 'ноября',12=>'декабря');
-          $days_w = array('Вс.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');   
+         $days_M = array(1=>'січень',2=>'лютий',3=>'березень',4=>'квітень', 5 =>'травень',6=>'червень',7=>'липень',8=>'серпень',9=> 'вересень',10=> 'жовтень',11=> 'листопад',12=>'грудень');
+          $days_w = array('Нд.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');   
                 
           $data_date = $date->format('d.m.Y');                    
           ?>
@@ -142,7 +142,7 @@ get_header(); ?>
              <span> <?php echo '<strong>'.( $days_w[($date->format('w'))] .'</strong>'.$data_date ); ?></span>
             </div>
             <table class="qroom-booking_times">
-              <?php echo do_shortcode('[jt-calendar-level-3 room="Пятый элемент" date="'.$data_date.'"]') ; ?>
+              <?php echo do_shortcode('[jt-calendar-level-3 room="Пятий елемент" date="'.$data_date.'"]') ; ?>
             </table>
           </div> 
           <?php
@@ -152,15 +152,15 @@ get_header(); ?>
           }             
         ?>        
         <div class="qroom-booking_link_more button-1" onclick="qroom.quests.showMore(2,this,2);">
-          Показать еще
+          Показати ще
         </div>
 
 
         <?php        
         for ($a=0; $a < 7 ; $a++) {
           $start = '6:30';
-          $days_M = array(1=>'января',2=>'февраля',3=>'марта',4=>'апрля', 5 =>'мая',6=>'июня',7=>'июля',8=>'августа',9=> 'сентября',10=> 'октября',11=> 'ноября',12=>'декабря');
-          $days_w = array('Вс.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');                
+         $days_M = array(1=>'січень',2=>'лютий',3=>'березень',4=>'квітень', 5 =>'травень',6=>'червень',7=>'липень',8=>'серпень',9=> 'вересень',10=> 'жовтень',11=> 'листопад',12=>'грудень');
+          $days_w = array('Нд.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');                
           $data_date = $date->format('d.m.Y');    
           ?>
           <div class="qroom-booking_times_week-2" style="display:none;">
@@ -168,7 +168,7 @@ get_header(); ?>
               <span> <?php echo '<strong>'.( $days_w[($date->format('w'))] .'</strong>'.$data_date ); ?></span>
             </div>
             <table class="qroom-booking_times">
-              <?php echo do_shortcode('[jt-calendar-level-3 room="Пятый элемент" date="'.$data_date.'"]') ; ?>
+              <?php echo do_shortcode('[jt-calendar-level-3 room="Пятий елемент" date="'.$data_date.'"]') ; ?>
             </table>
           </div>        
           <?php
@@ -178,15 +178,15 @@ get_header(); ?>
           }             
         ?>
         <div class="qroom-booking_link_more button-2" onclick="qroom.quests.showMore(3,this,3);" style="display:none;">
-          Показать еще
+          Показати ще
         </div>
 
 
         <?php        
         for ($a=0; $a < 7 ; $a++) {
           $start = '6:30';
-          $days_M = array(1=>'января',2=>'февраля',3=>'марта',4=>'апрля', 5 =>'мая',6=>'июня',7=>'июля',8=>'августа',9=> 'сентября',10=> 'октября',11=> 'ноября',12=>'декабря');
-          $days_w = array('Вс.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.'); 
+         $days_M = array(1=>'січень',2=>'лютий',3=>'березень',4=>'квітень', 5 =>'травень',6=>'червень',7=>'липень',8=>'серпень',9=> 'вересень',10=> 'жовтень',11=> 'листопад',12=>'грудень');
+          $days_w = array('Нд.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.'); 
           $data_date = $date->format('d.m.Y');  
           ?>
           <div class="qroom-booking_times_week-3" style="display:none;">
@@ -194,7 +194,7 @@ get_header(); ?>
               <span> <?php echo '<strong>'.( $days_w[($date->format('w'))] .'</strong>'.$data_date ); ?></span>
             </div>
             <table class="qroom-booking_times">
-              <?php echo do_shortcode('[jt-calendar-level-3 room="Пятый элемент" date="'.$data_date.'"]') ; ?>
+              <?php echo do_shortcode('[jt-calendar-level-3 room="Пятий елемент" date="'.$data_date.'"]') ; ?>
             </table>
           </div>        
           <?php
@@ -204,14 +204,14 @@ get_header(); ?>
             }             
           ?>
           <div class="qroom-booking_link_more button-3" onclick="qroom.quests.showMore(4,this,4);" style="display:none;">
-            Показать еще
+            Показати ще
           </div>
 
           <?php        
           for ($a=0; $a < 7 ; $a++) {
             $start = '6:30';
-            $days_M = array(1=>'января',2=>'февраля',3=>'марта',4=>'апрля', 5 =>'мая',6=>'июня',7=>'июля',8=>'августа',9=> 'сентября',10=> 'октября',11=> 'ноября',12=>'декабря');
-            $days_w = array('Вс.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');  
+           $days_M = array(1=>'січень',2=>'лютий',3=>'березень',4=>'квітень', 5 =>'травень',6=>'червень',7=>'липень',8=>'серпень',9=> 'вересень',10=> 'жовтень',11=> 'листопад',12=>'грудень');
+            $days_w = array('Нд.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');  
             $data_date = $date->format('d.m.Y');    
             ?>
             <div class="qroom-booking_times_week-4" style="display:none;">
@@ -219,7 +219,7 @@ get_header(); ?>
                 <span> <?php echo '<strong>'.( $days_w[($date->format('w'))] .'</strong>'.$data_date ); ?></span>
               </div>
               <table class="qroom-booking_times">
-                <?php echo do_shortcode('[jt-calendar-level-3 room="Пятый элемент" date="'.$data_date.'"]') ; ?>
+                <?php echo do_shortcode('[jt-calendar-level-3 room="Пятий елемент" date="'.$data_date.'"]') ; ?>
               </table>
             </div>        
             <?php
@@ -228,48 +228,62 @@ get_header(); ?>
                 }
             }             
           ?>
-        </div>
+
         <!-- <div class="qroom-booking_link_more"> -->    
       <div class="qroom-booking_prices">
         <div class="qroom-booking_prices_title">
-          <span>Цена за команду</span>
+          <span>Ціна за команду</span>
         </div>
         <div class="qroom-booking_prices_desc">
-          Стоимость игры любой категории не зависит от количества человек в команде. Число игроков может варьироваться от 2 до 4.
+          Вартість гри будь-якої категорії не залежить від кількості осіб у команді. Число гравців може змінюватись від 2 до 6*.
         </div>
         <div class="_nclear">
-          <table class="qroom-booking_prices_info _count-3 _price-type-1 _turquoise" onmouseover="qroom.ttip.show({ el: this, side: 'top', hoverable: true, width: 350 })" onmouseout="qroom.ttip.hide(this);">
+          <!-- <table class="qroom-booking_prices_info _count-3 _price-type-1 _turquoise" onmouseover="qroom.ttip.show({ el: this, side: 'top', hoverable: true, width: 350 })" onmouseout="qroom.ttip.hide(this);">
             <tr>
               <td>
                 <b>400</b>
               </td>
             </tr>
-          </table>
+          </table> -->
           <table class="qroom-booking_prices_info _count-3 _price-type-1 _blue" onmouseover="qroom.ttip.show({ el: this, side: 'top', hoverable: true, width: 350 })" onmouseout="qroom.ttip.hide(this);">
             <tr>
               <td>
-                <b>450</b>
+                <b>800</b>
               </td>
             </tr>
           </table>
+          <!-- <table class="qroom-booking_prices_info _count-3 _price-type-1 _pink" onmouseover="qroom.ttip.show({ el: this, side: 'top', hoverable: true, width: 350 })" onmouseout="qroom.ttip.hide(this);">
+            <tr>
+              <td>
+                <b>договорная</b>
+              </td>
+            </tr>
+          </table> -->
+          <!-- <table class="qroom-booking_prices_info _count-3 _price-type-1 _pink" onmouseover="qroom.ttip.show({ el: this, side: 'top', hoverable: true, width: 350 })" onmouseout="qroom.ttip.hide(this);">
+            <tr>
+              <td>
+                <b>600</b>
+              </td>
+            </tr>
+          </table> -->
         </div>
       </div>
       <div class="qroom-booking_prices_variants" onclick="pricesTypesPopup();">
-        <span class="qroom-js_link">Способы оплаты</span>
+        <span class="qroom-js_link">Методи оплати</span>
       </div>
       <div class="_ta-c">
-        Бронирование открыто на 21 день вперед. Если Вас интересует более поздняя дата, то позвоните нам, мы внесем вас в предварительное бронирование. <br>Телефон <span class="ya-phone"> 097-15-14-542</span>.
+        Бронювання відкрито на 21 день уперед. Якщо Вас цікавить пізніша дата, то зателефонуйте нам, ми внесемо вас у попереднє бронювання. <br>Телефон <span class="ya-phone"> 097-15-14-542</span>.
       </div>
       <div class="hidden" id="qroom-prices_popup">
         <div class="qroom-location_popup_title">
-          Способы оплаты
+          Методи оплати
         </div>
         <div class="qroom-popup_text"> 
           <p>Вы можете оплатить наши услуги следующими способами:</p>
           <ul>
             <li>Наличными перед началом квеста;</li>
-            <li>Банковской картой перед началом квеста;<br/><img src="/wp-content/themes/quest/images/cards_accepted.jpg" style="padding-top:3px;" alt='Карты для оплаты'/></li>
-            <li>Корпоративным клиентам мы готовы выставить счет для безналичной оплаты. Для получения счета свяжитесь, пожалуйста, с нашим менеджером по работе с корпоративными клиентами по телефону 8 (918) 758-62-58 или по почте <a class="qroom-dark-link" href="mailto:questzt@i.ua">questzt@i.ua</a></li>
+            <li>Банковской картой перед началом квеста;<br/><img src="/wp-content/themes/quest/images/cards_accepted.jpg" style="padding-top:3px;" alt='Карти для оплати'/></li>
+            <li>Корпоративним клієнтам ми готові виставити рахунок для безготівкової оплати. Для отримання рахунку зв'яжіться, будь ласка, з нашим менеджером з корпоративних клієнтів за телефоном  <a href="tel:+380971514542">097-15-14-542</a> або поштою  <a class="qroom-dark-link" href="mailto:questzt@i.ua">questzt@i.ua</a></li>
           </ul>
         </div>
       </div>
@@ -279,7 +293,7 @@ get_header(); ?>
 <div class="qroom-contacts_box">
   <div class="qroom-content_inner">
     <div class="qroom-contacts_box_title qroom-font_rbc _font_size_36 _weight_bold">
-      КАК НАС НАЙТИ
+      ЯК НАС ЗНАЙТИ
     </div>
     <div class="qroom-contacts_box_text">
     </div>
@@ -289,7 +303,7 @@ get_header(); ?>
           <i class="material-icons">phone</i><span class="ya-phone"> 097-15-14-542</span>
         </div>
         <div class="qroom-contacts_box_info">
-          <i class="material-icons">place</i>Житомир ул. Победы 3
+          <i class="material-icons">place</i>Житомир вул. Перемоги 3
         </div>
       </div>
     </div>
@@ -300,14 +314,14 @@ get_header(); ?>
      <div id="contact-outside">
       <div class="block-contact">
         <div class="block-img">
-          <img src="/wp-content/uploads/2017/08/3.jpg" alt='Тайны да Винчи'>
+          <img src="/wp-content/uploads/2017/08/3.jpg" alt='Таємниці да Вінчі'>
         </div>
         <div class="moduletable">
-          <div class="h3">Квест комнаты</div>
+          <div class="h3">Квест кімнати</div>
           <div class="custom">
             <div class="b-email"><a href="mailto:info@tascal.ru">questzt@i.ua</a></div>
           <div class="b-telef">Тел.: 097-15-14-542</div>
-          <div class="b-text">Житомир, ул. Победы 3</div></div>
+          <div class="b-text">Житомир, вул. Перемоги 3</div></div>
         </div>                   
       </div>
     </div>
@@ -342,7 +356,7 @@ get_header(); ?>
 
         }
       // КОНТАКТЫ
-      // г. Краснодар ул. Красноармейская, 36 (Д) 
+      // г. Краснодар вул. Красноармейская, 36 (Д) 
       var marker = new google.maps.Marker({
               position: new google.maps.LatLng(45.022565,38.972572),
       icon: image1
@@ -353,14 +367,14 @@ get_header(); ?>
           '</div>'+
           '<h2 id="firstHeading" class="firstHeading">Фирменный центр продаж «Краснодарский»</h2>'+
           '<div id="bodyborder"></div>'+
-          '<div id="bodyContent"><p>г. Краснодар ул. Красноармейская, 36 (Д) </p><sapn>8 800 333 7 111</sapn></div>'+
+          '<div id="bodyContent"><p>г. Краснодар вул. Красноармейская, 36 (Д) </p><sapn>8 800 333 7 111</sapn></div>'+
           '<hr>'+
           '<h2 id="firstHeading" class="firstHeading">Офис продаж</h2>'+
           '<div id="bodyborder"></div>'+
-          '<div id="bodyContent"><p>г. Краснодар ул. Красноармейская, 36 (Д) </p><sapn>8 861 267 11 65</sapn></div>'+
+          '<div id="bodyContent"><p>г. Краснодар вул. Красноармейская, 36 (Д) </p><sapn>8 861 267 11 65</sapn></div>'+
           '</div>';
       makeInfoWin(marker, contentString);
-      // г. Краснодар ул. Красноармейская, 36 (Д) 
+      // г. Краснодар вул. Красноармейская, 36 (Д) 
       var marker = new google.maps.Marker({
               position: new google.maps.LatLng(45.017185,38.958147),
       icon: image2
@@ -371,7 +385,7 @@ get_header(); ?>
           '</div>'+
           '<h2 id="firstHeading" class="firstHeading">«Солнечный дом»</h2>'+
           '<div id="bodyborder"></div>'+
-          '<div id="bodyContent"><p>ул. Кубанская набережная, 3</p></div>'+
+          '<div id="bodyContent"><p>вул. Кубанская набережная, 3</p></div>'+
           '</div>';
       makeInfoWin(marker, contentString);
 
@@ -385,4 +399,4 @@ get_header(); ?>
  -->
   </div>
 </div>
-<?php get_footer(); ?> 
+<?php get_footer(); ?>

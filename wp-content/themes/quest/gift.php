@@ -18,16 +18,15 @@ get_header(); ?>
   <div class="qroom-content_inner qroom-gift_form_top">
     <div class="qroom-gift_form">
       <h1 class="qroom-gift_form_title">
-        Купить подарочный сертификат
+          Купити подарунковий сертифікат
       </h1>
-      <p class="qroom-gift_form_sub-title">У нас вы всегда можете приобрести подарочный сертификат на прохождение квеста, который станет прекрасным подарком родным, близким и друзьям. <br>
-      Вы сможете проверить их на сообразительность, умение мыслить нестандартно и быстро ориентироваться в новой обстановке. <br>
-      Такой подарок будет неожиданным, интересным и очень оригинальным. <br>
-      Владелец сертификата может позвонить и забронировать комнату для прохождения квеста, уточнив количество человек и удобное время.</p>
-      <ul class="qroom-gift_form_desc" style="display:none;">
-        <li><strong>Сертификат III категории</strong> на квест в будний день до 18 часов - <strong class="currency rub">1700</strong></li>
-        <li><strong>Сертификат II категории</strong> на квест в будний день на любое время - <strong class="currency rub">2200</strong></li>
-        <li><strong>Сертификат I категории</strong> – на квест в любой день на любое время – <strong class="currency rub">2700</strong></li>
+      <p class="qroom-gift_form_sub-title">У нас ви завжди можете придбати подарунковий сертифікат на проходження квесту, який стане чудовим подарунком рідним, близьким та друзям. <br>
+          Ви зможете перевірити їх на кмітливість, вміння мислити нестандартно та швидко орієнтуватися у новій обстановці. <br>
+          Такий подарунок буде несподіваним, цікавим та дуже оригінальним. <br>
+          Власник сертифікату може зателефонувати та забронювати кімнату для проходження квесту, уточнивши кількість осіб та зручний час.</p><ul class="qroom-gift_form_desc" style="display:none;">
+            <li><strong>Сертифікат III категорії</strong> на квест у будній день до 18 години - <strong class="currency rub">1700</strong></li>
+            <li><strong>Сертифікат II категорії</strong> на квест у будній день на будь-який час - <strong class="currency rub">2200</strong></li>
+            <li><strong>Сертифікат І категорії</strong> – на квест у будь-який день на будь-який час – <strong class="currency rub">2700</strong></li>
       </ul>
       <p class="qroom-gift_form_sub-title">Мы бесплатно доставим любой сертификат по Житомиру!</p>
       <div class="qroom-form_outer">
@@ -49,7 +48,7 @@ get_header(); ?>
           </div>
            <div class="relative">
             <div class="" onClick="sendForm()">
-              <input type="submit"  class="qroom-btn _big"  value="Заказать сертификат">
+              <input type="submit"  class="qroom-btn _big"  value="Замовити сертифікат">
             </div>
             <div class="qroom-form_additional">
               <div id="result"></div>
@@ -63,48 +62,48 @@ get_header(); ?>
 </div>
 <div class="qroom-gift_presentation qroom-content_inner" style="display:none;"> 
   <h2 class="_font_size_36 qroom-font_rbc _weight_bold qroom-gift_presentation_title _ta-c">
-    КВЕСТ НАЧНЕТСЯ ПРЯМО ВО ВРЕМЯ ПРАЗДНИКА!
+      КВЕСТ ПОЧНЕТЬСЯ ПРЯМО ПІД ЧАС СВЯТА!
   </h2>
   <div class="qroom-gift_presentation_text">
-    Подарочный сертификат спрятан внутри шкатулки. Чтобы его достать, нужно провести ключик по лабиринту - прямо к замочку!
+      Подарунковий сертифікат захований усередині скриньки. Щоб його дістати, потрібно провести ключик лабіринтом - прямо до замочка!
   </div>
   <div class="qroom-gift_presentation_pic"></div>
 </div>
 <div class="qroom-gift_how">
   <h2 class="_font_size_36 qroom-font_rbc _weight_bold qroom-gift_presentation_title _ta-c">
-    КАК ПРИОБРЕСТИ СЕРТИФИКАТ?
+      ЯК ПРИДБАТИ СЕРТИФІКАТ?
   </h2>
   <div class="qroom-gift_how_list">
     <div class="qroom-gift_how_item">
       <div class="qroom-gift_how_item_icn material-icons">phone</div>
-      <div class="qroom-gift_how_item_title">Способ №1</div>
-      Позвонить по телефону
+      <div class="qroom-gift_how_item_title">Спосіб №1</div>
+        Зателефонувати
       <div class="qroom-gift_how_item_phone">
         <div class="material-icons">phone</div>
         097-15-14-542 <br>
       </div>
-      и заказать доставку у нашего менеджера
+        та замовити доставку у нашого менеджера
     </div>
     <div class="qroom-gift_how_item">
       <div class="qroom-gift_how_item_icn material-icons">touch_app</div>
-      <div class="qroom-gift_how_item_title">Способ №2</div>
-      Отправить заявку, нажав на кнопку &laquo;Заказать&raquo;
+      <div class="qroom-gift_how_item_title">Спосіб №2</div>
+        Надіслати заявку, натиснувши кнопку &laquo;Замовити&raquo;
     </div>
     <div class="qroom-gift_how_item">
       <div class="qroom-gift_how_item_icn material-icons">directions_walk</div>
-      <div class="qroom-gift_how_item_title">Способ №3</div>
-      Самостоятельно забрать сертификат по адресу <br>(г. Житомир ул. Победы 3).
+      <div class="qroom-gift_how_item_title">Спосіб №3</div>
+        Самостійно забрати сертифікат на адресу <br>(г. Житомир вул. Перемоги 3).
     </div>
   </div>
   <div class="_ta-c">
     <div class="qroom-btn _big _white qroom-gift_how_btn" onclick="qroom.navScroll($('.qroom-gift_form_top'))">
-      Заказать
+      Замовити
     </div>
   </div>
 </div>
 <div class="qroom-gifts_examples" style="display:none;">
   <div class="qroom-gifts_examples_title">
-    Вы можете выбрать любой из 5 дизайнов лабиринтов
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda debitis dolorum eligendi expedita explicabo facilis incidunt laboriosam odio porro quia quis repellendus reprehenderit, sapiente sequi similique sint vel vitae voluptas.
   </div>
   <div class="qroom-gifts_examples_img"></div>
 </div>
@@ -140,7 +139,7 @@ get_header(); ?>
 
     <div class="relative">
       <div class="" onClick="sendForm2()">
-        <input type="submit"  class="qroom-btn _big"  value="Заказать сертификат">
+        <input type="submit"  class="qroom-btn _big"  value="Замовити сертификат">
       </div>
       <div class="qroom-form_additional">
         <div id="result2"></div>
@@ -170,7 +169,7 @@ get_header(); ?>
     </div>
     <div class="qroom-quests_item_title">
       <span>
-      <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_item_title' });" href="/da_vinci">&#171;Тайны да Винчи&#187;</a>
+      <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_item_title' });" href="/da_vinci">&#171;Таємниці да Вінчі&#187;</a>
       </span>
     </div>
     <div class="qroom-quests_item_hover">
@@ -181,17 +180,17 @@ get_header(); ?>
         </div>
         <div class="qroom-quests_item_infos">
           <div class="qroom-quests_item_info">
-            <i class="material-icons">person_outline</i> 2-4 игроков
+            <i class="material-icons">person_outline</i> 2-4 гравців
           </div>
           <div class="qroom-quests_item_info">
-            <i class="material-icons">place</i> Победы 3
+            <i class="material-icons">place</i> Перемоги 3
           </div>
         </div>
         <div class="qroom-quests_item_btns">
           <div>
-            <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_button_big' });" class="qroom-btn _big qr-booking-button" href="/#booking">Забронировать</a>
+            <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_button_big' });" class="qroom-btn _big qr-booking-button" href="/#booking">Забронювати</a>
           </div>
-          <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_about' });" href="/da_vinci/">Подробнее о квесте</a>
+          <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_about' });" href="/da_vinci/">Детальніше про квест</a>
         </div>
       </div>
     </div>
@@ -210,16 +209,16 @@ get_header(); ?>
     </div>
     <div class="qroom-quests_item_title">
       <span>
-      <a href="/kvest-komnata-2" onclick="return false">&#171;Пятый элемент&#187;</a>
-      <!-- <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_item_title' });" href="/kvest-komnata-2" onclick="return false">&#171;Пятый элемент&#187;</a> -->
+      <a href="/five-element" >&#171;П'ятий елемент&#187;</a>
+      <!-- <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_item_title' });" href="/five-element" >&#171;П'ятий елемент&#187;</a> -->
       </span>
     </div>
-    <div class="qroom-quests_item_hover qroom-quests_item_hover-stop">
-      <a href="/kvest-komnata-2" onclick="return false" class="qroom-quests_item_hover_link"></a>
-      <!-- <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_panel' });" href="/kvest-komnata-2" onclick="return false" class="qroom-quests_item_hover_link"></a> -->
-      <div class="h1" style="padding-top: 100px;font-size: 60px;font-weight: 900;line-height: 1.5;font-family: 'Berkshire Swash', cursive;">Скоро<br>открытие!</div>
+    <div class="qroom-quests_item_hover">
+      <a href="/five-element"  class="qroom-quests_item_hover_link"></a>
+       <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_panel' });" href="/five-element"  class="qroom-quests_item_hover_link"></a>
+      <!--<div class="h1" style="padding-top: 100px;font-size: 60px;font-weight: 900;line-height: 1.5;font-family: 'Berkshire Swash', cursive;">Скоро<br>відкриття!</div>-->
       <div class="qroom-quests_item_hover_inner">
-        <div class="qroom-quests_item_level"> 
+        <div class="qroom-quests_item_level">
           <i class="material-icons _lock _active">lock_outline</i>
           <i class="material-icons _lock _active">lock_outline</i>
           <i class="material-icons _lock _active">lock_outline</i>
@@ -228,19 +227,19 @@ get_header(); ?>
         </div>
         <div class="qroom-quests_item_infos">
           <div class="qroom-quests_item_info">
-            <i class="material-icons">person_outline</i> 2-4 игроков
+            <i class="material-icons">person_outline</i> 2-4 гравців
           </div>
           <div class="qroom-quests_item_info">
-            <i class="material-icons">place</i> Победы 3
+            <i class="material-icons">place</i> Перемоги 3
           </div>
         </div>
         <div class="qroom-quests_item_btns">
           <div>
-            <!-- <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_button_big' });" class="qroom-btn _big qr-booking-button" href="/kvest-komnata-2#booking" onclick="return false">Забронировать</a> -->
-            <a class="qroom-btn _big qr-booking-button" href="/kvest-komnata-2#booking" onclick="return false">Забронировать</a>
+            <!-- <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_button_big' });" class="qroom-btn _big qr-booking-button" href="/five-element#booking" >Забронювати</a> -->
+            <a class="qroom-btn _big qr-booking-button" href="/five-element#booking" >Забронювати</a>
           </div>
-          <a href="/kvest-komnata-2" onclick="return false">Подробнее о квесте</a>
-          <!-- <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_about' });" href="/kvest-komnata-2" onclick="return false">Подробнее о квесте</a> -->
+          <a href="/five-element" >Детальніше про квест</a>
+          <!-- <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_about' });" href="/five-element" >Детальніше про квест</a> -->
         </div>
       </div>
     </div>

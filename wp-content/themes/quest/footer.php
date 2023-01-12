@@ -20,7 +20,7 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
 <noscript>
   <a href="http://click.hotlog.ru/?2569627" target="_blank">
     <img src="http://hit20.hotlog.ru/cgi-bin/hotlog/count?s=2569627&im=43" border="0"
-         title="HotLog" alt="HotLog"></a>
+         title="HotLog" alt="questzone"></a>
 </noscript>
 <!-- /HotLog -->
 <div class="qroom-footer">
@@ -31,21 +31,21 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
         <a href="/">
           <!-- <img src="/wp-content/themes/quest/images/logo-icon.png" class="logo-icon">
           <img src="/wp-content/themes/quest/images/logo.png"> -->
-          <img src="/wp-content/themes/quest/images/new-logo.jpg" style="width: 150px;" alt='Логотип'/>
+          <img src="/wp-content/themes/quest/images/new-logo.jpg" style="width: 150px;" alt='questzone'/>
         </a>
         <div class="_ta-c">
-          <div class="qroom-btn _big qr-booking-site" onclick="qroom.scrollToBooking();">Забронировать</div>
+          <div class="qroom-btn _big qr-booking-site" onclick="qroom.scrollToBooking();">Забронювати</div>
         </div>
 
       </div>
       <div class="qroom-footer_list _contacts">
         <div class="qroom-footer_list_title">
-          Контакты
+          Контакт
         </div>
         <div class="qroom-footer_list_item">
           Житомир
           <div class="material-icons">place</div>
-          ул. Победы 3
+          вул. Перемоги 3
         </div>
         <div class="qroom-footer_list_item">
           <div class="material-icons">phone</div>
@@ -54,7 +54,7 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
        href="tel:+380971514542">097-15-14-542</a>
         </span>
         </div>
-        <span>Мы в соцсетях<span>
+        <span>Ми у соцмережах<span>
       </div>
 
       <div class="qroom-footer_list _contacts">
@@ -75,13 +75,13 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
 
     </div>
     <!-- <div class="_ta-c">
-      <div class="qroom-btn _big qr-booking-site" onclick="qroom.scrollToBooking();">Забронировать</div>
+      <div class="qroom-btn _big qr-booking-site" onclick="qroom.scrollToBooking();">Забронювати</div>
     </div> -->
   </div>
   <!-- <div class="qroom-footer_bottom">
     <div class="qroom-content_inner">
         <div class="qroom-copyright">
-            &copy; &mdash; 2017 <a href="/">http://quest-game.com</a>. Разработка от <a href="http://korshuqb.beget.tech/">Sergey</a>
+            &copy; &mdash; 2017 <a href="/">http://quest-game.com</a>. Разработка от <a href="https://github.com/Chernushov88">Sergey</a>
         </div>
     </div>
     </div> -->
@@ -92,22 +92,22 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
 <div type="button" class="callback-bt">
   <a href="tel:+380971514542" class="text-call">
     <i class="fa fa-phone"></i>
-    <span>Звонок</span>
+    <span>Дзвінок</span>
   </a>
 </div>
 <div class="qopup-content qopup-content-payment">
   <div class="qopup-close material-icons" onclick="pricesTypesPopupHide();">close</div>
   <div class="qroom-location_popup_title">
-    Способы оплаты
+      Способи оплати
   </div>
   <div class="qroom-popup_text">
-    <p>Вы можете оплатить наши услуги следующими способами:</p>
+    <p>Ви можете оплатити наші послуги такими способами:</p>
     <ul>
-      <li>Наличными перед началом квеста;</li>
-      <li>Банковской картой перед началом квеста;<br><img src="/wp-content/themes/quest/images/cards_accepted.jpg"
-                                                          style="padding-top:3px;" alt="Карты для оплаты"></li>
-      <li>Корпоративным клиентам мы готовы выставить счет для безналичной оплаты. Для получения счета свяжитесь,
-        пожалуйста, с нашим менеджером по работе с корпоративными клиентами по телефону 8 (918) 758-62-58 или по почте
+      <li>Готівкою перед початком квесту;</li>
+      <li>Банківською картою перед початком квесту;<br><img src="/wp-content/themes/quest/images/cards_accepted.jpg"
+                                                          style="padding-top:3px;" alt="Карти для оплати"></li>
+      <li>Корпоративним клієнтам ми готові виставити рахунок для безготівкової оплати. Для отримання рахунку зв'яжіться,
+          будь ласка, з нашим менеджером по роботі з корпоративними клієнтами за телефоном <a style="font-size: 22px; font-family: Roboto, sans-serif; color: #BDDF01;" href="tel:+380971514542">097-15-14-542</a> або поштою
         <a class="qroom-dark-link" href="mailto:questzt@i.ua">questzt@i.ua</a></li>
     </ul>
   </div>
@@ -123,7 +123,7 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
       <div class="qopup-close material-icons">close</div>
       <div class="qopup-content">
         <div class="qroom-booking_qopup">
-          <div class="-qroom-booking_qopup_title qroom-booking_qopup_title-home">Название комнаты</div>
+          <div class="qroom-booking_qopup_title qroom-booking_qopup_title-home">Назва кімнати</div>
           <div class="qroom-booking_qopup_desc">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_content() ?>
@@ -165,8 +165,8 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
                 <div class="qroom-row">
                   <div class="qroom-col-6">
                     <div class="qroom-form_field">
-                      <input type="text" class="qroom-input qroom-need_validate" placeholder="Имя *"
-                             data-validations="empty,not_null" data-error="Введите ваше имя" name="Name" maxlength="100"
+                      <input type="text" class="qroom-input qroom-need_validate" placeholder="Імя *"
+                             data-validations="empty,not_null" data-error="Введіть ваше ім'я" name="Name" maxlength="100"
                              minlength="3" required>
                       <div class="qroom-form_field_error"></div>
                     </div>
@@ -174,7 +174,7 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
                   <div class="qroom-col-6">
                     <div class="qroom-form_field">
                       <input type="text" class="qroom-input qroom-need_validate phone" placeholder="Ваш телефон *"
-                             data-validations="empty,phone" data-error="Введите ваш телефон" name="Phone" required>
+                             data-validations="empty,phone" data-error="Введіть телефон" name="Phone" required>
                       <div class="qroom-form_field_error"></div>
                     </div>
                   </div>
@@ -187,7 +187,7 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
               </div>
               <div class="qroom-col-6">
                 <div class="qroom-form_field">
-                  <textarea class="qroom-textarea" data-title="Комментарий" placeholder="Комментарий"
+                  <textarea class="qroom-textarea" data-title="Коментар" placeholder="Коментар"
                             name="Comment"></textarea>
                   <div class="qroom-form_field_error"></div>
                 </div>
@@ -199,21 +199,21 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
                 <tbody>
                 <tr>
                   <td>
-                    <i class="material-icons">event</i><span class="data-date">01 августа, Пт</span>
+                    <i class="material-icons">event</i><span class="data-date">01 серпня, Пт</span>
                   </td>
                   <td>
                     <i class="material-icons">access_time</i><span class="data-time">23:00</span>
                   </td>
                   <td>
-                    <i class="material-icons">place</i> ул. Победы 3
+                    <i class="material-icons">place</i> ввул. Перемоги 3
                   </td>
                   <td class="qroom-form_price">
                     <div class="qroom-form_old_price">
-                      Старая цена <span class="currency rub"></span>
+                      Стара ціна <span class="currency rub"></span>
                     </div>
                     <div class="qroom-form_price_now">
-                      <i class="material-icons">account_balance_wallet</i>Цена: <span
-                          class="qroom-booking_qopup_cost_holder currency rub">2&nbsp;000</span>
+                      <i class="material-icons">account_balance_wallet</i>Ціна: <span
+                          class="qroom-booking_qopup_cost_holder currency rub LOREM">700</span>
                     </div>
                   </td>
                 </tr>
@@ -223,7 +223,7 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
             <div class="_ta-c">
               <div class="qroom-form_btns">
                 <button class="qroom-btn _big qr-booking-finish">
-                  Забронировать игру
+                    Забронювати гру
                 </button>
               </div>
               <!-- <div class="relative">
@@ -234,22 +234,21 @@ $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
                 </div> -->
             </div>
             <div class="qroom-form_additional">
-              * Обязательные пункты для заполнения
+              * Обов'язкові пункти для заповнення
             </div>
             <div class="qroom-booking_terms">
               <div class="qroom-checkbox _checked" onclick="qroom.checkbox(this);">
                 <input type="checkbox" checked="" name="Agree">
                 <i class="material-icons qroom-checkbox_icn _outline">check_box_outline_blank</i>
                 <i class="material-icons qroom-checkbox_icn _check_icn">check_box</i>
-                Я согласен получать рассылку о новых квестах и акциях не чаще одного раза в две недели
+                  Я згоден отримувати розсилку про нові квести та акції не частіше одного разу на два тижні
               </div>
               <div class="qroom-checkbox _checked" onclick="qroom.checkbox(this);">
-                <input type="checkbox" class="qroom-need_validate" data-validations="checked" data-error="Подтвердите"
+                <input type="checkbox" class="qroom-need_validate" data-validations="checked" data-error="Підтвердіть"
                        name="Privacy">
                 <i class="material-icons qroom-checkbox_icn _outline">check_box_outline_blank</i>
                 <i class="material-icons qroom-checkbox_icn _check_icn">check_box</i>
-                Я ознакомлен с<a href="/files/politika_konfidentsialnosti.pdf" target="_blank"> политикой
-                  конфиденциальности</a>
+                  Я ознайомлений з<a href="/files/politika_konfidentsialnosti.pdf" target="_blank"> політикою конфіденційності</a>
                 <div class="qroom-form_field_error"></div>
               </div>
             </div>

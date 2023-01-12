@@ -572,8 +572,8 @@ qroom.quests = new function () {
 		$('.qroom-content-hom-page').parents('.customize-support').find('#room').val(home_room_title);
 		$('.qroom-booking_qopup_title').text(home_room_title);
 		var home_room_title2 = $(params).parents('.qroom-booking_quest_title-content').find('.qroom-booking_quest_title').attr('data-title');
-		var room_title1 = 'Тайны да Винчи';
-		var room_title2 = 'Пятый элемент';
+		var room_title1 = 'Таємниці да Вінчі';
+		var room_title2 = 'П'ятий елемент';
 		if ($(home_room_title2) == $(room_title1)) {
 			console.log('55555555555');
 		}

@@ -8,7 +8,7 @@
     <div class="row">
 
       <div class="qroom-corporate-reviews">
-        <h1 class="qroom-font_rbc _font_size_36 _weight_bold _ta-c qroom-corporate-reviews-title">Отзывы игроков</h1>
+        <h1 class="qroom-font_rbc _font_size_36 _weight_bold _ta-c qroom-corporate-reviews-title">Відгуки гравців</h1>
         
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <?php the_content() ?>
@@ -28,7 +28,7 @@
         <div id="dots"></div>
         <div class="container">
           <div class="c2">
-            Отзывы игроков
+            Отзывы гравців
             <div id="comment-filter" class="f-select">
               <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label is-dirty" data-upgraded=",MaterialSelectfield">
                 <select id="sortComments" class="mdl-selectfield__select" style="visibility: hidden;" name="">
@@ -44,7 +44,7 @@
                 </div>
               </div>
             </div>
-            <div class="btn btn-blue leave-comment "><i> </i> Оставить отзыв</div>
+            <div class="btn btn-blue leave-comment "><i> </i> Залишити відгук</div>
           </div>
 
           <div class="container-fluid comments-wrapper comments-wrapper-empty-3 ">
@@ -119,7 +119,7 @@
               </div>
             </div>
           </div>
-          <div class="container-fluid"><button id="more-reviews" class="btn btn-outline pd btn-md more-day" type="button">Показать еще</button></div>
+          <div class="container-fluid"><button id="more-reviews" class="btn btn-outline pd btn-md more-day" type="button">Показати ще</button></div>
         </div>
       </div> -->
       

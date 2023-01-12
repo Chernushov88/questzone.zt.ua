@@ -28,9 +28,9 @@ get_header(); ?>
 <?php
 function date_function() {
   $date3 = new DateTime(date('d.m.Y'));
-  $days_M = array(1=>'января',2=>'февраля',3=>'марта',4=>'апрля', 5 =>'мая',6=>'июня',7=>'июля',8=>'августа',9=> 'сентября',10=> 'октября',11=> 'ноября',12=>'декабря');
+ $days_M = array(1=>'січень',2=>'лютий',3=>'березень',4=>'квітень', 5 =>'травень',6=>'червень',7=>'липень',8=>'серпень',9=> 'вересень',10=> 'жовтень',11=> 'листопад',12=>'грудень');
   $data_W = ( $days_M[($date3->format('n'))] );
-  $days_w = array('Вс.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');
+  $days_w = array('Нд.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');
   $date = new DateTime(date('d.m.Y'));
   $date2 = new DateTime(date('d.m.Y'));
   $date->modify('+'.$a.'day');
@@ -68,7 +68,7 @@ function date_function() {
       </div>
       <div class="qroom-quests_item_title">
         <span>
-        <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_item_title' });" href="/kvest-komnata-1">Тайны да Винчи</a>
+        <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_item_title' });" href="/kvest-komnata-1">Таємниці да Вінчі</a>
         </span>
       </div>
       <div class="qroom-quests_item_hover">
@@ -83,17 +83,17 @@ function date_function() {
           </div>
           <div class="qroom-quests_item_infos">
             <div class="qroom-quests_item_info">
-              <i class="material-icons">person_outline</i> 2-4 игроков
+              <i class="material-icons">person_outline</i> 2-4 гравців
             </div>
             <div class="qroom-quests_item_info">
-              <i class="material-icons">place</i> ул. Победы 3
+              <i class="material-icons">place</i> вул. Перемоги 3
             </div>
           </div>
           <div class="qroom-quests_item_btns">
             <div>
-              <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_button_big' });" class="qroom-btn _big qr-booking-button" href="/kvest-komnata-1#booking">Подробнее</a>
+              <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_button_big' });" class="qroom-btn _big qr-booking-button" href="/kvest-komnata-1#booking">Докладніше</a>
             </div>
-            <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_about' });" href="/kvest-komnata-1">Подробнее о квесте</a>
+            <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_about' });" href="/kvest-komnata-1">Детальніше про квест</a>
           </div>
         </div>
       </div>
@@ -116,11 +116,11 @@ function date_function() {
       </div>
       <div class="qroom-quests_item_title">
         <span>
-        <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_item_title' });" href="/kvest-komnata-2">Квест комната 2</a>
+        <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_item_title' });" href="/five-element">Квест комната 2</a>
         </span>
       </div>
       <div class="qroom-quests_item_hover">
-        <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_panel' });" href="/kvest-komnata-2" class="qroom-quests_item_hover_link"></a>
+        <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_panel' });" href="/five-element" class="qroom-quests_item_hover_link"></a>
         <div class="qroom-quests_item_hover_inner">
           <div class="qroom-quests_item_level">
             <i class="material-icons _lock _active">lock_outline</i>
@@ -131,7 +131,7 @@ function date_function() {
           </div>
           <div class="qroom-quests_item_infos">
             <div class="qroom-quests_item_info">
-              <i class="material-icons">person_outline</i> 2-6 игроков
+              <i class="material-icons">person_outline</i> 2-6 гравців
             </div>
             <div class="qroom-quests_item_info">
               <i class="material-icons">place</i> Пирогова 24
@@ -139,9 +139,9 @@ function date_function() {
           </div>
           <div class="qroom-quests_item_btns">
             <div>
-              <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_button_big' });" class="qroom-btn _big qr-booking-button" href="/kvest-komnata-2#booking">Подробнее</a>
+              <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_button_big' });" class="qroom-btn _big qr-booking-button" href="/five-element#booking">Докладніше</a>
             </div>
-            <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_about' });" href="/kvest-komnata-2">Подробнее о квесте</a>
+            <a onclick="qroom.analytics.track('quest', 'game_click', { label: 'from_gamelist_hover_about' });" href="/five-element">Детальніше про квест</a>
           </div>
         </div>
       </div>
@@ -163,7 +163,7 @@ function date_function() {
   <div class="qroom-booking_header">
     <div class="qroom-content_inner">
       <div class="qroom-booking_title">
-        Календарь бронирования
+        Календар бронювання
       </div>
       <div class="qroom-booking_desc">
         Чтобы записаться на игру -  выберите любое доступное время в одном из квестов. После нажатия на плитку со временем Вы попадете на страницу бронирования.
@@ -176,13 +176,13 @@ function date_function() {
   </div>
   <div class="qroom-booking_body">
     <div class="qroom-content_inner">
-      <div class="qroom-booking_dates_pick" id="qroom-booking_dates_pick" data-title="Нажмите на удобную Вам дату, чтобы посмотреть расписание на этот день!" onmouseover="qroom.ttip.show({ el: this })" onmouseout="qroom.ttip.hide(this);">
+      <div class="qroom-booking_dates_pick" id="qroom-booking_dates_pick" data-title="Натисніть на зручну дату, щоб переглянути розклад на цей день!" onmouseover="qroom.ttip.show({ el: this })" onmouseout="qroom.ttip.hide(this);">
         <?php
           for ($a=0; $a < 21 ; $a++) {
             $date3 = new DateTime(date('d.m.Y'));
-            $days_M = array(1=>'января',2=>'февраля',3=>'марта',4=>'апрля', 5 =>'мая',6=>'июня',7=>'июля',8=>'августа',9=> 'сентября',10=> 'октября',11=> 'ноября',12=>'декабря');
+           $days_M = array(1=>'січень',2=>'лютий',3=>'березень',4=>'квітень', 5 =>'травень',6=>'червень',7=>'липень',8=>'серпень',9=> 'вересень',10=> 'жовтень',11=> 'листопад',12=>'грудень');
             $data_W = ( $days_M[($date3->format('n'))] );
-            $days_w = array('Вс.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');
+            $days_w = array('Нд.', 'Пн.', 'Вт.', 'Ср.', 'Чт.', 'Пт.', 'Сб.');
             $date = new DateTime(date('d.m.Y'));
             $date2 = new DateTime(date('d.m.Y'));
             $date->modify('+'.$a.'day');
@@ -204,15 +204,15 @@ function date_function() {
       </div>
 
 
-      <div class="qroom-booking_holder" id="qroom_booking_holder" data-title="Нажмите на плитку с удобным временем, чтобы забронировать игру!">
+      <div class="qroom-booking_holder" id="qroom_booking_holder" data-title="Натисніть на плитку зі зручним часом, щоб Забронювати гру!">
         <?php echo do_shortcode('[jt-calendar-level-1]'); ?>
       </div>
-      <div class="qroom-booking_holder" data-title="Нажмите на плитку с удобным временем, чтобы забронировать игру!" onmouseover="qroom.ttip.show({ el: this })" onmouseout="qroom.ttip.hide(this);">
+      <div class="qroom-booking_holder" data-title="Натисніть на плитку зі зручним часом, щоб Забронювати гру!" onmouseover="qroom.ttip.show({ el: this })" onmouseout="qroom.ttip.hide(this);">
         <div class="hidden booking-template">
           <div class="qroom-booking_time _booked">Занято</div>
         </div>
         <div class="qroom-booking_quest_title">
-          <span>Тайны да Винчи</span>
+          <span>Таємниці да Вінчі</span>
         </div>
         <table class="qroom-booking_times">
           <tbody>
@@ -294,10 +294,10 @@ function date_function() {
 
       <div class="qroom-booking_prices">
         <div class="qroom-booking_prices_title">
-          <span>Цена за команду</span>
+          <span>Ціна за команду</span>
         </div>
         <div class="qroom-booking_prices_desc">
-          Стоимость игры любой категории не зависит от количества человек в команде. Число игроков может варьироваться от 2 до 4*.
+          Вартість гри будь-якої категорії не залежить від кількості осіб у команді. Число гравців може змінюватись від 2 до 4*.
         </div>
         <div class="_nclear">
           <table class="qroom-booking_prices_info _count-3 _price-type-1 _turquoise" data-title="" onmouseover="qroom.ttip.show({ el: this, side: 'top', hoverable: true, width: 350 })" onmouseout="qroom.ttip.hide(this);">
@@ -324,21 +324,21 @@ function date_function() {
         </div>
       </div>
       <div class="qroom-booking_prices_variants" onclick="qroom.quests.pricesTypesPopup();">
-        <span class="qroom-js_link">Способы оплаты</span>
+        <span class="qroom-js_link">Методи оплати</span>
       </div>
       <div class="_ta-c">
         Бронирование открыто на 21 день вперед. Если Вас интересует более поздняя дата, то позвоните нам, мы внесем вас в предварительное бронирование. Телефон <span class="ya-phone"> 097-15-14-542, 073-135-16-17</span>.
       </div>
       <div class="hidden" id="qroom-prices_popup">
         <div class="qroom-location_popup_title">
-          Способы оплаты
+          Методи оплати
         </div>
         <div class="qroom-popup_text">
           <p>Вы можете оплатить наши услуги следующими способами:</p>
           <ul>
             <li>Наличными перед началом квеста;</li>
             <li>Банковской картой перед началом квеста;<br/><img src="/wp-content/themes/quest/images/cards_accepted.jpg" style="padding-top:3px;"/></li>
-            <li>Корпоративным клиентам мы готовы выставить счет для безналичной оплаты. Для получения счета свяжитесь, пожалуйста, с нашим менеджером по работе с корпоративными клиентами по телефону 8 (918) 758-62-58 или по почте <a class="qroom-dark-link" href="mailto:stavropol@questrooms.com">stavropol@questrooms.com</a></li>
+            <li>Корпоративним клієнтам ми готові виставити рахунок для безготівкової оплати. Для отримання рахунку зв'яжіться, будь ласка, з нашим менеджером з корпоративних клієнтів за телефоном  <a href="tel:+380971514542">097-15-14-542</a> або поштою  <a class="qroom-dark-link" href="mailto:stavropol@questrooms.com">stavropol@questrooms.com</a></li>
           </ul>
         </div>
       </div>

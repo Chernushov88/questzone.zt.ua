@@ -9,78 +9,78 @@
     <div class="row">
 
       <div class="qroom-corporate_service">
-        <h1 class="qroom-font_rbc _font_size_36 _weight_bold _ta-c qroom-corporate_service_title">Основные правила:</h1>
+        <h1 class="qroom-font_rbc _font_size_36 _weight_bold _ta-c qroom-corporate_service_title">Основні правила:</h1>
         <div class="qroom-corporate_service_item">
           <div class="qroom-content_inner">
             <h4 class="qroom-title_with_border">
-              <span>Что такое квест-комната?</span>
+              <span>Що таке квест-кімната?</span>
             </h4>
-              <p>Это игра, где вы оказываетесь в закрытом помещении, из которого нужно выбраться.</p>
-              <p>Для этого вам понадобятся логика и смекалка, а также предметы, которые вы найдете в процессе игры.</p> 
+              <p>Це гра, де ви опиняєтеся в закритому приміщенні, з якого потрібно вибратися.</p>
+              <p>Для цього вам знадобляться логіка та кмітливість, а також предмети, які ви знайдете в процесі гри.</p>
           </div>
         </div>
         <div class="qroom-corporate_service_item">
           <div class="qroom-content_inner">
             <h4 class="qroom-title_with_border">
-              <span>Сколько участников должно быть в команде?</span>
+              <span>Скільки учасників має бути у команді?</span>
             </h4>
             <p>
-              Как правило, игра рассчитана на 2-4 игрока. Но в некоторых комнатах могут быть свои ограничения, <br>
-              которые указаны у нас на сайте. Обращайте на них внимание при бронировании.</p>
+                Як правило, гра розрахована на 2-4 гравці. Але в деяких кімнатах можуть бути свої обмеження.
+                які вказані у нас на сайті. Звертайте на них увагу під час бронювання.</p>
           </div>
         </div>
         <div class="qroom-corporate_service_item">
           <div class="qroom-content_inner">
             <h4 class="qroom-title_with_border">
-              <span>Есть ли возрастные ограничения?</span>
+              <span>Чи є вікові обмеження?</span>
             </h4>
             <p>
-              Игроки до <strong>12 лет</strong> должны быть с родителями. Некоторые комнаты имеют возрастные ограничения 18+,
-              которые указаны у нас на сайте.
+                Гравці віком до <strong>12 років</strong> мають бути з батьками. Деякі кімнати мають вікові обмеження 18+,
+                які вказані у нас на сайті.
             </p>
           </div>
         </div>
         <div class="qroom-corporate_service_item">
           <div class="qroom-content_inner">
             <h4 class="qroom-title_with_border">
-              <span>Что если мы застрянем в комнате?</span>
+                <span>Що якщо ми застрягнемо в кімнаті?</span>
             </h4>
-            <p>
-              В любой момент можно обратиться за подсказкой к оператору,
-              который следит за ходом игры и вашей безопасностью. 
-            </p>
+              <p>
+                  У будь-який момент можна звернутися за підказкою до оператора,
+                  який стежить за ходом гри та вашою безпекою.
+              </p>
+          </div>
+        </div>
+          <div class="qroom-corporate_service_item">
+              <div class="qroom-content_inner">
+                  <h4 class="qroom-title_with_border">
+                      <span>Скільки часу триває гра?</span>
+                  </h4>
+                  <p>
+                      У більшості кімнат є <strong>60 хвилин</strong>. Однак,
+                      існують квест-кімнати та з іншими тимчасовими обмеженнями, які вказані у нас на сайті.
+                  </p>
           </div>
         </div>
         <div class="qroom-corporate_service_item">
           <div class="qroom-content_inner">
             <h4 class="qroom-title_with_border">
-              <span>Сколько времени длится игра?</span>
+                <span>Скільки коштує гра?</span>
             </h4>
-            <p>
-              В большинстве комнат – <strong>60 минут</strong>. Однако,
-              существуют квест-комнаты и с другими временными ограничениями, которые указаны у нас на сайте.
-            </p>
+              <p>
+                  Ціна залежить від дня тижня та часу. На сторінці з кожною кімнатою ви знайдете детальний розклад сеансів з цінами.
+              </p>
           </div>
         </div>
         <div class="qroom-corporate_service_item">
           <div class="qroom-content_inner">
             <h4 class="qroom-title_with_border">
-              <span>Сколько стоит игра?</span>
+                <span>Чи можна подарувати гру?</span>
             </h4>
-            <p>
-              Цена зависит от дня недели и времени. На странице каждой комнаты вы найдете подробное расписание сеансов с ценами.
-            </p>
-          </div>
-        </div>
-        <div class="qroom-corporate_service_item">
-          <div class="qroom-content_inner">
-            <h4 class="qroom-title_with_border">
-              <span>Можно ли подарить игру?</span>
-            </h4>
-            <p>
-              Конечно! Для этого достаточно приобрести подарочный сертификат.
-              Получатель сертификата сможет сам выбрать понравившуюся комнату и удобное время для игры.
-            </p>
+              <p>
+                  Звісно! Для цього достатньо придбати подарунковий сертифікат.
+                  Отримувач сертифікату зможе сам вибрати кімнату, що сподобалася, і зручний час для гри.
+              </p>
           </div>
         </div>
       </div>    
@@ -93,7 +93,7 @@
                 </div>
                  <div class="relative">
                   <div class="" onclick="sendForm5()">
-                    <input type="submit" class="qroom-btn _big _green" value="Заказать звонок">
+                    <input type="submit" class="qroom-btn _big _green" value="Замовити дзвінок">
                   </div>
                   <div class="qroom-form_additional">
                     <div id="result5"></div>

@@ -13,7 +13,7 @@
 
 <div class="qroom-content ">
 <div class="qroom-content_inner blog-list">
-  <h1>Новости</h1>
+  <h1>Новини</h1>
 <?php
 // запрос
 $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
