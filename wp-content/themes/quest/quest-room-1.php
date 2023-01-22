@@ -28,7 +28,7 @@ get_header(); ?>
         </div>
       </div>
     </div>
-  11  <div class="qroom-quest_options">
+   <?php/*<div class="qroom-quest_options">
       <div class="qroom-quest_option">
         <div class="qroom-icn_quest qroom-icn_quest _handcuffs"></div>
           Усі гравці опиняться у справжніх поліцейських кайданках
@@ -45,7 +45,7 @@ get_header(); ?>
         <div class="qroom-icn_quest qroom-icn_quest _face"></div>
           Відмінний вибір для новачків
       </div>
-    </div>22
+    </div>*/?>
     <i class="material-icons qroom-about_arrow_bottom">arrow_downward</i>
     <div class="qroom-content_inner">
       <div class="qroom-quest_top_desc">

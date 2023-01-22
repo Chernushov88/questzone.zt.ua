@@ -36,7 +36,7 @@ get_header(); ?>
                         </div>
                         <div class="qroom-quests_item_infos">
                             <div class="qroom-quests_item_info">
-                                <i class="material-icons">person_outline</i> 2-6 гравців
+                                <i class="material-icons">person_outline</i> 2-4 гравців
                             </div>
                             <div class="qroom-quests_item_info">
                                 <i class="material-icons">place</i> Пирогова 24
@@ -79,7 +79,7 @@ get_header(); ?>
                         </div>
                         <div class="qroom-quests_item_infos">
                             <div class="qroom-quests_item_info">
-                                <i class="material-icons">person_outline</i> 2-6 гравців
+                                <i class="material-icons">person_outline</i> 2-4 гравців
                             </div>
                             <div class="qroom-quests_item_info">
                                 <i class="material-icons">place</i> Пирогова 24

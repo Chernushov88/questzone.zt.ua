@@ -70,7 +70,7 @@ function time_add_min( & $time, $min)
                     </div>
                 </div>
                 <div class="qroom-quest_top_info">
-                    <i class="material-icons">person_outline</i>2-6 гравців
+                    <i class="material-icons">person_outline</i>2-4 гравців
                 </div>
                 <div class="qroom-quest_top_info">
                     <i class="material-icons">timer</i>60 минут

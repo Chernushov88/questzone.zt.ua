@@ -69,11 +69,11 @@ get_header(); ?>
           </div>
         </div>
         <div class="qroom-quest_top_info">
-          <i class="material-icons">person_outline</i>2-6 гравців
+          <i class="material-icons">person_outline</i>2-4 гравців
         </div>
 
         <div class="qroom-quest_top_info">
-          <i class="material-icons">timer</i>60 минут
+          <i class="material-icons">timer</i>60 - 80 хвилин
         </div>
         <div class="qroom-quest_top_info">
           <i class="material-icons">place</i> вул. Перемоги 3
